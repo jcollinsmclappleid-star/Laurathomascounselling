@@ -3,9 +3,9 @@ import { HomePageContent } from "@/components/home/home-page-content";
 import { pageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Laura Thomas Counselling",
+  title: "Counselling in Bedford - Laura Thomas Counselling",
   description:
-    "Counselling in Bedford and online, with specialist parenting support from Laura Thomas.",
+    "Therapy and support for individuals, couples, parents and families in Bedford and online. Practical counselling with Laura Thomas in Wixams.",
   path: "/",
 });
 

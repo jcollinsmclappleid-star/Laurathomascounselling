@@ -55,6 +55,6 @@ Sister site **http://www.parentologyworld.com/** — homepage strap (“Teen cou
 - **Blog teasers, testimonies, fees tables** — out of scope; articles remain registry-only.
 - **Parentology sister site** — outbound mention only via `/parentology/` gateway route.
 
-## Logo decision
+## Logo decision (Batch 2f)
 
-Replaced CSS-inverted pack PNG on the homepage overlay header with Laura’s **live v2 wordmarks** (dark header variant on forest hero, light variant on cream sticky header).
+Navigation uses Laura’s live **v2a wordmark** on a **cream pill** (`public/brand/laura-logo-nav.webp`) without CSS invert filters.

@@ -131,6 +131,13 @@ export const homeFaq = {
   ],
 } as const;
 
+/** From parentologyworld.com/resources — Books & Guides. */
+export const homeBooks = {
+  heading: "Straight-talking support for parents",
+  intro:
+    "If you are trying to make sense of teenage life, mental health, emotional overwhelm and behaviour changes, these books are designed to help you feel calmer, clearer and more confident at home. Practical, supportive, and easy to use in real life, without overwhelming jargon.",
+} as const;
+
 export const homeLocation = {
   paragraphs: [
     "Based in the beautiful, new village of Wixams just 4 miles south of Bedford. Easily accessible from the M1, A421 and A6.",

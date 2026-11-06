@@ -33,9 +33,9 @@
 | Wixams file (business cards, not the building) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-Wixams-1280x853.jpg` | `public/images/wixams-practice.webp` — do not use as the practice exterior |
 | Practice doorway (also on Parentology About) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8857-Edit-Large.png` | `public/images/laura-doorway-hero.webp` — homepage location image |
 | Laura portrait used under How I can help | Parentology About, WhatsApp image 8 Mar 2026 | `public/images/laura-parentology-portrait.webp` |
-| Laura in the counselling space (individual support) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8821-Edit-Medium.jpeg` | `public/images/individual-support.webp` |
-| Brick doorway with tree artwork (Wixams practice) | Parentology About reference `IMG013` | `public/images/laura-brick-doorway-tree-art.webp` |
-| Teen counselling card (decorative gradient) | **Generated** — not photography | `public/images/young-people-support.webp` — illustrative only |
+| Individual support still life (practice shelf) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8828-Edit-Medium.jpeg` | `public/images/individual-support.webp` — not a portrait of Laura |
+| Teen counselling card | Parentology teen-support stock, Pexels cottonbro (`IMG039`) | `public/images/young-people-support.webp` — not a client |
+| Lake at Wixams | Geograph 3595334, Philip Jeffrey, CC BY-SA 2.0 | `public/images/wixams-lake.webp` — credit shown beside the image |
 | Counselling room | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-71-1280x853.jpg` | `public/images/counselling-space.webp` |
 | Couples / relationship | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2021/07/relationship-5-1280x825.jpg` | `public/images/couples-support.webp` |
 

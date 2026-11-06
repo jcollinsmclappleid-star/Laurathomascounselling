@@ -4,6 +4,7 @@ import { BookOpen, Compass, GraduationCap, HandHeart, MessageCircle } from "luci
 import type { LucideIcon } from "lucide-react";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
 import {
+  homeBooks,
   homeFaq,
   homeHowICanHelp,
   homeIntroBlocks,
@@ -40,8 +41,8 @@ const counsellingOptions = [
     title: homeHowICanHelp.services.individual.title,
     body: homeHowICanHelp.services.individual.body,
     image: "/images/individual-support.webp",
-    alt: "Laura Thomas in her counselling space",
-    position: "object-[50%_30%]",
+    alt: "A quiet corner of the counselling room, with a lamp and flowers",
+    position: "object-[50%_45%]",
   },
   {
     href: couplesFamilyHref,
@@ -56,8 +57,8 @@ const counsellingOptions = [
     title: homeHowICanHelp.services.youngPeople.title,
     body: homeHowICanHelp.services.youngPeople.body,
     image: "/images/young-people-support.webp",
-    alt: "",
-    position: "object-center",
+    alt: "A teenager talking with an adult in a quiet room",
+    position: "object-[62%_40%]",
   },
 ] as const;
 
@@ -372,10 +373,11 @@ export function HomeBelowFold() {
           <p className="text-[9px] uppercase tracking-[0.15em]">Books</p>
           <h2
             id="books-heading"
-            className="mt-4 font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
+            className="mt-4 max-w-3xl font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
           >
-            Parenting books for real family conversations.
+            {homeBooks.heading}
           </h2>
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed">{homeBooks.intro}</p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             <article className="flex flex-col rounded-2xl bg-[var(--color-cream)] p-6 shadow-[var(--shadow-soft)]">
               <Link
@@ -455,15 +457,27 @@ export function HomeBelowFold() {
               Book a free call
             </HomeCtaPrimary>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] sm:aspect-[16/11]">
-            <Image
-              src="/images/laura-brick-doorway-tree-art.webp"
-              alt="Laura at the brick doorway of her counselling practice in Wixams, with tree artwork inside"
-              fill
-              className="object-cover object-[48%_35%]"
-              sizes="(max-width: 1024px) 100vw, 480px"
-            />
-          </div>
+          <figure>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] sm:aspect-[16/11]">
+              <Image
+                src="/images/wixams-lake.webp"
+                alt="The lake at Wixams, with trees and grass along the water"
+                fill
+                className="object-cover object-[50%_60%]"
+                sizes="(max-width: 1024px) 100vw, 480px"
+              />
+            </div>
+            <figcaption className="mt-2 text-[11px] leading-snug text-[#f4eddd]/75">
+              Lake by Wixams by Philip Jeffrey,{" "}
+              <a
+                href="https://creativecommons.org/licenses/by-sa/2.0/"
+                rel="license"
+                className="underline underline-offset-2"
+              >
+                CC BY-SA 2.0
+              </a>
+            </figcaption>
+          </figure>
         </div>
       </section>
     </div>

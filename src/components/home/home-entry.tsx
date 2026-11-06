@@ -337,9 +337,16 @@ export function HomeEntry() {
         </div>
       </section>
 
-      <p className="border-t border-[#c8cbb9]/80 px-5 py-3 text-center text-[9px] uppercase tracking-[0.14em] text-[var(--color-forest)] md:px-10 md:py-4">
-        M.Ed · MNCPS (Accred.)
-      </p>
+      <ul className="flex flex-wrap items-center justify-center gap-2 border-t border-[#c8cbb9]/80 px-5 py-3 md:px-10 md:py-4">
+        {["M.Ed", "MNCPS (Accred.)"].map((pill) => (
+          <li
+            key={pill}
+            className="rounded-full border border-[#173e35]/15 bg-[var(--color-sage)] px-3 py-1 text-[10px] uppercase tracking-[0.12em] text-[var(--color-forest)]"
+          >
+            {pill}
+          </li>
+        ))}
+      </ul>
     </>
   );
 }

@@ -43,13 +43,13 @@ export function SiteHeader() {
     };
   }, [menuOpen]);
 
-  const overlayHeader = isHomeOverlay && !menuOpen;
+  const onForestBar = isHomeOverlay;
 
   return (
     <header
       className={cn(
         "z-50 w-full",
-        overlayHeader
+        onForestBar
           ? "absolute inset-x-0 top-0 border-b border-white/15 bg-[#102f2c]/94 text-[#fff8e9] backdrop-blur-sm md:bg-[#102f2c]/96"
           : "sticky top-0 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]",
       )}
@@ -57,24 +57,28 @@ export function SiteHeader() {
       <div
         className={cn(
           "mx-auto flex max-w-[var(--content-max)] items-center justify-between gap-4 px-[18px] md:px-10 lg:px-[65px]",
-          overlayHeader ? "h-14 md:h-16" : "h-16 md:h-[100px]",
+          onForestBar ? "h-16" : "h-16 md:h-[100px]",
         )}
       >
         <Link
           href="/"
           className={cn(
-            "relative block shrink-0 rounded-md bg-[var(--color-cream)] px-3 py-1.5 shadow-sm",
-            overlayHeader
-              ? "h-[44px] w-[min(220px,52vw)] md:h-[48px] md:w-[240px]"
-              : "h-[48px] w-[min(240px,55vw)] md:h-[52px] md:w-[260px]",
+            "relative block shrink-0",
+            onForestBar
+              ? "h-11 w-[145px] md:h-12 md:w-[158px]"
+              : "h-12 w-[158px] md:h-14 md:w-[185px]",
           )}
         >
           <Image
-            src="/brand/laura-logo-nav.webp"
+            src={
+              onForestBar
+                ? "/brand/laura-logo-nav-on-green.webp"
+                : "/brand/laura-logo-nav-on-cream.webp"
+            }
             alt="Laura Thomas Counselling"
             fill
             className="object-contain object-left"
-            sizes="(max-width: 768px) 220px, 260px"
+            sizes="185px"
             priority
           />
         </Link>
@@ -89,7 +93,7 @@ export function SiteHeader() {
               href={item.href}
               className={cn(
                 "min-h-[44px] py-3 leading-none transition hover:text-[var(--accent)]",
-                overlayHeader && "hover:text-white",
+                onForestBar && "hover:text-white",
               )}
             >
               {item.label}
@@ -99,7 +103,7 @@ export function SiteHeader() {
             href={contactCta.href}
             className={cn(
               "inline-flex min-h-[44px] items-center gap-1.5 border px-[22px] py-3 text-xs font-medium transition",
-              overlayHeader
+              onForestBar
                 ? "border-white/55 hover:border-white hover:bg-white/10"
                 : "border-[#657a69]/80 hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)]",
             )}
@@ -114,7 +118,7 @@ export function SiteHeader() {
           type="button"
           className={cn(
             "inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs md:hidden",
-            overlayHeader && "text-[#fff8e9]",
+            onForestBar && "text-[#fff8e9]",
           )}
           aria-expanded={menuOpen}
           aria-controls={panelId}

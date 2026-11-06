@@ -27,7 +27,6 @@ const contactHref = hrefFromRegistry("/contact-me/");
 const DOORWAY_HERO = {
   src: "/images/laura-doorway-hero.webp",
   alt: "Laura Thomas at the entrance to her counselling space",
-  objectPosition: "object-[48%_20%]",
 } as const;
 
 const fadeUp: Variants = {
@@ -106,7 +105,7 @@ function WorldPanel({
     <motion.div
       layout
       className={cn(
-        "relative min-h-0 min-w-0 flex-1 overflow-hidden",
+        "relative min-h-[210px] min-w-0 flex-none overflow-hidden lg:min-h-0 lg:flex-1",
         isExpanding && "fixed inset-0 z-[70]",
       )}
       animate={
@@ -120,7 +119,7 @@ function WorldPanel({
         ref={ref}
         href={href}
         className={cn(
-          "group relative flex h-full min-h-[44px] w-full flex-col text-[#fff8ea] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-white/90 active:opacity-95",
+          "group relative flex h-full min-h-[210px] w-full flex-col text-[#fff8ea] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-white/90 active:opacity-95 lg:min-h-0",
           pulseClass,
         )}
         onClick={(event) => {
@@ -230,21 +229,21 @@ export function HomeEntry() {
   return (
     <>
       <section
-        className="relative flex h-[100svh] min-h-0 w-full flex-col overflow-hidden bg-[#102f2c] lg:grid lg:grid-cols-2 lg:grid-rows-2"
+        className="relative flex w-full flex-col bg-[#102f2c] lg:grid lg:h-[100svh] lg:min-h-0 lg:grid-cols-2 lg:grid-rows-2 lg:overflow-hidden"
         aria-label="Choose your path"
       >
         <motion.div
-          className="relative flex min-h-0 flex-[1.05] flex-col overflow-hidden text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:flex-none"
+          className="relative flex flex-col text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:min-h-0 lg:overflow-hidden"
           {...containerMotion}
         >
-          <div className="relative z-[1] flex min-h-0 flex-1 flex-col lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
-            <div className="flex min-h-0 flex-1 flex-col lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-8">
-              <p className="shrink-0 bg-[#102f2c] px-[19px] pb-2 pt-[3.625rem] text-[9px] uppercase tracking-[0.14em] leading-snug sm:px-6 sm:pt-[3.875rem] lg:hidden">
+          <div className="relative z-[1] flex flex-col lg:min-h-0 lg:flex-1 lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
+            <div className="flex flex-col lg:grid lg:min-h-0 lg:flex-1 lg:grid-cols-2 lg:items-center lg:gap-x-8">
+              <p className="shrink-0 bg-[#102f2c] px-[19px] pb-3 pt-[4.5rem] text-[9px] uppercase tracking-[0.14em] leading-snug sm:px-6 lg:hidden">
                 {homeEyebrow}
               </p>
 
               <motion.div
-                className="relative aspect-[4/5] max-h-[min(44svh,440px)] w-full shrink-0 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:max-h-none lg:min-h-[360px]"
+                className="relative h-[42svh] w-full shrink-0 overflow-hidden lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:aspect-[4/5] lg:h-auto lg:min-h-[360px]"
                 {...itemMotion}
               >
                 <Image
@@ -252,7 +251,7 @@ export function HomeEntry() {
                   alt={DOORWAY_HERO.alt}
                   fill
                   priority
-                  className={cn("object-cover", DOORWAY_HERO.objectPosition)}
+                  className="object-cover object-[50%_8%] lg:object-[48%_20%]"
                   sizes="(max-width: 1024px) 100vw, 360px"
                 />
                 <div
@@ -302,13 +301,13 @@ export function HomeEntry() {
           </div>
         </motion.div>
 
-        <div className="flex min-h-0 flex-1 flex-col lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:pt-16 xl:pt-[4.5rem]">
+        <div className="flex flex-col lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:h-full lg:min-h-0 lg:pt-16 xl:pt-[4.5rem]">
           <WorldPanel
             panelId="counselling"
             href={counsellingHref}
-            imageSrc="/images/counselling-space.webp"
-            imageAlt="Laura Thomas's counselling room in Wixams"
-            objectPosition="object-[50%_45%]"
+            imageSrc="/images/room.webp"
+            imageAlt="A calm counselling room with an armchair by the window"
+            objectPosition="object-[65%_40%]"
             kicker="Counselling & therapeutic support"
             title="A space for you."
             description="Individual, couples, family and young-person counselling."
@@ -322,8 +321,8 @@ export function HomeEntry() {
           <WorldPanel
             panelId="parentology"
             href={parentologyHref}
-            imageSrc="/images/parentology/parentology-hero.webp"
-            imageAlt="Parentology World — support for parents and teenagers"
+            imageSrc="/images/family.webp"
+            imageAlt="A mother and daughter talking together at a kitchen table"
             objectPosition="object-[52%_30%]"
             kicker="Parentology · Parents & teenagers"
             title="Growing together."

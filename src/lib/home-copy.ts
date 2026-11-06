@@ -95,12 +95,12 @@ export const homeLocation = {
   ],
 } as const;
 
-/** Strap and copy from parentologyworld.com (sister site). */
+/** Verbatim lines from parentologyworld.com homepage. */
 export const homeParentologyWorld = {
   strap: "Teen counselling · Parent support · Real-time guidance",
-  headline: "When your teenager suddenly changes, it can feel confusing, overwhelming, and isolating.",
+  headline:
+    "When your teenager suddenly changes, it can feel confusing, overwhelming, and isolating.",
   subline: "Anxiety. Anger. School refusal. Shutdowns. Silence.",
-  body: "Support for parents and teenagers navigating mental health, emotional overwhelm, behaviour changes, and family stress. There is a way through this — and you do not have to figure it out alone.",
-  detail:
-    "Parentology World is Laura's specialist space for parents and teenagers — ongoing guidance, teen counselling, and calm support when home life feels hard.",
+  body: "There is a way through this. And you do not have to figure it out alone.",
+  detail: "I'll help you understand what's really going on and what to do next.",
 } as const;

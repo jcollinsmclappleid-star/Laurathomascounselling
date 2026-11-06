@@ -330,9 +330,9 @@ export function HomeBelowFold() {
           <div className="mt-8 grid gap-3 md:grid-cols-2">
             <HomeRoutePanel
               href={counsellingHref}
-              imageSrc="/images/counselling-space.webp"
-              imageAlt="Laura Thomas's counselling room in Wixams"
-              imagePosition="object-[50%_45%]"
+              imageSrc="/images/room.webp"
+              imageAlt="A calm counselling room with an armchair by the window"
+              imagePosition="object-[65%_40%]"
               kicker="Counselling & therapeutic support"
               title="A space for you."
               description="Individual, couples, family and young-person counselling."
@@ -341,9 +341,9 @@ export function HomeBelowFold() {
             />
             <HomeRoutePanel
               href={parentologyHref}
-              imageSrc="/images/parentology/parentology-hero.webp"
-              imageAlt="Parentology World — support for parents and teenagers"
-              imagePosition="object-center"
+              imageSrc="/images/family.webp"
+              imageAlt="A mother and daughter talking together at a kitchen table"
+              imagePosition="object-[52%_30%]"
               kicker="Parentology · Parents & teenagers"
               title="Growing together."
               description="Specialist guidance for the changing years of family life."

@@ -27,14 +27,6 @@ const boysBookHref = hrefFromRegistry(
 const faqHref = hrefFromRegistry("/faq-and-fees/");
 const contactHref = hrefFromRegistry("/contact-me/");
 
-const locationPills = [
-  "Wixams",
-  "4 miles south of Bedford",
-  "M1",
-  "A421",
-  "A6",
-] as const;
-
 const counsellingOptions = [
   {
     href: individualHref,
@@ -308,16 +300,6 @@ export function HomeBelowFold() {
             >
               Wixams, Bedford
             </h2>
-            <ul className="mt-5 flex flex-wrap gap-2">
-              {locationPills.map((pill) => (
-                <li
-                  key={pill}
-                  className="rounded-full bg-[var(--color-forest)] px-3 py-1.5 text-[11px] uppercase tracking-[0.08em] text-[#fff8e9]"
-                >
-                  {pill}
-                </li>
-              ))}
-            </ul>
             <div className="mt-5 max-w-2xl space-y-4 text-[15px] leading-relaxed">
               {homeLocation.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
@@ -327,12 +309,12 @@ export function HomeBelowFold() {
               Book a free call
             </HomeCtaPrimary>
           </div>
-          <div className="relative aspect-[16/10] overflow-hidden rounded-[18px]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[18px]">
             <Image
-              src="/images/laura-doorway-hero.webp"
-              alt="Laura Thomas at the doorway of her counselling practice in Wixams"
+              src="/images/room.webp"
+              alt="A warm, quiet counselling room with a chair by the window"
               fill
-              className="object-cover object-[42%_32%]"
+              className="object-cover object-[70%_55%]"
               sizes="(max-width: 1024px) 100vw, 560px"
             />
           </div>
@@ -457,27 +439,15 @@ export function HomeBelowFold() {
               Book a free call
             </HomeCtaPrimary>
           </div>
-          <figure>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] sm:aspect-[16/11]">
-              <Image
-                src="/images/wixams-lake.webp"
-                alt="The lake at Wixams, with trees and grass along the water"
-                fill
-                className="object-cover object-[50%_60%]"
-                sizes="(max-width: 1024px) 100vw, 480px"
-              />
-            </div>
-            <figcaption className="mt-2 text-[11px] leading-snug text-[#f4eddd]/75">
-              Lake by Wixams by Philip Jeffrey,{" "}
-              <a
-                href="https://creativecommons.org/licenses/by-sa/2.0/"
-                rel="license"
-                className="underline underline-offset-2"
-              >
-                CC BY-SA 2.0
-              </a>
-            </figcaption>
-          </figure>
+          <div className="relative aspect-[16/10] overflow-hidden rounded-[14px]">
+            <Image
+              src="/images/laura-headphones.webp"
+              alt="Laura Thomas"
+              fill
+              className="object-cover object-[70%_40%]"
+              sizes="(max-width: 1024px) 100vw, 480px"
+            />
+          </div>
         </div>
       </section>
     </div>

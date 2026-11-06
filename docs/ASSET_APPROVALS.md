@@ -35,7 +35,9 @@
 | Laura portrait used under How I can help | Parentology About, WhatsApp image 8 Mar 2026 | `public/images/laura-parentology-portrait.webp` |
 | Individual support still life (practice shelf) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8828-Edit-Medium.jpeg` | `public/images/individual-support.webp` — not a portrait of Laura |
 | Teen counselling card | Parentology teen-support stock, Pexels cottonbro (`IMG039`) | `public/images/young-people-support.webp` — not a client |
-| Lake at Wixams | Geograph 3595334, Philip Jeffrey, CC BY-SA 2.0 | `public/images/wixams-lake.webp` — credit shown beside the image |
+| Lake at Wixams | Geograph 3595334, Philip Jeffrey, CC BY-SA 2.0 | `public/images/wixams-lake.webp` — not used on the homepage |
+| Laura with headphones | Parentology About banner, Screenshot 12 Jan 2026 | `public/images/laura-headphones.webp` — closing homepage image |
+| Warm counselling room | Concept room already in the repo | `public/images/room.webp` — location image; not a photograph of the Wixams practice |
 | Counselling room | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-71-1280x853.jpg` | `public/images/counselling-space.webp` |
 | Couples / relationship | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2021/07/relationship-5-1280x825.jpg` | `public/images/couples-support.webp` |
 

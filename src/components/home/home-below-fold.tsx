@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  BookOpen,
-  Compass,
-  GraduationCap,
-  HandHeart,
-  MessageCircle,
-  Users,
-} from "lucide-react";
+import { BookOpen, Compass, GraduationCap, HandHeart, MessageCircle } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
-import { HomeRecentBlogs } from "@/components/home/home-recent-blogs";
 import {
   homeFaq,
   homeHowICanHelp,
@@ -59,6 +51,14 @@ const counsellingOptions = [
     alt: "A couple sitting together",
     position: "object-[50%_40%]",
   },
+  {
+    href: youngPeopleHref,
+    title: homeHowICanHelp.services.youngPeople.title,
+    body: homeHowICanHelp.services.youngPeople.body,
+    image: "/images/young-people-support.webp",
+    alt: "",
+    position: "object-center",
+  },
 ] as const;
 
 const parentologyInsights: {
@@ -102,8 +102,6 @@ const parentologyInsights: {
   },
 ];
 
-const familyHref = hrefFromRegistry("/family-therapy-2/");
-
 export function HomeBelowFold() {
   return (
     <div className="bg-[var(--color-cream)]" id="home-main-content">
@@ -146,7 +144,7 @@ export function HomeBelowFold() {
             <h3 className="mt-2 font-serif text-[clamp(32px,5vw,44px)] leading-none tracking-[-0.6px]">
               A space for you.
             </h3>
-            <div className="mt-6 grid gap-8 md:grid-cols-2">
+            <div className="mt-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {counsellingOptions.map((option) => (
                 <article key={option.href}>
                   <div className="relative mb-4 aspect-[16/10] overflow-hidden rounded-[14px]">
@@ -155,7 +153,7 @@ export function HomeBelowFold() {
                       alt={option.alt}
                       fill
                       className={`object-cover ${option.position}`}
-                      sizes="(max-width: 768px) 100vw, 480px"
+                      sizes="(max-width: 1024px) 100vw, 380px"
                     />
                   </div>
                   <h4 className="font-serif text-2xl tracking-[-0.3px]">
@@ -209,43 +207,15 @@ export function HomeBelowFold() {
             {homeParentologyWorld.body} {homeParentologyWorld.detail}
           </p>
 
-          <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-            <div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-[14px]">
-                  <Image
-                    src="/images/teen-parent-support.webp"
-                    alt="Laura Thomas, who supports parents and young people"
-                    fill
-                    className="object-cover object-[50%_22%]"
-                    sizes="240px"
-                  />
-                </div>
-                <div className="relative aspect-[3/4] overflow-hidden rounded-[14px]">
-                  <Image
-                    src="/images/family.webp"
-                    alt="A mother and daughter talking together at a kitchen table"
-                    fill
-                    className="object-cover object-[52%_30%]"
-                    sizes="240px"
-                  />
-                </div>
-              </div>
-              <h3 className="mt-5 flex items-center gap-2 font-serif text-[clamp(28px,4vw,36px)] leading-none tracking-[-0.4px]">
-                <Users aria-hidden size={22} strokeWidth={1.6} />
-                Teen &amp; family support
-              </h3>
-              <p className="mt-3 text-[15px] leading-relaxed">
-                {homeHowICanHelp.services.teenParent.body}
-              </p>
-              <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <HomeCtaSecondary href={youngPeopleHref} showArrow>
-                  Teen counselling
-                </HomeCtaSecondary>
-                <HomeCtaSecondary href={familyHref} showArrow>
-                  Family support
-                </HomeCtaSecondary>
-              </div>
+          <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(240px,0.38fr)_minmax(0,1fr)]">
+            <div className="relative aspect-[4/5] max-w-sm overflow-hidden rounded-[14px]">
+              <Image
+                src="/images/family.webp"
+                alt="A parent and teenager talking together at a kitchen table"
+                fill
+                className="object-cover object-[52%_30%]"
+                sizes="(max-width: 1024px) 100vw, 320px"
+              />
             </div>
             <div>
               <h3 className="font-serif text-2xl tracking-[-0.3px]">
@@ -458,34 +428,44 @@ export function HomeBelowFold() {
         className="border-t border-[#c8cbb9] bg-[var(--color-forest)] px-[19px] py-10 text-[#f4eddd] md:px-10 lg:px-[65px]"
         aria-labelledby="book-call-heading"
       >
-        <div className="mx-auto flex max-w-[var(--content-max)] flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <ul className="flex flex-wrap gap-2">
-              {["Wixams", "Bedford", "Online"].map((pill) => (
-                <li
-                  key={pill}
-                  className="rounded-full border border-white/30 px-3 py-1 text-[10px] uppercase tracking-[0.12em]"
-                >
-                  {pill}
-                </li>
-              ))}
-            </ul>
-            <h2
-              id="book-call-heading"
-              className="mt-4 font-serif text-[clamp(32px,8vw,48px)] leading-[1.02] tracking-[-0.6px]"
-            >
+        <div className="mx-auto grid max-w-[var(--content-max)] gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(260px,0.95fr)] lg:items-center">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <ul className="flex flex-wrap gap-2">
+                {["Wixams", "Bedford", "Online"].map((pill) => (
+                  <li
+                    key={pill}
+                    className="rounded-full border border-white/30 px-3 py-1 text-[10px] uppercase tracking-[0.12em]"
+                  >
+                    {pill}
+                  </li>
+                ))}
+              </ul>
+              <h2
+                id="book-call-heading"
+                className="mt-4 font-serif text-[clamp(32px,8vw,48px)] leading-[1.02] tracking-[-0.6px]"
+              >
+                Book a free call
+              </h2>
+              <p className="mt-3 max-w-lg text-sm leading-relaxed text-[#f4eddd]/90">
+                {homeLocation.paragraphs[2]}
+              </p>
+            </div>
+            <HomeCtaPrimary href={contactHref} tone="onDark" className="shrink-0 self-start sm:self-center">
               Book a free call
-            </h2>
-            <p className="mt-3 max-w-lg text-sm leading-relaxed text-[#f4eddd]/90">
-              {homeLocation.paragraphs[2]}
-            </p>
+            </HomeCtaPrimary>
           </div>
-          <HomeCtaPrimary href={contactHref} tone="onDark">
-            Book a free call
-          </HomeCtaPrimary>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] sm:aspect-[16/11]">
+            <Image
+              src="/images/laura-brick-doorway-tree-art.webp"
+              alt="Laura at the brick doorway of her counselling practice in Wixams, with tree artwork inside"
+              fill
+              className="object-cover object-[48%_35%]"
+              sizes="(max-width: 1024px) 100vw, 480px"
+            />
+          </div>
         </div>
       </section>
-      <HomeRecentBlogs />
     </div>
   );
 }

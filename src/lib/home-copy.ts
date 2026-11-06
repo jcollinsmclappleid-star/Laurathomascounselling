@@ -97,6 +97,10 @@ export const homeHowICanHelp = {
       title: "Teen & Parent Support",
       body: "For when home life feels tense, unpredictable, or difficult to manage. You might be dealing with behaviour changes, emotional outbursts, anxiety, or feeling like you're constantly walking on eggshells. It's not always clear what's driving it — or how to respond. I help you understand what's really going on for your teen and give you clear, practical ways to respond so things feel calmer and more manageable at home.",
     },
+    youngPeople: {
+      title: "Compelling counselling for teenagers",
+      body: "I specialise in working with teens and families. When feelings run high or things feel confusing, counselling gives a young person space to make sense of what is going on — without judgement, jargon or long waiting lists. Sessions can be in person in Wixams or online, working at their pace.",
+    },
   },
 } as const;
 

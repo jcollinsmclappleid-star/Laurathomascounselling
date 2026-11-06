@@ -34,6 +34,8 @@
 | Practice doorway (also on Parentology About) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8857-Edit-Large.png` | `public/images/laura-doorway-hero.webp` — homepage location image |
 | Laura portrait used under How I can help | Parentology About, WhatsApp image 8 Mar 2026 | `public/images/laura-parentology-portrait.webp` |
 | Laura in the counselling space (individual support) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8821-Edit-Medium.jpeg` | `public/images/individual-support.webp` |
+| Brick doorway with tree artwork (Wixams practice) | Parentology About reference `IMG013` | `public/images/laura-brick-doorway-tree-art.webp` |
+| Teen counselling card (decorative gradient) | **Generated** — not photography | `public/images/young-people-support.webp` — illustrative only |
 | Counselling room | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-71-1280x853.jpg` | `public/images/counselling-space.webp` |
 | Couples / relationship | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2021/07/relationship-5-1280x825.jpg` | `public/images/couples-support.webp` |
 

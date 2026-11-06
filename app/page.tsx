@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/site";
 export const metadata: Metadata = pageMetadata({
   title: "Counselling in Bedford - Laura Thomas Counselling",
   description:
-    "Therapy and support for individuals, couples, parents and families in Bedford and online. Practical counselling with Laura Thomas in Wixams.",
+    "Counselling based in Bedford for adults, families, couples and young people. Anxiety, depression, self-esteem, identity, relationships.",
   path: "/",
 });
 

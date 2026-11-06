@@ -4,23 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion, type Variants } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import {
   useAffordancePulse,
   usePrefersReducedMotion,
 } from "@/components/home/affordance-pulse";
-import { MeetLauraPanel } from "@/components/home/meet-laura-panel";
 import { hrefFromRegistry } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 
 const counsellingHref = hrefFromRegistry("/services/");
 const parentologyHref = hrefFromRegistry("/parentology/");
+const meetLauraHref = hrefFromRegistry("/qualified-counsellor/");
 
-/** Temporary homepage hero — swap this path when approved replacement imagery lands (must not duplicate room.webp). */
-const HERO_IMAGE = {
-  src: "/images/detail.webp",
-  alt: "Detail from Laura's existing practice",
-  objectPosition: "object-[65%_45%]",
+const DOORWAY_HERO = {
+  src: "/images/laura-doorway-hero.webp",
+  alt: "Laura Thomas at the entrance to her counselling space",
+  objectPosition: "object-[48%_20%]",
 } as const;
 
 const fadeUp: Variants = {
@@ -59,38 +59,6 @@ const kenBurns = {
     ease: "easeInOut" as const,
   },
 };
-
-function HeroArt({
-  reduced,
-  ready,
-}: {
-  reduced: boolean;
-  ready: boolean;
-}) {
-  const drift = !reduced && ready ? kenBurns : undefined;
-
-  return (
-    <div className="absolute inset-0">
-      <motion.div className="absolute inset-0" {...drift}>
-        <Image
-          src={HERO_IMAGE.src}
-          alt={HERO_IMAGE.alt}
-          fill
-          priority
-          className={cn(
-            "object-cover brightness-[0.52] saturate-[0.85]",
-            HERO_IMAGE.objectPosition,
-          )}
-          sizes="(max-width: 1024px) 100vw, 50vw"
-        />
-      </motion.div>
-      <div
-        className="absolute inset-0 bg-gradient-to-r from-[#102f2cf0] via-[#102f2c99] to-transparent to-90%"
-        aria-hidden="true"
-      />
-    </div>
-  );
-}
 
 function WorldPanel({
   href,
@@ -254,27 +222,24 @@ export function HomeEntry() {
 
   return (
     <>
-      {/* Concept imagery: room.webp, family.webp, detail.webp (temp hero) require client approval. */}
       <section
-        className="relative flex h-[100svh] min-h-0 w-full flex-col overflow-hidden bg-[var(--color-forest)] lg:grid lg:grid-cols-2 lg:grid-rows-2"
+        className="relative flex h-[100svh] min-h-0 w-full flex-col overflow-hidden bg-[#102f2c] lg:grid lg:grid-cols-2 lg:grid-rows-2"
         aria-label="Choose your path"
       >
         <motion.div
           className="relative flex min-h-0 flex-[1.05] flex-col overflow-hidden text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:flex-none"
           {...containerMotion}
         >
-          <HeroArt reduced={reduced} ready={ready} />
-
-          <div className="relative z-[1] flex min-h-0 flex-1 flex-col px-[19px] pb-2 pt-[3.5rem] sm:px-6 sm:pt-[3.75rem] md:px-10 md:pb-4 md:pt-16 lg:px-[65px] lg:pb-6 lg:pt-[4.25rem]">
-            <div className="min-h-0 flex-1 lg:max-w-3xl">
+          <div className="relative z-[1] flex min-h-0 flex-1 flex-col px-[19px] pb-2 pt-[3.625rem] sm:px-6 sm:pb-3 sm:pt-[3.875rem] md:px-10 md:pb-4 md:pt-16 lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
+            <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)_minmax(108px,34%)] items-start gap-x-3 gap-y-2 sm:grid-cols-[minmax(0,1fr)_minmax(120px,32%)] sm:gap-x-4 lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:gap-y-4">
               <motion.h1
-                className="font-serif leading-[0.98] tracking-[-0.8px] lg:tracking-[-2px]"
+                className="col-span-2 mt-1.5 font-serif leading-[0.98] tracking-[-0.8px] lg:col-span-1 lg:col-start-1 lg:mt-0 lg:tracking-[-2px]"
                 {...itemMotion}
               >
                 <span className="block max-w-full text-[9px] font-sans uppercase tracking-[0.14em] leading-snug lg:text-[10px] lg:tracking-[0.24em]">
                   Counselling in Bedford · Specialist parenting support
                 </span>
-                <span className="mt-1.5 block text-[clamp(28px,8.2vw,38px)] md:max-w-[345px] md:text-[44px] md:tracking-[-1px] lg:mt-3 lg:max-w-[940px] lg:text-[clamp(64px,5.5vw,103px)]">
+                <span className="mt-1.5 block text-[clamp(26px,7.6vw,36px)] md:text-[40px] md:tracking-[-1px] lg:mt-3 lg:text-[clamp(52px,4.2vw,88px)]">
                   Different journeys.
                   <br />
                   The right support
@@ -282,34 +247,63 @@ export function HomeEntry() {
                   <em className="not-italic">for you.</em>
                 </span>
               </motion.h1>
-              <motion.p
-                className="mt-1.5 max-w-full text-xs leading-snug md:max-w-[330px] md:text-[11px] lg:mt-4 lg:max-w-[475px] lg:text-sm lg:leading-[1.8]"
-                {...itemMotion}
-              >
-                <span className="hidden lg:inline">
-                  Counselling for yourself, your relationship or your family.
-                  <br />A connected world of support, with Laura Thomas.
-                </span>
-                <span className="lg:hidden">
-                  Counselling and specialist parenting support.
-                  <br />
-                  Bedford and online, with Laura Thomas.
-                </span>
-              </motion.p>
-              <motion.p
-                className="mt-2 text-[10px] uppercase tracking-[0.12em] text-[#fff8e9]/90 lg:mt-3"
-                {...itemMotion}
-              >
-                Choose where to begin
-              </motion.p>
-            </div>
 
-            <motion.div
-              className="mt-3 shrink-0 lg:mt-5 lg:max-w-md"
-              {...itemMotion}
-            >
-              <MeetLauraPanel variant="hero" />
-            </motion.div>
+              <motion.div
+                className="relative col-start-2 row-start-2 row-span-3 aspect-[3/4] w-full min-h-[140px] overflow-hidden sm:min-h-[168px] lg:col-start-2 lg:row-span-4 lg:row-start-1 lg:min-h-0 lg:self-stretch"
+                {...itemMotion}
+              >
+                <Image
+                  src={DOORWAY_HERO.src}
+                  alt={DOORWAY_HERO.alt}
+                  fill
+                  priority
+                  className={cn("object-cover", DOORWAY_HERO.objectPosition)}
+                  sizes="(max-width: 1024px) 34vw, 360px"
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#102f2c]/35 lg:bg-gradient-to-r lg:from-[#102f2c]/25 lg:to-transparent"
+                  aria-hidden="true"
+                />
+              </motion.div>
+
+              <motion.div
+                className="col-start-1 row-start-2 lg:col-start-1 lg:row-start-2"
+                {...itemMotion}
+              >
+                <p className="max-w-full text-xs leading-snug md:text-[11px] lg:max-w-[475px] lg:text-sm lg:leading-[1.8]">
+                  <span className="hidden lg:inline">
+                    Counselling for yourself, your relationship or your family.
+                    <br />A connected world of support, with Laura Thomas.
+                  </span>
+                  <span className="lg:hidden">
+                    Counselling and specialist parenting support.
+                    <br />
+                    Bedford and online, with Laura Thomas.
+                  </span>
+                </p>
+              </motion.div>
+
+              <motion.div
+                className="col-start-1 row-start-3 flex flex-col gap-2 lg:row-start-3"
+                {...itemMotion}
+              >
+                <p className="text-[10px] uppercase tracking-[0.12em] text-[#fff8e9]/90">
+                  Choose where to begin
+                </p>
+                <Link
+                  href={meetLauraHref}
+                  className="inline-flex min-h-11 w-fit items-center gap-2 border-b border-[#fff8e9]/70 pb-1 text-[11px] uppercase tracking-[0.12em] transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fff8e9] active:opacity-90"
+                  onClick={(event) => {
+                    if (expanding) {
+                      event.preventDefault();
+                    }
+                  }}
+                >
+                  Meet Laura Thomas
+                  <ArrowUpRight aria-hidden size={14} strokeWidth={1.8} />
+                </Link>
+              </motion.div>
+            </div>
           </div>
         </motion.div>
 

@@ -2,10 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { HomeRoutePanel } from "@/components/home/home-route-panel";
-import { MeetLauraPanel } from "@/components/home/meet-laura-panel";
 import { hrefFromRegistry } from "@/lib/routes";
 
-const aboutHref = hrefFromRegistry("/qualified-counsellor/");
 const counsellingHref = hrefFromRegistry("/services/");
 const individualHref = hrefFromRegistry("/counselling/");
 const couplesFamilyHref = hrefFromRegistry("/couples-counselling/");
@@ -50,6 +48,15 @@ export function HomeBelowFold() {
           </p>
           <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
             <article className="border-t border-[#a3ad95] pt-6">
+              <div className="relative mb-4 aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/counselling-space.webp"
+                  alt="Laura Thomas's counselling room in Wixams"
+                  fill
+                  className="object-cover object-[50%_45%]"
+                  sizes="(max-width: 768px) 100vw, 320px"
+                />
+              </div>
               <h3 className="font-serif text-[clamp(28px,6vw,36px)] leading-[1.05] tracking-[-0.5px]">
                 Individual Support
               </h3>
@@ -71,6 +78,15 @@ export function HomeBelowFold() {
               </Link>
             </article>
             <article className="border-t border-[#a3ad95] pt-6">
+              <div className="relative mb-4 aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/couples-support.webp"
+                  alt="Couple sitting together — couples and family counselling"
+                  fill
+                  className="object-cover object-[50%_40%]"
+                  sizes="(max-width: 768px) 100vw, 320px"
+                />
+              </div>
               <h3 className="font-serif text-[clamp(28px,6vw,36px)] leading-[1.05] tracking-[-0.5px]">
                 Couples &amp; Family Support
               </h3>
@@ -127,7 +143,8 @@ export function HomeBelowFold() {
         className="border-t border-[#c8cbb9]/80 bg-[var(--color-sage)] px-[19px] py-12 md:px-10 lg:px-[65px]"
         aria-labelledby="overwhelm-heading"
       >
-        <div className="mx-auto max-w-[var(--content-max)]">
+        <div className="mx-auto grid max-w-[var(--content-max)] gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:items-center">
+          <div>
           <h2
             id="overwhelm-heading"
             className="font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
@@ -160,60 +177,15 @@ export function HomeBelowFold() {
             Get started
             <ArrowUpRight aria-hidden size={16} strokeWidth={1.8} />
           </Link>
-        </div>
-      </section>
-
-      <section
-        className="border-t border-[#c8cbb9]/80 px-[19px] py-12 md:px-10 lg:px-[65px]"
-        aria-labelledby="meet-laura-heading"
-      >
-        <div className="mx-auto grid max-w-[var(--content-max)] gap-8 md:grid-cols-[minmax(0,0.85fr)_1fr] md:items-start md:gap-12">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-[340px] overflow-hidden md:mx-0 md:max-w-none">
-            <Image
-              src="/images/laura.webp"
-              alt="Laura Thomas, counsellor and parenting specialist"
-              fill
-              className="object-cover object-[50%_22%]"
-              sizes="(max-width: 768px) 340px, 360px"
-            />
           </div>
-          <div>
-            <p className="text-[9px] uppercase tracking-[0.15em]">
-              Meet Laura Thomas
-            </p>
-            <h2
-              id="meet-laura-heading"
-              className="mt-3 font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
-            >
-              Welcome — I&apos;m Laura.
-            </h2>
-            <p className="mt-4 max-w-xl text-[15px] leading-relaxed">
-              I offer counselling in Bedford for adults, families, couples and
-              young people. My aim is to help you feel more content and at ease
-              in your life. I offer long and short-term therapy depending on what
-              you would like to get out of our sessions — private counselling
-              offers flexibility by working on what you bring, in your own time
-              and at your own pace.
-            </p>
-            <p className="mt-4 max-w-xl text-[15px] leading-relaxed">
-              My interest in human behaviour has been with me for over 22 years.
-              After studying Psychology, I began working in mental health and
-              went on to work with young people, families and adults across
-              education, local authorities and charities. That path led me to
-              train as a counsellor and, alongside roles in schools and mental
-              health services, I now run my private practice — support that is
-              personal, responsive and focused on what actually helps.
-            </p>
-            <p className="mt-4 text-[11px] uppercase tracking-[0.12em] text-[var(--text-muted)]">
-              M.Ed · MNCPS (Accred.)
-            </p>
-            <Link
-              href={aboutHref}
-              className="mt-6 inline-flex min-h-11 items-center gap-2 border border-[#7e8b72] px-5 py-3 text-sm transition hover:bg-[var(--soft-surface)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)] active:scale-[0.99]"
-            >
-              Read more about me
-              <ArrowUpRight aria-hidden size={16} strokeWidth={1.8} />
-            </Link>
+          <div className="relative aspect-[4/3] overflow-hidden lg:aspect-[5/4]">
+            <Image
+              src="/images/counselling-space.webp"
+              alt="A calm, private counselling space in Wixams"
+              fill
+              className="object-cover object-[55%_50%]"
+              sizes="(max-width: 1024px) 100vw, 480px"
+            />
           </div>
         </div>
       </section>
@@ -222,7 +194,8 @@ export function HomeBelowFold() {
         className="border-t border-[#c8cbb9]/80 bg-[var(--soft-surface)] px-[19px] py-12 md:px-10 lg:px-[65px]"
         aria-labelledby="location-heading"
       >
-        <div className="mx-auto max-w-[var(--content-max)]">
+        <div className="mx-auto grid max-w-[var(--content-max)] gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
           <p className="text-[9px] uppercase tracking-[0.15em]">Location</p>
           <h2
             id="location-heading"
@@ -236,6 +209,16 @@ export function HomeBelowFold() {
             quiet, separate space away from the house, with online sessions
             available when that suits you better.
           </p>
+          </div>
+          <div className="relative aspect-[16/10] overflow-hidden">
+            <Image
+              src="/images/wixams-practice.webp"
+              alt="Exterior of Laura Thomas Counselling in Wixams, near Bedford"
+              fill
+              className="object-cover object-[50%_45%]"
+              sizes="(max-width: 1024px) 100vw, 560px"
+            />
+          </div>
         </div>
       </section>
 
@@ -363,9 +346,9 @@ export function HomeBelowFold() {
             id="routes-heading"
             className="mt-3 font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
           >
-            Choose counselling, Parentology or meet Laura.
+            Choose counselling or Parentology support.
           </h2>
-          <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-3 md:grid-cols-2">
             <HomeRoutePanel
               href={counsellingHref}
               imageSrc="/images/room.webp"
@@ -388,9 +371,6 @@ export function HomeBelowFold() {
               cta="Explore Parentology"
               variant="parentology"
             />
-            <div className="md:col-span-2 lg:col-span-1">
-              <MeetLauraPanel variant="cream" />
-            </div>
           </div>
         </div>
       </section>

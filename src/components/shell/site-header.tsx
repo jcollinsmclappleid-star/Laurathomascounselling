@@ -50,7 +50,7 @@ export function SiteHeader() {
       className={cn(
         "z-50 w-full",
         overlayHeader
-          ? "absolute inset-x-0 top-0 border-b border-white/20 bg-gradient-to-b from-[#102f2c]/75 via-[#102f2c]/35 to-transparent text-[#fff8e9]"
+          ? "absolute inset-x-0 top-0 border-b border-white/15 bg-[#102f2c]/94 text-[#fff8e9] backdrop-blur-sm md:bg-[#102f2c]/96"
           : "sticky top-0 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]",
       )}
     >
@@ -77,7 +77,11 @@ export function SiteHeader() {
             }
             alt="Laura Thomas Counselling"
             fill
-            className="object-contain object-left"
+            className={cn(
+              "object-contain object-left",
+              overlayHeader &&
+                "brightness-0 invert drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]",
+            )}
             sizes="(max-width: 768px) 200px, 240px"
             priority
           />
@@ -91,14 +95,22 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="min-h-[44px] py-3 leading-none transition hover:text-[var(--accent)]"
+              className={cn(
+                "min-h-[44px] py-3 leading-none transition hover:text-[var(--accent)]",
+                overlayHeader && "hover:text-white",
+              )}
             >
               {item.label}
             </Link>
           ))}
           <Link
             href={contactCta.href}
-            className="inline-flex min-h-[44px] items-center gap-1.5 border border-[#657a69]/80 px-[22px] py-3 text-xs font-medium transition hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)]"
+            className={cn(
+              "inline-flex min-h-[44px] items-center gap-1.5 border px-[22px] py-3 text-xs font-medium transition",
+              overlayHeader
+                ? "border-white/55 hover:border-white hover:bg-white/10"
+                : "border-[#657a69]/80 hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)]",
+            )}
           >
             {contactCta.label}
             <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.8} />

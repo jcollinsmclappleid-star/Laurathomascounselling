@@ -145,8 +145,8 @@ function WorldPanel({
           )}
           aria-hidden="true"
         />
-        <div className="relative z-[1] flex h-full flex-col justify-between p-3 pb-2 sm:p-[18px] md:p-4 lg:p-6">
-          <div className="pr-10">
+        <div className="relative z-[1] flex h-full flex-col justify-between p-3 pb-2 sm:p-[18px] md:p-4 lg:p-6 lg:pt-8">
+          <div className="pr-10 lg:pt-1">
             <p className="text-[8px] uppercase tracking-[0.15em] sm:text-[9px] lg:text-[10px] lg:tracking-[0.24em]">
               {kicker}
             </p>
@@ -230,26 +230,75 @@ export function HomeEntry() {
           className="relative flex min-h-0 flex-[1.05] flex-col overflow-hidden text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:flex-none"
           {...containerMotion}
         >
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-[min(56svh,480px)] lg:hidden">
+            <Image
+              src={DOORWAY_HERO.src}
+              alt={DOORWAY_HERO.alt}
+              fill
+              priority
+              className={cn("object-cover", DOORWAY_HERO.objectPosition)}
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#102f2c]/72 via-[#102f2c]/28 to-[#102f2c]" />
+          </div>
+
           <div className="relative z-[1] flex min-h-0 flex-1 flex-col px-[19px] pb-2 pt-[3.625rem] sm:px-6 sm:pb-3 sm:pt-[3.875rem] md:px-10 md:pb-4 md:pt-16 lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
-            <div className="grid min-h-0 flex-1 grid-cols-[minmax(0,1fr)_minmax(108px,34%)] items-start gap-x-3 gap-y-2 sm:grid-cols-[minmax(0,1fr)_minmax(120px,32%)] sm:gap-x-4 lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:gap-y-4">
-              <motion.h1
-                className="col-span-2 mt-1.5 font-serif leading-[0.98] tracking-[-0.8px] lg:col-span-1 lg:col-start-1 lg:mt-0 lg:tracking-[-2px]"
-                {...itemMotion}
-              >
-                <span className="block max-w-full text-[9px] font-sans uppercase tracking-[0.14em] leading-snug lg:text-[10px] lg:tracking-[0.24em]">
-                  Counselling in Bedford · Specialist parenting support
-                </span>
-                <span className="mt-1.5 block text-[clamp(26px,7.6vw,36px)] md:text-[40px] md:tracking-[-1px] lg:mt-3 lg:text-[clamp(52px,4.2vw,88px)]">
-                  Different journeys.
-                  <br />
-                  The right support
-                  <br />
-                  <em className="not-italic">for you.</em>
-                </span>
-              </motion.h1>
+            <div className="flex min-h-0 flex-1 flex-col justify-end lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-8 lg:gap-y-4">
+              <div className="relative mt-[min(34svh,300px)] lg:mt-0">
+                <motion.h1
+                  className="mt-1.5 font-serif leading-[0.98] tracking-[-0.8px] drop-shadow-[0_2px_18px_rgba(16,47,44,0.55)] lg:mt-0 lg:tracking-[-2px] lg:drop-shadow-none"
+                  {...itemMotion}
+                >
+                  <span className="block max-w-full text-[9px] font-sans uppercase tracking-[0.14em] leading-snug lg:text-[10px] lg:tracking-[0.24em]">
+                    Counselling in Bedford · Specialist parenting support
+                  </span>
+                  <span className="mt-1.5 block text-[clamp(26px,7.6vw,36px)] md:text-[40px] md:tracking-[-1px] lg:mt-3 lg:text-[clamp(52px,4.2vw,88px)]">
+                    Different journeys.
+                    <br />
+                    The right support
+                    <br />
+                    <em className="not-italic">for you.</em>
+                  </span>
+                </motion.h1>
+
+                <motion.div className="mt-2 lg:mt-4" {...itemMotion}>
+                  <p className="max-w-full text-xs leading-snug drop-shadow-[0_1px_12px_rgba(16,47,44,0.5)] md:text-[11px] lg:max-w-[475px] lg:text-sm lg:leading-[1.8] lg:drop-shadow-none">
+                    <span className="hidden lg:inline">
+                      Counselling for yourself, your relationship or your family.
+                      <br />A connected world of support, with Laura Thomas.
+                    </span>
+                    <span className="lg:hidden">
+                      Counselling and specialist parenting support.
+                      <br />
+                      Bedford and online, with Laura Thomas.
+                    </span>
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  className="mt-3 flex flex-col gap-2 lg:mt-4"
+                  {...itemMotion}
+                >
+                  <p className="text-[10px] uppercase tracking-[0.12em] text-[#fff8e9]/90">
+                    Choose where to begin
+                  </p>
+                  <Link
+                    href={meetLauraHref}
+                    className="inline-flex min-h-11 w-fit items-center gap-2 border-b border-[#fff8e9]/70 pb-1 text-[11px] uppercase tracking-[0.12em] transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fff8e9] active:opacity-90"
+                    onClick={(event) => {
+                      if (expanding) {
+                        event.preventDefault();
+                      }
+                    }}
+                  >
+                    Meet Laura Thomas
+                    <ArrowUpRight aria-hidden size={14} strokeWidth={1.8} />
+                  </Link>
+                </motion.div>
+              </div>
 
               <motion.div
-                className="relative col-start-2 row-start-2 row-span-3 aspect-[3/4] w-full min-h-[140px] overflow-hidden sm:min-h-[168px] lg:col-start-2 lg:row-span-4 lg:row-start-1 lg:min-h-0 lg:self-stretch"
+                className="relative hidden min-h-[280px] overflow-hidden lg:block lg:min-h-[360px] lg:self-stretch"
                 {...itemMotion}
               >
                 <Image
@@ -258,56 +307,18 @@ export function HomeEntry() {
                   fill
                   priority
                   className={cn("object-cover", DOORWAY_HERO.objectPosition)}
-                  sizes="(max-width: 1024px) 34vw, 360px"
+                  sizes="360px"
                 />
                 <div
-                  className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#102f2c]/35 lg:bg-gradient-to-r lg:from-[#102f2c]/25 lg:to-transparent"
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#102f2c]/25 to-transparent"
                   aria-hidden="true"
                 />
-              </motion.div>
-
-              <motion.div
-                className="col-start-1 row-start-2 lg:col-start-1 lg:row-start-2"
-                {...itemMotion}
-              >
-                <p className="max-w-full text-xs leading-snug md:text-[11px] lg:max-w-[475px] lg:text-sm lg:leading-[1.8]">
-                  <span className="hidden lg:inline">
-                    Counselling for yourself, your relationship or your family.
-                    <br />A connected world of support, with Laura Thomas.
-                  </span>
-                  <span className="lg:hidden">
-                    Counselling and specialist parenting support.
-                    <br />
-                    Bedford and online, with Laura Thomas.
-                  </span>
-                </p>
-              </motion.div>
-
-              <motion.div
-                className="col-start-1 row-start-3 flex flex-col gap-2 lg:row-start-3"
-                {...itemMotion}
-              >
-                <p className="text-[10px] uppercase tracking-[0.12em] text-[#fff8e9]/90">
-                  Choose where to begin
-                </p>
-                <Link
-                  href={meetLauraHref}
-                  className="inline-flex min-h-11 w-fit items-center gap-2 border-b border-[#fff8e9]/70 pb-1 text-[11px] uppercase tracking-[0.12em] transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fff8e9] active:opacity-90"
-                  onClick={(event) => {
-                    if (expanding) {
-                      event.preventDefault();
-                    }
-                  }}
-                >
-                  Meet Laura Thomas
-                  <ArrowUpRight aria-hidden size={14} strokeWidth={1.8} />
-                </Link>
               </motion.div>
             </div>
           </div>
         </motion.div>
 
-        <div className="flex min-h-0 flex-1 flex-col lg:col-start-2 lg:row-span-2 lg:row-start-1">
+        <div className="flex min-h-0 flex-1 flex-col lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:pt-16 xl:pt-[4.5rem]">
           <WorldPanel
             panelId="counselling"
             href={counsellingHref}

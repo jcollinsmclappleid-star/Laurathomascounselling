@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
 import { LauraIntroVideo } from "@/components/home/laura-intro-video";
 import { homeWelcomeParagraphs } from "@/lib/home-copy";
@@ -13,17 +12,7 @@ export function HomeAboutLaura() {
       className="border-t border-[#c8cbb9]/80 bg-[var(--color-cream)] px-[19px] py-12 md:px-10 lg:px-[65px]"
       aria-labelledby="about-laura-heading"
     >
-      <div className="mx-auto grid max-w-[var(--content-max)] gap-10 lg:grid-cols-[minmax(0,0.9fr)_1fr] lg:items-start lg:gap-14">
-        <div className="relative mx-auto aspect-[3/4] w-full max-w-[420px] overflow-hidden lg:mx-0 lg:max-w-none">
-          <Image
-            src="/images/laura-doorway-about.webp"
-            alt="Laura Thomas at the entrance to her counselling space in Wixams"
-            fill
-            className="object-cover object-[50%_22%]"
-            sizes="(max-width: 1024px) 420px, 480px"
-            priority
-          />
-        </div>
+      <div className="mx-auto grid max-w-[var(--content-max)] items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
         <div>
           <p className="text-[9px] uppercase tracking-[0.15em]">About Laura</p>
           <h2
@@ -44,10 +33,8 @@ export function HomeAboutLaura() {
             <HomeCtaSecondary href={aboutHref}>Read more about me</HomeCtaSecondary>
             <HomeCtaPrimary href={contactHref}>Book a free call</HomeCtaPrimary>
           </div>
-          <div className="mt-10 max-w-xl">
-            <LauraIntroVideo />
-          </div>
         </div>
+        <LauraIntroVideo className="lg:mt-8" />
       </div>
     </section>
   );

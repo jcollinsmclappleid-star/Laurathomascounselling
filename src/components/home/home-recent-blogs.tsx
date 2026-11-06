@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HomeCtaSecondary } from "@/components/home/home-cta";
-import { homeRecentBlogs, homeRecentBlogsIntro } from "@/lib/home-copy";
+import { homeRecentBlogs } from "@/lib/home-copy";
 import { hrefFromRegistry } from "@/lib/routes";
 
 const blogHref = hrefFromRegistry("/counselling-blog/");
@@ -8,41 +8,29 @@ const blogHref = hrefFromRegistry("/counselling-blog/");
 export function HomeRecentBlogs() {
   return (
     <section
-      className="border-t border-[#c8cbb9]/80 bg-[var(--color-cream)] px-[19px] py-12 md:px-10 lg:px-[65px]"
+      className="border-t border-[#c8cbb9]/80 bg-[var(--color-cream)] px-[19px] py-8 md:px-10 lg:px-[65px]"
       aria-labelledby="recent-blogs-heading"
     >
-      <div className="mx-auto max-w-[var(--content-max)]">
-        <p className="text-[9px] uppercase tracking-[0.15em]">Blog</p>
+      <div className="mx-auto flex max-w-[var(--content-max)] flex-col gap-4 md:flex-row md:items-start md:justify-between md:gap-10">
         <h2
           id="recent-blogs-heading"
-          className="mt-3 font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
+          className="shrink-0 font-serif text-2xl tracking-[-0.3px]"
         >
           Recent blogs
         </h2>
-        <p className="mt-4 max-w-2xl text-[15px] leading-relaxed">
-          {homeRecentBlogsIntro}
-        </p>
-        <ol className="mt-10 divide-y divide-[#c8cbb9]/80 border-y border-[#c8cbb9]/80">
-          {homeRecentBlogs.map((post) => {
-            const href = hrefFromRegistry(post.path);
-            return (
-              <li key={post.path} className="py-6">
-                <h3 className="font-serif text-[clamp(26px,5vw,34px)] leading-[1.1] tracking-[-0.4px]">
-                  <Link
-                    href={href}
-                    className="underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)]"
-                  >
-                    {post.title}
-                  </Link>
-                </h3>
-                <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--text-muted)]">
-                  {post.excerpt}
-                </p>
-              </li>
-            );
-          })}
-        </ol>
-        <HomeCtaSecondary href={blogHref} className="mt-8">
+        <ul className="min-w-0 flex-1 space-y-2 text-[15px] leading-snug">
+          {homeRecentBlogs.map((post) => (
+            <li key={post.path}>
+              <Link
+                href={hrefFromRegistry(post.path)}
+                className="underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)]"
+              >
+                {post.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <HomeCtaSecondary href={blogHref} className="shrink-0">
           Read blogs
         </HomeCtaSecondary>
       </div>

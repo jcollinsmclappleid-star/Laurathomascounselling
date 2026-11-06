@@ -4,6 +4,7 @@ import { HeartHandshake, User, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
 import { HomeParentologySection } from "@/components/home/home-parentology-section";
+import { HomeRecentBlogs } from "@/components/home/home-recent-blogs";
 import { HomeRoutePanel } from "@/components/home/home-route-panel";
 import {
   homeFaq,
@@ -64,6 +65,9 @@ export function HomeBelowFold() {
               <p key={p.slice(0, 32)}>{p}</p>
             ))}
           </div>
+          <HomeCtaSecondary href={counsellingHref} className="mt-8">
+            Explore all counselling services
+          </HomeCtaSecondary>
           <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-10">
             <article className="border-t border-[#a3ad95] pt-6">
               <div className="relative mb-4 aspect-[16/10] overflow-hidden">
@@ -140,9 +144,6 @@ export function HomeBelowFold() {
             </article>
             <HomeParentologySection />
           </div>
-          <HomeCtaSecondary href={counsellingHref} className="mt-8">
-            Explore all counselling services
-          </HomeCtaSecondary>
         </div>
       </section>
 
@@ -378,6 +379,7 @@ export function HomeBelowFold() {
           </HomeCtaPrimary>
         </div>
       </section>
+      <HomeRecentBlogs />
     </div>
   );
 }

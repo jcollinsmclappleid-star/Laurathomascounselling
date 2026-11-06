@@ -333,10 +333,10 @@ export function HomeBelowFold() {
           </div>
           <div className="relative aspect-[16/10] overflow-hidden rounded-[18px]">
             <Image
-              src="/images/wixams-practice.webp"
-              alt="Laura Thomas Counselling in Wixams, near Bedford"
+              src="/images/laura-doorway-hero.webp"
+              alt="Laura Thomas at the doorway of her counselling practice in Wixams"
               fill
-              className="object-cover object-[50%_45%]"
+              className="object-cover object-[42%_32%]"
               sizes="(max-width: 1024px) 100vw, 560px"
             />
           </div>

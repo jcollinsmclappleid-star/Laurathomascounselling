@@ -30,7 +30,8 @@
 | Legacy header assets | `public/brand/laura-logo-*-header.webp`, `laura-logo-nav.webp` | Superseded by transparent `laura-logo-nav-on-green.webp` / `laura-logo-nav-on-cream.webp` (no cream pill, no CSS invert). |
 | Counselling route panel | `public/images/room.webp` | Concept room (armchair). Live `counselling-space.webp` is a windowsill, not a room. |
 | Parentology route panel | `public/images/family.webp` | Concept mother-and-daughter photograph, as in Batch 2e. |
-| Wixams practice exterior | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-Wixams-1280x853.jpg` | `public/images/wixams-practice.webp` |
+| Wixams file (business cards, not the building) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-Wixams-1280x853.jpg` | `public/images/wixams-practice.webp` — do not use as the practice exterior |
+| Practice doorway (also on Parentology About) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2023/02/DSC8857-Edit-Large.png` | `public/images/laura-doorway-hero.webp` — homepage location image |
 | Counselling room | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-71-1280x853.jpg` | `public/images/counselling-space.webp` |
 | Couples / relationship | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2021/07/relationship-5-1280x825.jpg` | `public/images/couples-support.webp` |
 

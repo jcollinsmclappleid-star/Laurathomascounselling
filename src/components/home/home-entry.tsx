@@ -12,6 +12,13 @@ const counsellingHref = hrefFromRegistry("/services/");
 const parentologyHref = hrefFromRegistry("/parentology/");
 const meetLauraHref = hrefFromRegistry("/qualified-counsellor/");
 
+/** Temporary homepage hero — swap this path when approved replacement imagery lands (must not duplicate room.webp). */
+const HERO_IMAGE = {
+  src: "/images/detail.webp",
+  alt: "Detail from Laura's existing practice",
+  objectPosition: "object-[65%_45%]",
+} as const;
+
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 22 },
   visible: {
@@ -75,24 +82,17 @@ function HeroArt({
 
   return (
     <div className="absolute inset-0">
-      <motion.div className="absolute inset-0 lg:hidden" {...drift}>
+      <motion.div className="absolute inset-0" {...drift}>
         <Image
-          src="/images/hero-entry-mobile.webp"
-          alt="Concept garden path leading to an open gate"
+          src={HERO_IMAGE.src}
+          alt={HERO_IMAGE.alt}
           fill
           priority
-          className="object-cover object-center brightness-[0.52] saturate-[0.85]"
-          sizes="100vw"
-        />
-      </motion.div>
-      <motion.div className="absolute inset-0 hidden lg:block" {...drift}>
-        <Image
-          src="/images/hero-entry-desktop.webp"
-          alt="Concept garden path leading to an open gate"
-          fill
-          priority
-          className="object-cover object-center brightness-[0.52] saturate-[0.85]"
-          sizes="50vw"
+          className={cn(
+            "object-cover brightness-[0.52] saturate-[0.85]",
+            HERO_IMAGE.objectPosition,
+          )}
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
       </motion.div>
       <div
@@ -260,7 +260,7 @@ export function HomeEntry() {
 
   return (
     <>
-      {/* Concept imagery: room.webp, family.webp, hero-entry-*.webp require client approval. */}
+      {/* Concept imagery: room.webp, family.webp, detail.webp (temp hero) require client approval. */}
       <section
         className="relative flex h-[100svh] min-h-0 w-full flex-col overflow-hidden bg-[var(--color-forest)] lg:grid lg:grid-cols-2 lg:grid-rows-2"
         aria-label="Choose your path"

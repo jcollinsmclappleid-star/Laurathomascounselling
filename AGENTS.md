@@ -7,6 +7,7 @@
 3. **Facts** — never invent fees, credentials, contact details, testimonials, or reviews; use `[PLACEHOLDER: …]` where facts are unverified.
 4. **Secrets & infra** — never commit secrets; do not deploy or change DNS.
 5. **Reference pack** — keep `docs/reference/` out of `public/` and the production bundle.
+6. **No content migration** — do not fetch, scrape, import, or recreate WordPress articles or pages unless Joshua explicitly approves a migration batch. No migration inventories or recovery work in design/infrastructure batches.
 
 ## How to run work
 

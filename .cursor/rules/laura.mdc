@@ -12,10 +12,11 @@ alwaysApply: true
 - Never invent fees, credentials, contact details, or reviews; use clear placeholders.
 - Never commit secrets; do not deploy or change DNS.
 - Keep `docs/reference/` out of `public/` and the production bundle.
+- No WordPress or legacy content migration (fetch, scrape, import, recreate, or inventory) unless Joshua explicitly approves — defer to a dedicated migration batch.
 
 ## Workflow
 
-- One batch per session per `COMPOSER_BATCHES.md`; Batch 0 is complete (infrastructure only).
+- One batch per session per `COMPOSER_BATCHES.md`; Batch 0 is complete (infrastructure only); Batch 1 adds fonts, assets, header/footer.
 - Do not build full Laura pages in Batch 0 scope; follow the next batch title exactly.
 - Finish with green `npm run build` and `npm run lint`, then commit and stop.
 

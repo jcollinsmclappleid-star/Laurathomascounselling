@@ -1,5 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  BookOpen,
+  Compass,
+  GraduationCap,
+  HandHeart,
+  MessageCircle,
+  Users,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
 import { HomeRecentBlogs } from "@/components/home/home-recent-blogs";
 import {
@@ -10,7 +19,6 @@ import {
   homeOverwhelm,
   homeParentologyWorld,
 } from "@/lib/home-copy";
-import { parentologyNav } from "@/lib/parentology-nav";
 import { hrefFromRegistry } from "@/lib/routes";
 
 const counsellingHref = hrefFromRegistry("/services/");
@@ -39,9 +47,9 @@ const counsellingOptions = [
     href: individualHref,
     title: homeHowICanHelp.services.individual.title,
     body: homeHowICanHelp.services.individual.body,
-    image: "/images/counselling-space.webp",
-    alt: "A quiet corner of the counselling space in Wixams",
-    position: "object-[55%_50%]",
+    image: "/images/individual-support.webp",
+    alt: "Laura Thomas in her counselling space",
+    position: "object-[50%_30%]",
   },
   {
     href: couplesFamilyHref,
@@ -51,15 +59,50 @@ const counsellingOptions = [
     alt: "A couple sitting together",
     position: "object-[50%_40%]",
   },
-  {
-    href: youngPeopleHref,
-    title: homeHowICanHelp.services.teenParent.title,
-    body: homeHowICanHelp.services.teenParent.body,
-    image: "/images/teen-parent-support.webp",
-    alt: "Laura Thomas, who counsels young people and parents",
-    position: "object-[50%_22%]",
-  },
 ] as const;
+
+const parentologyInsights: {
+  icon: LucideIcon;
+  label: string;
+  insight: string;
+  href: string;
+}[] = [
+  {
+    icon: HandHeart,
+    label: "Find support",
+    insight:
+      "Help with what is happening at home, or room to understand what it is bringing up for you.",
+    href: hrefFromRegistry("/parentology/support-for-you/"),
+  },
+  {
+    icon: MessageCircle,
+    label: "In-Touch",
+    insight:
+      "Messaging-led guidance for parents, once you have agreed how contact works.",
+    href: hrefFromRegistry("/parentology/ongoing-guidance/"),
+  },
+  {
+    icon: Compass,
+    label: "RESET",
+    insight:
+      "Recognise what is happening, empathise, say what matters, regulate together, then respond.",
+    href: hrefFromRegistry("/parentology/responding-with-reset/"),
+  },
+  {
+    icon: BookOpen,
+    label: "Tools",
+    insight: "Something to read, watch or return to for the moment you are in.",
+    href: hrefFromRegistry("/parentology/practical-tools/"),
+  },
+  {
+    icon: GraduationCap,
+    label: "Workshops",
+    insight: "Recorded learning you can take at your own pace.",
+    href: hrefFromRegistry("/parentology/learn-at-your-pace/"),
+  },
+];
+
+const familyHref = hrefFromRegistry("/family-therapy-2/");
 
 export function HomeBelowFold() {
   return (
@@ -80,99 +123,159 @@ export function HomeBelowFold() {
               Choose counselling or specialist parenting support.
             </h2>
           </div>
-          <div className="mt-5 max-w-2xl space-y-4 text-[15px] leading-relaxed">
-            {homeHowICanHelp.intro.map((paragraph) => (
-              <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-            ))}
-            <p>{homeIntroBlocks[6]}</p>
+          <div className="mt-6 grid items-center gap-8 lg:grid-cols-[minmax(240px,0.7fr)_minmax(0,1.3fr)]">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-[18px] sm:max-w-sm">
+              <Image
+                src="/images/laura-parentology-portrait.webp"
+                alt="Laura Thomas"
+                fill
+                className="object-cover object-[50%_20%]"
+                sizes="(max-width: 1024px) 100vw, 360px"
+              />
+            </div>
+            <div className="max-w-2xl space-y-4 text-[15px] leading-relaxed">
+              {homeHowICanHelp.intro.map((paragraph) => (
+                <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+              ))}
+              <p>{homeIntroBlocks[6]}</p>
+            </div>
           </div>
 
-          <div className="mt-10 grid items-start gap-8 lg:grid-cols-2">
-            <article className="border-t border-[#173e35]/20 pt-6">
-              <p className="text-[10px] uppercase tracking-[0.16em]">
-                Counselling
-              </p>
-              <h3 className="mt-2 font-serif text-[clamp(32px,5vw,44px)] leading-none tracking-[-0.6px]">
-                A space for you.
-              </h3>
-              <div className="mt-6 space-y-8">
-                {counsellingOptions.map((option) => (
-                  <div key={option.href}>
-                    <div className="relative mb-4 aspect-[16/10] overflow-hidden">
-                      <Image
-                        src={option.image}
-                        alt={option.alt}
-                        fill
-                        className={`object-cover ${option.position}`}
-                        sizes="(max-width: 1024px) 100vw, 480px"
-                      />
-                    </div>
-                    <h4 className="font-serif text-2xl tracking-[-0.3px]">
-                      {option.title}
-                    </h4>
-                    <p className="mt-2 text-[15px] leading-relaxed">{option.body}</p>
-                    <HomeCtaSecondary href={option.href} className="mt-3" showArrow>
-                      Find out more
-                    </HomeCtaSecondary>
+          <div className="mt-12">
+            <p className="text-[10px] uppercase tracking-[0.16em]">Counselling</p>
+            <h3 className="mt-2 font-serif text-[clamp(32px,5vw,44px)] leading-none tracking-[-0.6px]">
+              A space for you.
+            </h3>
+            <div className="mt-6 grid gap-8 md:grid-cols-2">
+              {counsellingOptions.map((option) => (
+                <article key={option.href}>
+                  <div className="relative mb-4 aspect-[16/10] overflow-hidden rounded-[14px]">
+                    <Image
+                      src={option.image}
+                      alt={option.alt}
+                      fill
+                      className={`object-cover ${option.position}`}
+                      sizes="(max-width: 768px) 100vw, 480px"
+                    />
                   </div>
-                ))}
-              </div>
-              <HomeCtaPrimary href={counsellingHref} className="mt-6">
-                Explore counselling
-              </HomeCtaPrimary>
-            </article>
+                  <h4 className="font-serif text-2xl tracking-[-0.3px]">
+                    {option.title}
+                  </h4>
+                  <p className="mt-2 text-[15px] leading-relaxed">{option.body}</p>
+                  <HomeCtaSecondary href={option.href} className="mt-3" showArrow>
+                    Find out more
+                  </HomeCtaSecondary>
+                </article>
+              ))}
+            </div>
+            <HomeCtaPrimary href={counsellingHref} className="mt-6">
+              Explore counselling
+            </HomeCtaPrimary>
+          </div>
+        </div>
+      </section>
 
-            <article
-              className="bg-[var(--color-clay)] px-5 py-6 md:px-7 md:py-8"
-              data-world="parentology"
-            >
-              <p className="text-[10px] uppercase tracking-[0.16em] text-[var(--color-terracotta)]">
-                Specialist parenting support
-              </p>
-              <Image
-                src="/images/parentology/parentology-logo.webp"
-                alt="Parentology World"
-                width={1075}
-                height={718}
-                className="mt-4 h-28 w-auto max-w-full object-contain object-left"
-                style={{ width: "auto", height: "7rem" }}
-              />
-              <h3 className="mt-4 font-serif text-[clamp(28px,4vw,40px)] leading-[1.05] tracking-[-0.5px]">
-                {homeParentologyWorld.headline}
+      <section
+        className="relative bg-[var(--color-clay)] px-[19px] py-14 md:px-10 lg:px-[65px]"
+        data-world="parentology"
+        aria-labelledby="parentology-home-heading"
+      >
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[var(--color-cream)] to-transparent"
+          aria-hidden="true"
+        />
+        <div className="relative mx-auto max-w-[var(--content-max)]">
+          <p className="text-[10px] uppercase tracking-[0.16em] text-[var(--color-terracotta)]">
+            Specialist parenting support
+          </p>
+          <Image
+            src="/images/parentology/parentology-logo.webp"
+            alt="Parentology World"
+            width={1075}
+            height={718}
+            className="mt-4 h-32 w-auto max-w-full object-contain object-left"
+            style={{ width: "auto", height: "8rem" }}
+          />
+          <h2
+            id="parentology-home-heading"
+            className="mt-5 max-w-3xl font-serif text-[clamp(32px,5vw,52px)] leading-[1.05] tracking-[-0.6px]"
+          >
+            {homeParentologyWorld.headline}
+          </h2>
+          <p className="mt-3 font-serif text-[clamp(22px,3vw,30px)] leading-snug">
+            {homeParentologyWorld.subline}
+          </p>
+          <p className="mt-4 max-w-2xl text-[15px] leading-relaxed">
+            {homeParentologyWorld.body} {homeParentologyWorld.detail}
+          </p>
+
+          <div className="mt-10 grid items-start gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+            <div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[14px]">
+                  <Image
+                    src="/images/teen-parent-support.webp"
+                    alt="Laura Thomas, who supports parents and young people"
+                    fill
+                    className="object-cover object-[50%_22%]"
+                    sizes="240px"
+                  />
+                </div>
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[14px]">
+                  <Image
+                    src="/images/family.webp"
+                    alt="A mother and daughter talking together at a kitchen table"
+                    fill
+                    className="object-cover object-[52%_30%]"
+                    sizes="240px"
+                  />
+                </div>
+              </div>
+              <h3 className="mt-5 flex items-center gap-2 font-serif text-[clamp(28px,4vw,36px)] leading-none tracking-[-0.4px]">
+                <Users aria-hidden size={22} strokeWidth={1.6} />
+                Teen &amp; family support
               </h3>
-              <p className="mt-3 font-serif text-xl leading-snug">
-                {homeParentologyWorld.subline}
+              <p className="mt-3 text-[15px] leading-relaxed">
+                {homeHowICanHelp.services.teenParent.body}
               </p>
-              <p className="mt-4 text-[15px] leading-relaxed">
-                {homeParentologyWorld.body} {homeParentologyWorld.detail}
-              </p>
-              <ul className="mt-6 divide-y divide-[#173e35]/15 border-y border-[#173e35]/15">
-                {parentologyNav.map((item) => (
-                  <li key={item.href}>
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <HomeCtaSecondary href={youngPeopleHref} showArrow>
+                  Teen counselling
+                </HomeCtaSecondary>
+                <HomeCtaSecondary href={familyHref} showArrow>
+                  Family support
+                </HomeCtaSecondary>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-serif text-2xl tracking-[-0.3px]">
+                Ways to begin
+              </h3>
+              <ul className="mt-4 grid gap-3">
+                {parentologyInsights.map(({ icon: Icon, label, insight, href }) => (
+                  <li key={href}>
                     <Link
-                      href={item.href}
-                      className="flex min-h-11 items-center justify-between py-3 text-[15px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)]"
+                      href={href}
+                      className="flex gap-3 rounded-2xl bg-[var(--color-cream)]/80 px-4 py-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)]"
                     >
-                      {item.label}
-                      <span aria-hidden="true">→</span>
+                      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[var(--color-clay)] text-[var(--color-terracotta)]">
+                        <Icon aria-hidden size={18} strokeWidth={1.6} />
+                      </span>
+                      <span>
+                        <span className="block font-medium">{label}</span>
+                        <span className="mt-1 block text-[15px] leading-snug">
+                          {insight}
+                        </span>
+                      </span>
                     </Link>
                   </li>
                 ))}
               </ul>
-              <div className="relative mt-6 aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/images/family.webp"
-                  alt="A mother and daughter talking together at a kitchen table"
-                  fill
-                  className="object-cover object-[52%_30%]"
-                  sizes="(max-width: 1024px) 100vw, 480px"
-                />
-              </div>
-              <HomeCtaPrimary href={parentologyHref} className="mt-6">
-                Explore Parentology
-              </HomeCtaPrimary>
-            </article>
+            </div>
           </div>
+          <HomeCtaPrimary href={parentologyHref} className="mt-8">
+            Explore Parentology
+          </HomeCtaPrimary>
         </div>
       </section>
 

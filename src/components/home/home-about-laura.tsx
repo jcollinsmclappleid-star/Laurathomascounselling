@@ -22,7 +22,6 @@ export function HomeAboutLaura() {
         >
           Welcome, I&apos;m Laura
         </h2>
-        <LauraIntroVideo className="mt-6 max-w-3xl" />
         <div className="mt-8 grid items-start gap-8 lg:grid-cols-[minmax(260px,0.72fr)_minmax(0,1.28fr)] lg:gap-12">
           <div className="relative aspect-[3/4] overflow-hidden rounded-[18px]">
             <Image
@@ -42,6 +41,7 @@ export function HomeAboutLaura() {
             <p className="mt-5 text-[11px] uppercase tracking-[0.12em] text-[var(--text-muted)]">
               M.Ed · MNCPS (Accred.)
             </p>
+            <LauraIntroVideo className="mt-6 max-w-3xl" />
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <HomeCtaSecondary href={aboutHref}>Read more about me</HomeCtaSecondary>
               <HomeCtaPrimary href={contactHref}>Book a free call</HomeCtaPrimary>

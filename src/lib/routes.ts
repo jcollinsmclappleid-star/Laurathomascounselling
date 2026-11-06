@@ -14,7 +14,17 @@ export type LegacyRoute = {
 };
 
 /** Paths that exist as Next.js pages in this repo (expand as batches land). */
-export const builtPagePaths = ["/", "/parentology/"] as const;
+export const builtPagePaths = [
+  "/",
+  "/parentology/",
+  "/parentology/support-for-you/",
+  "/parentology/ongoing-guidance/",
+  "/parentology/responding-with-reset/",
+  "/parentology/practical-tools/",
+  "/parentology/learn-at-your-pace/",
+  "/parentology/learn-at-your-pace/when-parenting-feels-too-much/",
+  "/parentology/learn-at-your-pace/understanding-self-harm/",
+] as const;
 
 /**
  * Explicit legacy URL registry — every public WordPress URL plus planned new routes
@@ -60,43 +70,43 @@ export const legacyRoutes: LegacyRoute[] = [
     path: "/parentology/support-for-you/",
     kind: "page",
     title: "Find the support that fits your family",
-    plannedBatch: "4b",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/ongoing-guidance/",
     kind: "page",
     title: "A continuing connection through In-Touch",
-    plannedBatch: "4b",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/responding-with-reset/",
     kind: "page",
     title: "A more considered response, with RESET",
-    plannedBatch: "4b",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/practical-tools/",
     kind: "page",
     title: "Something useful for the moment you are in",
-    plannedBatch: "4c",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/learn-at-your-pace/",
     kind: "page",
     title: "Make room to understand, in your own time",
-    plannedBatch: "4c",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/learn-at-your-pace/when-parenting-feels-too-much/",
     kind: "page",
     title: "When parenting feels too much",
-    plannedBatch: "4c",
+    plannedBatch: "built",
   },
   {
     path: "/parentology/learn-at-your-pace/understanding-self-harm/",
     kind: "page",
     title: "Understanding self-harm: a workshop for parents",
-    plannedBatch: "4c",
+    plannedBatch: "built",
   },
   { path: "/books/", kind: "page", title: "Books", plannedBatch: 5 },
   {

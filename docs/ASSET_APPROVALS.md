@@ -60,3 +60,4 @@ Reference renditions live in `docs/reference/parentology-rev2/assets/`. They are
 | IMG006, IMG013 | Design brief treats these as Laura portraits. The register still says identity/licence to confirm, so they were **not** copied into `public/`. The hub uses the existing doorway portrait of Laura from her counselling site. |
 | IMG001 | Pexels stock (`pexels-cottonbro`). Not used. Not presented as Laura or as a client. |
 | Other pack renditions | Left in `docs/reference/` only. Not copied into `public/`. |
+| Welcome to Parentology poster | YouTube thumbnail for `YJPXSzILdv4` (oEmbed title “Welcome to Parentology”, author Laura Thomas Psychotherapist) | `public/images/parentology/welcome-video-poster.jpg` — still only. The film is not rehosted. Captions and transcript are not confirmed. Playback of the embedded player still needs a manual check. |

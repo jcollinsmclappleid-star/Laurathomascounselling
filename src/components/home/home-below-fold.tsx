@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HeartHandshake, User, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
+import { HomeParentologySection } from "@/components/home/home-parentology-section";
 import { HomeRoutePanel } from "@/components/home/home-route-panel";
 import {
   homeFaq,
@@ -63,7 +64,7 @@ export function HomeBelowFold() {
               <p key={p.slice(0, 32)}>{p}</p>
             ))}
           </div>
-          <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
+          <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-10">
             <article className="border-t border-[#a3ad95] pt-6">
               <div className="relative mb-4 aspect-[16/10] overflow-hidden">
                 <Image
@@ -114,14 +115,16 @@ export function HomeBelowFold() {
                 Find out more
               </HomeCtaSecondary>
             </article>
-            <article className="border-t border-[#a3ad95] pt-6">
+          </div>
+          <div className="mt-8 grid items-stretch gap-8 border-t border-[#c4a08e]/70 pt-8 lg:grid-cols-2 lg:gap-10">
+            <article>
               <div className="relative mb-4 aspect-[16/10] overflow-hidden">
                 <Image
                   src="/images/teen-parent-support.webp"
                   alt="Laura Thomas — counselling for young people and parents"
                   fill
                   className="object-cover object-[50%_22%]"
-                  sizes="(max-width: 768px) 100vw, 320px"
+                  sizes="(max-width: 1024px) 100vw, 480px"
                 />
               </div>
               <ServiceTitle
@@ -135,6 +138,7 @@ export function HomeBelowFold() {
                 Visit Parentology
               </HomeCtaSecondary>
             </article>
+            <HomeParentologySection />
           </div>
           <HomeCtaSecondary href={counsellingHref} className="mt-8">
             Explore all counselling services
@@ -261,10 +265,6 @@ export function HomeBelowFold() {
           >
             Parenting books for real family conversations.
           </h2>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed">
-            Take some time out, grab a coffee and take a read through some of my
-            blogs. Regularly updated with a mixture for adults and young people!
-          </p>
           <div className="mt-10 grid gap-10 sm:grid-cols-2">
             <article className="flex flex-col">
               <Link

@@ -35,6 +35,46 @@ export const homeWelcomeParagraphs = [
   "I offer long and short term therapy depending on what you would like to get out of our sessions.",
   "Either way, private counselling offers flexibility by working on what you bring in your own time and at your own pace.",
   "With 22 years-experience working in the field, I offer the space and time to allow us to work through what is worrying you.",
+  "After studying Psychology, I began working in mental health and quickly saw how many people weren't getting the support they really needed.",
+  "I went on to work with young people, families and adults across a range of settings, including education, local authorities and charities.",
+  "That's what led me to train as a counsellor and eventually start my own practice.",
+] as const;
+
+/** Homepage “Recent blogs” teasers — titles and excerpts as shown on laurathomascounselling.co.uk. */
+export const homeRecentBlogsIntro =
+  "Take some time out, grab a coffee and take a read through some of my blogs. Regularly updated with a mixture for adults and young people!";
+
+export const homeRecentBlogs = [
+  {
+    path: "/teen-mental-health-in-crisis-why-parents-are-the-missing-link/",
+    title: "Teen Mental Health in Crisis: Why Parents Are the Missing Link",
+    excerpt:
+      "If you're raising a teen right now, you don't need me to quote statistics. You already know something's not right. The spark in your child feels dimmer. They've gone quieter, moodier… maybe they're shutting themselves in their room or snapping at every small thing....",
+  },
+  {
+    path: "/the-last-heartbreak-is-the-one-you-feel-youll-never-recover-from/",
+    title: "The Last Heartbreak – By Kerry Chalmers",
+    excerpt:
+      "The last heartbreak is the one you feel you'll never recover from. The one that has you on your knees begging for someone, anyone to make the pain go away. It breaks you in such a way that if you close your eyes you can see yourself trying to scoop the pieces of you...",
+  },
+  {
+    path: "/managing-the-overwhelm/",
+    title: "Managing the Overwhelm",
+    excerpt:
+      "Feeling overwhelmed is a common experience in today's fast-paced world! Many of us are juggling multiple responsibilities, from work demands to personal commitments, often leading to the sensation of being swamped by unfinished tasks. If you find yourself struggling...",
+  },
+  {
+    path: "/the-difference-between-shame-and-guilt/",
+    title: "Understanding the Difference Between Shame and Guilt",
+    excerpt:
+      "In the realm of emotions, shame and guilt are often used interchangeably, but they are fundamentally different experiences that impact our well-being in distinct ways. Understanding these differences is crucial for emotional intelligence and mental health. In this...",
+  },
+  {
+    path: "/how-summer-can-ease-our-anxieties/",
+    title: "Why getting out in the sunshine can ease anxiety",
+    excerpt:
+      "As summer is now in full swing, I'm here to explain why getting out and about in the sunshine can ease our anxieties. Fresh air and sunlight directly affects our hormones - for the better! I think its safe to say we all feel a bit brighter when the sun starts to shine...",
+  },
 ] as const;
 
 export const homeHowICanHelp = {

@@ -233,17 +233,17 @@ export function HomeEntry() {
         aria-label="Choose your path"
       >
         <motion.div
-          className="relative flex flex-col text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:min-h-0 lg:overflow-hidden"
+          className="relative flex flex-col text-[#fff8e9] lg:col-start-1 lg:row-span-2 lg:row-start-1 lg:h-full lg:min-h-0"
           {...containerMotion}
         >
-          <div className="relative z-[1] flex flex-col lg:min-h-0 lg:flex-1 lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
-            <div className="flex flex-col lg:grid lg:min-h-0 lg:flex-1 lg:grid-cols-2 lg:items-center lg:gap-x-8">
+          <div className="relative z-[1] flex flex-col lg:h-full lg:min-h-0 lg:flex-1 lg:px-[65px] lg:pb-6 lg:pt-[4.375rem]">
+            <div className="flex flex-col lg:grid lg:h-full lg:min-h-0 lg:flex-1 lg:grid-cols-2 lg:grid-rows-1 lg:items-stretch lg:gap-x-8">
               <p className="shrink-0 bg-[#102f2c] px-[19px] pb-3 pt-[4.5rem] text-[9px] uppercase tracking-[0.14em] leading-snug sm:px-6 lg:hidden">
                 {homeEyebrow}
               </p>
 
               <motion.div
-                className="relative h-[42svh] w-full shrink-0 overflow-hidden lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:aspect-[4/5] lg:h-auto lg:min-h-[360px]"
+                className="relative h-[42svh] w-full shrink-0 overflow-hidden lg:col-start-2 lg:row-start-1 lg:h-full lg:min-h-0"
                 {...itemMotion}
               >
                 <Image
@@ -252,7 +252,7 @@ export function HomeEntry() {
                   fill
                   priority
                   className="object-cover object-[50%_8%] lg:object-[48%_20%]"
-                  sizes="(max-width: 1024px) 100vw, 360px"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                 />
                 <div
                   className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[#102f2c]/25 to-transparent lg:block"
@@ -261,7 +261,7 @@ export function HomeEntry() {
               </motion.div>
 
               <motion.div
-                className="shrink-0 bg-[#102f2c] px-[19px] pb-4 pt-4 sm:px-6 lg:col-start-1 lg:row-start-1 lg:px-0 lg:pb-0 lg:pt-0"
+                className="shrink-0 bg-[#102f2c] px-[19px] pb-4 pt-4 sm:px-6 lg:col-start-1 lg:row-start-1 lg:self-center lg:px-0 lg:pb-0 lg:pt-0"
                 {...itemMotion}
               >
                 <h1 className="font-serif leading-[0.98] tracking-[-0.8px] lg:tracking-[-2px]">

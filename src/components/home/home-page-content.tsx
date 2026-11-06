@@ -2,7 +2,7 @@ import { HomeAboutLaura } from "@/components/home/home-about-laura";
 import { HomeBelowFold } from "@/components/home/home-below-fold";
 import { HomeEntry } from "@/components/home/home-entry";
 import { HomeIntroSection } from "@/components/home/home-intro-section";
-import { HomeParentologySection } from "@/components/home/home-parentology-section";
+import { HomeRecentBlogs } from "@/components/home/home-recent-blogs";
 
 export function HomePageContent() {
   return (
@@ -10,7 +10,7 @@ export function HomePageContent() {
       <HomeEntry />
       <HomeIntroSection />
       <HomeAboutLaura />
-      <HomeParentologySection />
+      <HomeRecentBlogs />
       <HomeBelowFold />
     </>
   );

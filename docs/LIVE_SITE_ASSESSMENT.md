@@ -61,10 +61,21 @@ Navigation no longer uses a cream pill. The live **v2a** lockup (`laura-logo-v2a
 
 ## Parentology on the homepage — rationale
 
-**Chosen:** a clay-coloured Parentology band (`HomeParentologySection`) after About Laura, separate from the counselling story, with the Parentology wordmark, a short intro in Laura’s words from parentologyworld.com, the mother-and-daughter image, and one button to `/parentology/`. The hero route tile still offers the same door, using `family.webp`, but it is only the fork — not Parentology’s home on the page.
+**Chosen:** a clay Parentology band beside **Teen & Parent Support** inside How I can help (Batch 2g). It keeps the Parentology wordmark, clay field, `family.webp`, the lines from parentologyworld.com, and one button to `/parentology/`. The hero route tile is still only the fork.
 
 **Why this, for UX.** The first mobile screen has to be Laura: eyebrow, doorway photo, headline, intro, and “Book a free call”. Giving Parentology half of that screen would bury the primary counselling action. A route tile alone is also too thin — it cannot carry the wordmark or a sentence in Laura’s voice, so Parentology reads as a second button rather than a second practice. The clay band is the same brand system (forest type, terracotta accent) with Parentology’s own colour and logo, so the two practices stay related and distinct. The button leaves the homepage for the registry page `/parentology/`, where the fuller gateway belongs.
 
 **Why this, for SEO.** The homepage keeps a single H1. Parentology gets its own H2, unique verbatim copy, a descriptive image alt, and an internal link with the anchor “Explore Parentology” to `/parentology/`. That is a clear topical signal and a crawlable path without a second H1, without an off-site checkout link, and without duplicating the whole Parentology site. Testimonials on the sister site are not reused.
 
 **Images.** `family.webp` is the mother-and-daughter photograph used for the Parentology route tile in Batch 2e, and again in the band. The counselling route tile uses `room.webp` (an armchair in a quiet room). The live file previously used there (`counselling-space.webp`, Bedford-Counselling-71) is a windowsill of ornaments, not a counselling room. The PSA badge is not a background; accreditation stays as the small credentials line already on the page.
+
+## Homepage copy still not on the rebuild (Batch 2g)
+
+Compared with the live homepage on 6 November 2026, after restoring Recent blogs and the About background lines. These are still absent or only partly matched:
+
+- Header phone and email are on the live site and are not in the rebuild (`site.ts` still has no contact constants).
+- Live buttons “Start your support” and “Get started” are not used; the rebuild keeps “Book a free call”.
+- The homepage contact form (name, email, phone, message) is not rebuilt; contact stays on `/contact-me/`.
+- The FAQ opener is one paragraph here. On the live page it is split: “Coming to counselling can be a nerve- wracking experience:” then the questions, then “Its understandable to have lots of questions as it is a big decision to make. I get it.”
+- “Whether you're dealing with you mental health…” is tidied to “your”.
+- How I can help service copy is the same sentences, joined into one paragraph per service.

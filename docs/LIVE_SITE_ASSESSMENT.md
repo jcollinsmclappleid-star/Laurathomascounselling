@@ -35,7 +35,20 @@
 - Hosted on Laura’s WordPress uploads (not YouTube/Vimeo).
 - Rebuild: self-hosted MP4 (~3.2 MB, 720-wide H.264), poster from frame at 1s (`laura-video-poster.webp`), play on user click (no autoplay).
 
-## Gaps / not taken from live
+## Parentology World (Batch 2f)
+
+Sister site **http://www.parentologyworld.com/** — homepage strap (“Teen counselling · Parent support · Real-time guidance”), crisis/change messaging, and Parentology logo/hero artwork reused on the Laura homepage **Parentology** section with internal link to registry route `/parentology/` only (no off-site checkout).
+
+## Live imagery not reused (Batch 2f)
+
+| Asset | Reason |
+| --- | --- |
+| Pexels stock blocks on current WP homepage | Third-party stock; not Laura’s photography |
+| `room.webp` / `family.webp` (rebuild concept) | Still referenced only where concept panels remain; route panels now prefer live photos where noted |
+| `detail.webp` | Superseded by doorway hero |
+| `laura.webp` (pack) | Superseded by live doorway + Bedford-1111 teen/parent portrait |
+| Squarespace lifestyle JPGs on Parentology (Aro Ha series) | Not needed; hero graphic + logo sufficient for gateway section |
+| Blog post featured images | Registry-only articles; no migration batch |
 
 - **Google Calendar “Book a free call”** external URL on live site — rebuild CTA stays on registry `/contact-me/` only (no new off-site booking integration this batch).
 - **Live phone/email in header** — not copied; `src/lib/site.ts` has no verified contact constants yet.

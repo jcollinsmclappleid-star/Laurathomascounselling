@@ -63,26 +63,18 @@ export function SiteHeader() {
         <Link
           href="/"
           className={cn(
-            "relative block shrink-0",
+            "relative block shrink-0 rounded-md bg-[var(--color-cream)] px-3 py-1.5 shadow-sm",
             overlayHeader
-              ? "h-[44px] w-[200px] md:h-[48px] md:w-[220px]"
-              : "h-[52px] w-[200px] md:h-[56px] md:w-[240px]",
+              ? "h-[44px] w-[min(220px,52vw)] md:h-[48px] md:w-[240px]"
+              : "h-[48px] w-[min(240px,55vw)] md:h-[52px] md:w-[260px]",
           )}
         >
           <Image
-            src={
-              overlayHeader
-                ? "/brand/laura-logo-dark-header.webp"
-                : "/brand/laura-logo-light-header.webp"
-            }
+            src="/brand/laura-logo-nav.webp"
             alt="Laura Thomas Counselling"
             fill
-            className={cn(
-              "object-contain object-left",
-              overlayHeader &&
-                "brightness-0 invert drop-shadow-[0_1px_3px_rgba(0,0,0,0.45)]",
-            )}
-            sizes="(max-width: 768px) 200px, 240px"
+            className="object-contain object-left"
+            sizes="(max-width: 768px) 220px, 260px"
             priority
           />
         </Link>

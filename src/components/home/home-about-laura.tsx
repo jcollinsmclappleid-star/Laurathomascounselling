@@ -1,10 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { HomeCtaPrimary, HomeCtaSecondary } from "@/components/home/home-cta";
 import { LauraIntroVideo } from "@/components/home/laura-intro-video";
+import { homeWelcomeParagraphs } from "@/lib/home-copy";
 import { hrefFromRegistry } from "@/lib/routes";
 
 const aboutHref = hrefFromRegistry("/qualified-counsellor/");
+const contactHref = hrefFromRegistry("/contact-me/");
 
 export function HomeAboutLaura() {
   return (
@@ -29,35 +30,20 @@ export function HomeAboutLaura() {
             id="about-laura-heading"
             className="mt-3 font-serif text-[clamp(36px,9vw,56px)] leading-[1.02] tracking-[-1px]"
           >
-            Welcome — I&apos;m Laura.
+            Welcome, I&apos;m Laura
           </h2>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed">
-            I offer counselling in Bedford for adults, families, couples and
-            young people. My aim is to help you feel more content and at ease in
-            your life. I offer long and short-term therapy depending on what you
-            would like to get out of our sessions — private counselling offers
-            flexibility by working on what you bring, in your own time and at
-            your own pace.
-          </p>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed">
-            My interest in human behaviour has been with me for over 22 years.
-            After studying Psychology, I began working in mental health and went
-            on to work with young people, families and adults across education,
-            local authorities and charities. That path led me to train as a
-            counsellor and, alongside roles in schools and mental health
-            services, I now run my private practice — support that is personal,
-            responsive and focused on what actually helps.
-          </p>
+          <div className="mt-4 max-w-xl space-y-4 text-[15px] leading-relaxed">
+            {homeWelcomeParagraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+            ))}
+          </div>
           <p className="mt-4 text-[11px] uppercase tracking-[0.12em] text-[var(--text-muted)]">
             M.Ed · MNCPS (Accred.)
           </p>
-          <Link
-            href={aboutHref}
-            className="mt-6 inline-flex min-h-11 items-center gap-2 border border-[#7e8b72] px-5 py-3 text-sm transition hover:bg-[var(--soft-surface)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)] active:scale-[0.99]"
-          >
-            Read more about me
-            <ArrowUpRight aria-hidden size={16} strokeWidth={1.8} />
-          </Link>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <HomeCtaSecondary href={aboutHref}>Read more about me</HomeCtaSecondary>
+            <HomeCtaPrimary href={contactHref}>Book a free call</HomeCtaPrimary>
+          </div>
           <div className="mt-10 max-w-xl">
             <LauraIntroVideo />
           </div>

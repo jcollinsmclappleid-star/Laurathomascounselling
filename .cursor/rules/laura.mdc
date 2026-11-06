@@ -1,0 +1,24 @@
+---
+description: Laura Thomas Counselling rebuild — hard rules and batch workflow
+alwaysApply: true
+---
+
+# Laura Thomas Counselling
+
+## Hard rules
+
+- Single Composer session only — no subagents or parallel agents.
+- Short placeholder copy until told otherwise; no long-form or SEO content.
+- Never invent fees, credentials, contact details, or reviews; use clear placeholders.
+- Never commit secrets; do not deploy or change DNS.
+- Keep `docs/reference/` out of `public/` and the production bundle.
+
+## Workflow
+
+- One batch per session per `COMPOSER_BATCHES.md`; Batch 0 is complete (infrastructure only).
+- Do not build full Laura pages in Batch 0 scope; follow the next batch title exactly.
+- Finish with green `npm run build` and `npm run lint`, then commit and stop.
+
+## Assessment (Batch 0)
+
+Next.js 16 App Router base repurposed from trusted-founders-club tooling (not a second scaffold). Product auth, payments, DB, and Review Signal UI were stripped. Laura forest/cream tokens are in `app/globals.css`. Local Cormorant + Inter fonts and Header/Footer shell are Batch 1. See `docs/CODEBASE_ASSESSMENT.md`.

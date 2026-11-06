@@ -135,6 +135,21 @@ summary::-webkit-details-marker {
   animation: affordance-glow 2.4s ease-in-out 0.35s 1 both;
 }
 
+@keyframes route-pulse {
+  0%,
+  100% {
+    box-shadow: inset 0 0 0 0 rgba(255, 248, 234, 0);
+  }
+
+  50% {
+    box-shadow: inset 0 0 0 3px rgba(255, 248, 234, 0.72);
+  }
+}
+
+.route-pulse {
+  animation: route-pulse 2.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hover-lift,
   .hover-lift:hover {
@@ -147,7 +162,8 @@ summary::-webkit-details-marker {
   }
 
   .affordance-in-view,
-  .affordance-target {
+  .affordance-target,
+  .route-pulse {
     animation: none !important;
     transform: none !important;
     box-shadow: none !important;

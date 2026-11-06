@@ -1,0 +1,422 @@
+[
+  {
+    "path": "A_Strategic_Research_and_Architecture.pdf",
+    "bytes": 68391,
+    "sha256": "e1ff95b836c44c71b9a829829193aefb97f40deafaa877846bc92341c371559b"
+  },
+  {
+    "path": "A_Strategy_and_Architecture.md",
+    "bytes": 31137,
+    "sha256": "039b6c3de6a8f17328f172f8c5475557b701e580d41981627ff572b391b76b8d"
+  },
+  {
+    "path": "B_Premium_Website_Mockup_Pack.pdf",
+    "bytes": 7200482,
+    "sha256": "ab6612e0ed05e1413d29d1d8951f20ce91a1d892561a16560dbf1f0455b539cf"
+  },
+  {
+    "path": "C_Cinematic_Motion_Storyboard.pdf",
+    "bytes": 2245891,
+    "sha256": "b0787dfe9654bc7a73cf9ead1514e3086114d1c9283aca050b203281c6a70d14"
+  },
+  {
+    "path": "C_Parentology_Transition_Demonstration.mp4",
+    "bytes": 693802,
+    "sha256": "23cc7af1744beb60f93563d87c569e7638f4eded19ec163b752a28f3eef9bb09"
+  },
+  {
+    "path": "D_Laura_Thomas_Client_Presentation.pdf",
+    "bytes": 5555318,
+    "sha256": "5c0a5c5e524079daaaa12c0d69ec4d196ecd857fd9de4fc384586ef070f6dca6"
+  },
+  {
+    "path": "E_Cursor_Technical_Build_Specification.md",
+    "bytes": 24555,
+    "sha256": "1bf81882791b1cbf93124b1b0c33f7c5b676fd96cbde84a3a8cd01a49c42f4bb"
+  },
+  {
+    "path": "F_Phased_Cursor_Prompts.md",
+    "bytes": 16480,
+    "sha256": "9ef4849df6f634b7d811b1e0117e197864a5d6884b180c9cfebb7bd4f78522fe"
+  },
+  {
+    "path": "G_Asset_and_Research_Register.md",
+    "bytes": 15232,
+    "sha256": "b7f90dc7095092b369ebbebfb4ca1864c1e3e1158b4ce38ec1b12c47dea28008"
+  },
+  {
+    "path": "Generated_Image_Prompts.json",
+    "bytes": 1679,
+    "sha256": "6a86cb344414d14438c70706b10b4fe69afcaedea4f011e059ce527fa939a573"
+  },
+  {
+    "path": "H_Concept_Quality_Review.md",
+    "bytes": 5123,
+    "sha256": "98fec34920ab25a2b5eac668ee17a5f755afeb98df285db77f48e5e9cd1dff29"
+  },
+  {
+    "path": "I_Cursor_Existing_Site_Design_MVP_Prompt.md",
+    "bytes": 9324,
+    "sha256": "49435b7ee99163338741f3f52a00f1e14f8b89fed565d980b3f7e28c42375027"
+  },
+  {
+    "path": "Laura_Thomas_Homepage_Concept.png",
+    "bytes": 557119,
+    "sha256": "51abda07f75f9c64e6361f86d316de75ac20c579de82b097cc8ea2d5ba4ae3c9"
+  },
+  {
+    "path": "Laura_Thomas_Homepage_Direction_02.png",
+    "bytes": 1388348,
+    "sha256": "7ed5340e43bb16f578542dcd61a70df045785ab1f99a8751c05131b74331195f"
+  },
+  {
+    "path": "Laura_Thomas_Interactive_Concept.html",
+    "bytes": 9744470,
+    "sha256": "58992027ffd678ca68daeac2f0cfa976735a286a68b4685cf2f93521c5a3fa59"
+  },
+  {
+    "path": "README_START_HERE.md",
+    "bytes": 4397,
+    "sha256": "53497c46673ad91da16c2930c178cca3ab267cbbf96ab838454c2fe4d515402f"
+  },
+  {
+    "path": "Visual_Direction_02/BRANDING_AND_MOBILE_MVP_NOTES.md",
+    "bytes": 1880,
+    "sha256": "57edeeb2c7dc082b6147c5b38d07979667288ec02c7429a4a42227c0fc8f6b2d"
+  },
+  {
+    "path": "Visual_Direction_02/Books.html",
+    "bytes": 2822941,
+    "sha256": "64c719ee7f8b6dbad9ee634dff84dfda1913961c967a83c400131f36ee9259d2"
+  },
+  {
+    "path": "Visual_Direction_02/Books.png",
+    "bytes": 338593,
+    "sha256": "117fbf4c2eba9df62b9a2bdd6e1908c29e95455933d185114f96346456e95322"
+  },
+  {
+    "path": "Visual_Direction_02/Home.html",
+    "bytes": 3761609,
+    "sha256": "c05cf175567152e61e11400cea483e991db70f3632a445782dbd3ab8c9b0cf48"
+  },
+  {
+    "path": "Visual_Direction_02/Home.png",
+    "bytes": 1388348,
+    "sha256": "7ed5340e43bb16f578542dcd61a70df045785ab1f99a8751c05131b74331195f"
+  },
+  {
+    "path": "Visual_Direction_02/Laura_Thomas_Visual_Direction_02.pdf",
+    "bytes": 1449320,
+    "sha256": "4922ee9e7a9d820b33587211a186193ea0c1ae17defae8753d7dc49485ef13fd"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_320x568.png",
+    "bytes": 234383,
+    "sha256": "ac500e8034cf7d3176809e57a19147daddcb81df401afff320d3cd0a81fef9c3"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_375x667.png",
+    "bytes": 284240,
+    "sha256": "ccb72735e62428df544809d3c42ae0bb57dbf353d076f4a9d95b7c21a6f2ae12"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_390x664.png",
+    "bytes": 292574,
+    "sha256": "fd998b8c94313e4a096ec5cc038897c39e25f8c340e2c5488bf3e1f94a737972"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_390x844.png",
+    "bytes": 293926,
+    "sha256": "a410de655572ed8a2ee2245dff01ed01cf20006acfd2e57d463290a124850cd5"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_430x740.png",
+    "bytes": 326670,
+    "sha256": "d28a2c7ea1b6e9d285418b13bd28cf270dab2c24cec642322519b1a7b549ef80"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_First_Screen_Checks.json",
+    "bytes": 1667,
+    "sha256": "e6d38e34761491cbc18461585ee6356883d0dcd3c79c4e864a3d48c17f814380"
+  },
+  {
+    "path": "Visual_Direction_02/Mobile_Home.png",
+    "bytes": 295431,
+    "sha256": "a00cc0deecec349b8ae50cf0d9313710563aa006d165c78b072f1300334b91fd"
+  },
+  {
+    "path": "Visual_Direction_02/Parentology.html",
+    "bytes": 3092075,
+    "sha256": "cf558e63333ab0132a9049a4ac2a101a60bb6247e85c1370e8c48f63bd1cf223"
+  },
+  {
+    "path": "Visual_Direction_02/Parentology.png",
+    "bytes": 912206,
+    "sha256": "52d1dfcf018fa1ea9707704e2e3c3802e70d320cc4b48703fbfb2ea181a66642"
+  },
+  {
+    "path": "Visual_Direction_02/REVISION_NOTES.md",
+    "bytes": 1591,
+    "sha256": "657ff0e2e9f4b0a290faa5e08bede5daa921bf537ef1774acc03302ab512beba"
+  },
+  {
+    "path": "assets/Concept_Parent_and_Teen_Original.png",
+    "bytes": 2436066,
+    "sha256": "e379f2e740a18c97beb9115a714c17ff38a31a746c21a7af0e765e5c4dd6dcb3"
+  },
+  {
+    "path": "assets/Concept_Quiet_Interior_Original.png",
+    "bytes": 2545500,
+    "sha256": "e3fd00155ae0418c8c0d0f5b785d690960001fbd09e257e263a3c4cc6beb0620"
+  },
+  {
+    "path": "assets/Cormorant_Garamond_Licence.txt",
+    "bytes": 4387,
+    "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+  },
+  {
+    "path": "assets/Inter_Licence.txt",
+    "bytes": 4377,
+    "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+  },
+  {
+    "path": "assets/book-boys.jpg",
+    "bytes": 99616,
+    "sha256": "b8e55b382df040e5f09331ecc332ea56d18c81bee7056622568ef349bb0bf387"
+  },
+  {
+    "path": "assets/book-boys.webp",
+    "bytes": 96530,
+    "sha256": "aa806b315ac0009de8023bb4426d44d77487a22640d1f92cc654af8b8bc06d6d"
+  },
+  {
+    "path": "assets/book-girls.jpg",
+    "bytes": 109986,
+    "sha256": "d4885f29cff37d223216d3006db7a0053dfde9153535f8286d2d3ad71d02719d"
+  },
+  {
+    "path": "assets/book-girls.webp",
+    "bytes": 94722,
+    "sha256": "00062f3b667fe5055231eec16a8351f315130625d48a19434415c5017d5b403b"
+  },
+  {
+    "path": "assets/cushion.webp",
+    "bytes": 62890,
+    "sha256": "f32cb05001ffec2b305e6920d8c53d594fd382d42cbe3b73a57a19ecfc6bec38"
+  },
+  {
+    "path": "assets/detail.webp",
+    "bytes": 53294,
+    "sha256": "c10005b66d9c49776319d570b9d1c963caf0ae05394b4aaf9b6e4a83e42fa52c"
+  },
+  {
+    "path": "assets/family.webp",
+    "bytes": 248656,
+    "sha256": "86bbc5f2969b11ff574dcc0a92be568933c85daba6afaf6ec9d7c427d8dcca30"
+  },
+  {
+    "path": "assets/font-0.woff2",
+    "bytes": 293036,
+    "sha256": "0b9a8a33cfaa624d30f70f9b6686da769b319b8c37a55af16e29fef690108bbf"
+  },
+  {
+    "path": "assets/font-1.woff2",
+    "bytes": 290236,
+    "sha256": "6d37a86241a25d63f8fe6018b4c083449886b7165c1acb15edd0f574f690ecf7"
+  },
+  {
+    "path": "assets/font-2.woff2",
+    "bytes": 290496,
+    "sha256": "1724047c8988ca5155bff667bc48fa52e97d57aabc6b42eebbf986f21a4be20b"
+  },
+  {
+    "path": "assets/font-3.woff2",
+    "bytes": 324820,
+    "sha256": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba"
+  },
+  {
+    "path": "assets/font-4.woff2",
+    "bytes": 325304,
+    "sha256": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63"
+  },
+  {
+    "path": "assets/font-5.woff2",
+    "bytes": 326048,
+    "sha256": "e7a1aaf7eda9f2fad4131725fa556265ec75ca7b2d756260173a040363e8d4f7"
+  },
+  {
+    "path": "assets/fonts.css",
+    "bytes": 927,
+    "sha256": "97edf776e402849b726508ad17737b3d329c59269f8d3625aed5b2d9835e21b6"
+  },
+  {
+    "path": "assets/laura.webp",
+    "bytes": 104812,
+    "sha256": "0463bd91777370eec2de52247e199e1d8eb48ad9151bd41f666192414d244b7a"
+  },
+  {
+    "path": "assets/logo-parentology-alpha.webp",
+    "bytes": 144428,
+    "sha256": "f4e6785c7480540fe8e48dd5b8220859bb140c57787c37aef286a14c0a46e88f"
+  },
+  {
+    "path": "assets/original-00-00.png",
+    "bytes": 68071,
+    "sha256": "d088a99f51c86ea3c95d7abd1d6e274a1d3b11dc14bc01364fa671a4af3beef4"
+  },
+  {
+    "path": "assets/original-00-05.png",
+    "bytes": 1737083,
+    "sha256": "55b35c49ee9e60381b9d63645e0ea7dd625914468cbb8aa0be816f4de228dc78"
+  },
+  {
+    "path": "assets/original-00-10.png",
+    "bytes": 571183,
+    "sha256": "b164680aa94b87102c826fc92fb3e9f8ac50b1c1be634636340c2c7e5e7c0d50"
+  },
+  {
+    "path": "assets/original-01-00.png",
+    "bytes": 51656,
+    "sha256": "139a32d97f497af8a6d3a00aa8221a7c499bb1239eda29a64f3a7383072d18a9"
+  },
+  {
+    "path": "assets/original-07-06.png",
+    "bytes": 1779890,
+    "sha256": "48c470fe3cf3f47de47cf0fcde4548d9272c0c1b0a961966e021020f0ff8eed0"
+  },
+  {
+    "path": "assets/room.webp",
+    "bytes": 270664,
+    "sha256": "155c61c659573b1f6ec9ba0e171d4e276bcd69c6677c593c34b82e99ce810718"
+  },
+  {
+    "path": "assets/therapist-website-studio-logo.png",
+    "bytes": 191903,
+    "sha256": "7849097c0d7702233d7f8018b4edbe5677864637dd2ec80f10b8b95dcb054c9e"
+  },
+  {
+    "path": "creative.css",
+    "bytes": 21641,
+    "sha256": "60e8b537067c7dbba35355d877b86b48aa91c156db6128c90f878e9339d985fb"
+  },
+  {
+    "path": "mockups/01_Homepage_Editorial.png",
+    "bytes": 557119,
+    "sha256": "51abda07f75f9c64e6361f86d316de75ac20c579de82b097cc8ea2d5ba4ae3c9"
+  },
+  {
+    "path": "mockups/02_Homepage_Cinematic_Split.png",
+    "bytes": 1238771,
+    "sha256": "5d3b1010ac9ee22bc8b9c3fd665d8dbb7a1cd9275210273ef146dcaf594eded3"
+  },
+  {
+    "path": "mockups/03_Counselling_World.png",
+    "bytes": 699608,
+    "sha256": "15e6044e9df761a66e33774ab57c4ac6c14f22a15b6601fd69ccd5956981e4d5"
+  },
+  {
+    "path": "mockups/04_Parentology_World.png",
+    "bytes": 863326,
+    "sha256": "a264af7460e1694663c94a87958d2ed37fbab5320a38983feaffc0f39d04869f"
+  },
+  {
+    "path": "mockups/05_Parentology_Gateway_Full.png",
+    "bytes": 1450595,
+    "sha256": "8f8282b10aa2bcffeff2a350cd0d92c8579ec8a16fc57337dd0810d3872483d6"
+  },
+  {
+    "path": "mockups/06_Books_Showcase.png",
+    "bytes": 313605,
+    "sha256": "7c72dd7ebdc2e6d61eb8ecc3be07149e1b864f2c30c01f48de2f9e67392ec95f"
+  },
+  {
+    "path": "mockups/07_Individual_Counselling.png",
+    "bytes": 1009997,
+    "sha256": "fddb73ce884f4a7fc07a639639c91067ec99b8228fef2c8761a204022412c0a1"
+  },
+  {
+    "path": "mockups/08_Expert_Article.png",
+    "bytes": 1096203,
+    "sha256": "d20c2474c7d139e8fce23c63e18994b9009484a004747e69e6f93eb0dc05b987"
+  },
+  {
+    "path": "mockups/09_Mobile_Homepage.png",
+    "bytes": 449546,
+    "sha256": "6d14974efd9e036bc75deeabadc8bbfec16298912519a4ffb6302a7b7acd2617"
+  },
+  {
+    "path": "mockups/10_Mobile_Parentology_Gateway.png",
+    "bytes": 634899,
+    "sha256": "e6ed1ca73a649c694d00778b16a7744424c1713b5834f8d55b3eb12a841b9e7b"
+  },
+  {
+    "path": "mockups/11_Book_Detail.png",
+    "bytes": 260106,
+    "sha256": "534e3e54a488e280140de183ff8606319c8b90515e8c004e183c11c89dc2ae9e"
+  },
+  {
+    "path": "motion/01_Discovery.png",
+    "bytes": 557119,
+    "sha256": "51abda07f75f9c64e6361f86d316de75ac20c579de82b097cc8ea2d5ba4ae3c9"
+  },
+  {
+    "path": "motion/02_Engagement.png",
+    "bytes": 558147,
+    "sha256": "3a3706f02c9aa4043db51b436da331fa63b140dc505805ad7bea578571f2961f"
+  },
+  {
+    "path": "motion/03_Expansion.png",
+    "bytes": 627624,
+    "sha256": "66bcd9fc8f94b116d4f12252ac300dc77ba5603e78e4afce8a14a39ef942abe0"
+  },
+  {
+    "path": "motion/04_Warm_Threshold.png",
+    "bytes": 1793092,
+    "sha256": "4328afd0cabb9d828a129b737e71948cf79ff7c96ac6f58a09bbdc7fb718d69d"
+  },
+  {
+    "path": "motion/05_Arrival.png",
+    "bytes": 862324,
+    "sha256": "f49ab5f97992832e84b29cf9ab354652bd033afea2439cc2c940c7bec4e41179"
+  },
+  {
+    "path": "motion/06_Exploration.png",
+    "bytes": 94045,
+    "sha256": "d07775d5d1e31e70d6b17d881f184a313841cc4ad562604550ae1889058935e3"
+  },
+  {
+    "path": "motion/Parentology_Transition.gif",
+    "bytes": 1774386,
+    "sha256": "b2e7b238214da0e1ec125a98757edee291350f7bc34be65fbc515b4766c4b8d3"
+  },
+  {
+    "path": "page-manifest.json",
+    "bytes": 860,
+    "sha256": "43c3f36b14f7009733f6dcfd03e84dbe909a106af59af621ed2f04ff8a21bb84"
+  },
+  {
+    "path": "registers/Asset_Register.csv",
+    "bytes": 3387,
+    "sha256": "450fd04fb4d31a785246ac236ab44530617f824d4420c62c2288eca9387e0f3c"
+  },
+  {
+    "path": "registers/Parentology_Sitemap_URLs.json",
+    "bytes": 6746,
+    "sha256": "39241f943d78e1706af60c192efb93fd189cb435f5c8e6e6bc8697e371095a22"
+  },
+  {
+    "path": "registers/Prototype_Validation.json",
+    "bytes": 419,
+    "sha256": "92ad4adda5f8675e65592473e38ea3e823b84619f67546245029ffc27fe4d517"
+  },
+  {
+    "path": "registers/Research_Source_Register.csv",
+    "bytes": 9441,
+    "sha256": "9de7658f3c85b0c4cb80e02659dd317f9734e15b3bde125c8788022d23b85918"
+  },
+  {
+    "path": "registers/WordPress_Content_Inventory.csv",
+    "bytes": 18311,
+    "sha256": "081132e0f056fdf592cf5b025cf818bc09d1be71396f6f79e87c715f427337f7"
+  }
+]

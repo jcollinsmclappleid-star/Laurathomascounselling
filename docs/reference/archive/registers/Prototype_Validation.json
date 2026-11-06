@@ -1,0 +1,22 @@
+{
+  "tested_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "route_width_checks": 40,
+  "overflow_count": 0,
+  "broken_images": 0,
+  "script_errors": [],
+  "menu_passed": true,
+  "escape": {
+    "overlay": 0,
+    "mainInert": null
+  },
+  "reduced_motion": {
+    "overlay": 0,
+    "heading": "More understanding.\nStronger connection."
+  },
+  "back_navigation": "Different journeys.\nThe right support\nfor you."
+}

@@ -1,0 +1,51 @@
+id,source,url,verification_method,finding_or_limit,reviewed_date
+R01,Counselling homepage,https://www.laurathomascounselling.co.uk/,Public HTML + live desktop,Service positioning; imagery; existing Parentology link; metadata,2026-11-03
+R02,Qualifications,https://www.laurathomascounselling.co.uk/fully-qualified/,Public page + API,"Publicly stated credentials, experience and research; original certificates not inspected",2026-11-03
+R03,Services hub,https://www.laurathomascounselling.co.uk/services/,WordPress page API,Existing hub URL/content,2026-11-03
+R04,Individual counselling,https://www.laurathomascounselling.co.uk/counselling/,Public page + API,Existing individual intent and public £125 session listing; confirm current fees,2026-11-03
+R05,Couples counselling,https://www.laurathomascounselling.co.uk/couples-counselling/,Public page + API,Existing relationship offer and links,2026-11-03
+R06,Family therapy,https://www.laurathomascounselling.co.uk/family-therapy-2/,Public page + API,Existing family work; venue and suitability need current confirmation,2026-11-03
+R07,Teenage counselling,https://www.laurathomascounselling.co.uk/counselling-for-young-people/,Public page + API,Young-person journey; legacy copy and booking references,2026-11-03
+R08,FAQ and fees,https://www.laurathomascounselling.co.uk/faq-and-fees/,Public page + direct HTML,Starting fee £95 and routing; reconcile with individual page and cancellation wording,2026-11-03
+R09,Contact,https://www.laurathomascounselling.co.uk/contact-me/,Public page + API,Wixams/Bedford MK42; public phone/email,2026-11-03
+R10,Blog index,https://www.laurathomascounselling.co.uk/counselling-blog/,Public page + API,Historical archive and visible spam-comment widgets,2026-11-03
+R11,Public post API,https://www.laurathomascounselling.co.uk/wp-json/wp/v2/posts?per_page=100&_embed,TLS-verified JSON retrieval,16 public posts; author IDs/dates/media baseline; not private backup,2026-11-03
+R12,Public page API,https://www.laurathomascounselling.co.uk/wp-json/wp/v2/pages?per_page=100,TLS-verified JSON retrieval,16 public pages including legacy pages,2026-11-03
+R13,Parentology homepage,https://www.parentologyworld.com/,Public HTML + live desktop,"Brand, services, logo, cover artwork, contact/location wording and navigation",2026-11-03
+R14,Parentology About,https://www.parentologyworld.com/about,Public HTML,"Founder identity, credentials, research link and exact RESET step labels",2026-11-03
+R15,In-Touch,https://www.parentologyworld.com/intouch,Public HTML,Ongoing parent support; homepage states Monday-Friday voice/message support; entitlements need approval,2026-11-03
+R16,Teen support,https://www.parentologyworld.com/teen-support,Public HTML,Specialist teen offer; avoid reproducing detailed programme on counselling domain,2026-11-03
+R17,Resources,https://www.parentologyworld.com/resources,TLS-verified HTML retrieval,Resource categories; separate full offer from gateway,2026-11-03
+R18,Media,https://www.parentologyworld.com/media,Public HTML,"Books, media and award claims; contributor/publication-date distinctions require care",2026-11-03
+R19,Parentology sitemap,https://www.parentologyworld.com/sitemap.xml,TLS-verified XML retrieval,"113 page URLs; 20 article URLs, 39 tags; not proof every entry is indexed or public-entitled",2026-11-03
+R20,Counselling Directory profile,https://www.counselling-directory.org.uk/counsellors/laura-thomas-2,Search and public profile,Verified-professional listing; M.Ed/MNCPS broad corroboration; live NCPS register not independently matched,2026-11-03
+R21,Research-led article,https://www.parentologyworld.com/articles/schoolrefusal,TLS-verified HTML retrieval,Current title concerns parents being heard; 2017 research and developing doctorate; slug does not match current topic closely,2026-11-03
+R22,RESET article,https://www.parentologyworld.com/articles/the-reset-framework-a-new-way-to-support-parents-and-teens,TLS-verified HTML retrieval,Existing authoritative framework page; search-service 404 differed from direct successful retrieval,2026-11-03
+R23,Bedford Today international-publication piece,https://www.bedfordtoday.co.uk/your-world/from-bedford-to-beijing-local-psychotherapists-parenting-books-published-in-china-8819176,Search/open,"Contributor piece by Laura, retrieved date 24 July 2026; reports Mandarin publication; not independent sales audit",2026-11-03
+R24,Girls English paperback,https://www.amazon.co.uk/dp/B0DBFCDG98,TLS-verified retailer HTML,"Exact title, independently published, 23 July 2024, ISBN 9798332741753, 167 pages, cover and description",2026-11-03
+R25,Boys English paperback,https://www.amazon.co.uk/dp/B0DK7B64VL,TLS-verified retailer HTML,"Exact title, independently published, 16 October 2024, ISBN 9798343451054, 187 pages, cover and description",2026-11-03
+R26,Boys bibliographic corroboration,https://www.worldofbooks.com/en-gb/products/parenting-teen-boys-with-confidence-a-therapist-s-guide-to-building-resilience-i-book-laura-thomas-9798343451054,Search/open,Paperback ISBN/publisher/date corroboration,2026-11-03
+R27,Girls audiobook,https://books.apple.com/gb/audiobook/parenting-unstoppable-girls-a-therapists-guide-to/id1780767325,Search/open,"Apple lists 10 December 2024, publisher Laura Thomas M.Ed., narrator Liz Jones; edition/platform-specific, not paperback date",2026-11-03
+R28,Google AI features,https://developers.google.com/search/docs/appearance/ai-features,Official documentation,SEO foundations; no special AI schema/files required; GSC Web measurement limits,2026-11-03
+R29,Book vocabulary,https://schema.org/Book,Official documentation,Book author/edition/ISBN metadata; no automatic rich-result eligibility,2026-11-03
+R30,Sanity pricing,https://www.sanity.io/pricing,Official live pricing,"Free manual editorial use, current limits/roles; scheduled drafts differentiated",2026-11-03
+R31,Sanity drafts,https://www.sanity.io/docs/content-lake/drafts-and-versions,Official documentation,Draft/published separation; scheduled drafts paid; explicit publication timestamps,2026-11-03
+R32,Sanity Studio,https://www.sanity.io/docs/studio,Official documentation,Established CMS editor; no custom backend needed,2026-11-03
+R33,WordPress posts API,https://developer.wordpress.org/rest-api/reference/posts/,Official documentation,Content/date/author/status fields for migration,2026-11-03
+R34,Self Space,https://theselfspace.com/,Official site content,"Therapy benchmark: accessible language, audience/service architecture, booking and spaces",2026-11-03
+R35,Esther Perel,https://www.estherperel.com/,Official site content,Author/expertise/media ecosystem benchmark,2026-11-03
+R36,Penguin UK,https://www.penguin.co.uk/,Official site content,Editorial publishing and cover-led book discovery benchmark,2026-11-03
+R37,Aesop case study,https://www.work.co/clients/aesop/,First-party agency case study,"Calm digital extension, modular content and motion principles; results not reused as Laura forecasts",2026-11-03
+R38,Zoo case study,https://www.pentagram.com/work/zoo,First-party agency case study,Immersive rooms/threshold storytelling benchmark; game-like complexity deliberately excluded,2026-11-03
+R39,Core Web Vitals,https://web.dev/articles/vitals,Official documentation,75th-percentile LCP/INP/CLS targets; proposal not field-tested site,2026-11-03
+R40,Motion shared layout,https://motion.dev/docs/react-layout-animations,Official documentation,"layout/layoutId; transform-based animation, persistent-boundary planning",2026-11-03
+R41,GSAP pricing,https://gsap.com/pricing/,Official live page,Current free library claim; final project licence review still needed,2026-11-03
+R42,Reduced motion,https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion,MDN platform reference,Reduced-motion media preference,2026-11-03
+R43,Next image optimisation,https://nextjs.org/docs/app/getting-started/images,Official documentation,Responsive image dimensions/delivery; pin compatible stable version at build time,2026-11-03
+R44,Counselling sitemap index,https://www.laurathomascounselling.co.uk/sitemap_index.xml,TLS-verified XML,Post/page/category/tag sitemap inventory,2026-11-03
+R45,Counselling post sitemap,https://www.laurathomascounselling.co.uk/post-sitemap.xml,TLS-verified XML,16 post URLs; agrees with public API,2026-11-03
+R46,Counselling page sitemap,https://www.laurathomascounselling.co.uk/page-sitemap.xml,TLS-verified XML,16 page URLs; agrees with public API,2026-11-03
+R47,Parentology parent service,https://www.parentologyworld.com/parents,TLS-verified HTML,Parent strategy/session/support content; choose approved preferred destination before launch,2026-11-03
+R48,Parentology resource access,https://www.parentologyworld.com/resources-access-page-1,Public HTML,"Guides, journals and videos; public reachability is not permission to re-publish or expose controlled resources",2026-11-03
+R49,Counselling teen mental health post,https://www.laurathomascounselling.co.uk/teen-mental-health-in-crisis-why-parents-are-the-missing-link/,Public HTML + API,Original date April 2025; overlaps in opening/theme with Parentology article,2026-11-03
+R50,Parentology teen mental health article,https://www.parentologyworld.com/articles/teen-mental-health-in-crisis,TLS-verified HTML,Existing content overlap; review ownership/canonicals without automatic deletion,2026-11-03

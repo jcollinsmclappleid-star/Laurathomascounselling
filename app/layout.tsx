@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { SiteFooter } from "@/components/shell/site-footer";
+import { SiteHeader } from "@/components/shell/site-header";
+import { cormorantGaramond, interLocal } from "./fonts";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -33,15 +29,17 @@ export default function RootLayout({
   return (
     <html
       lang="en-GB"
-      className={`${inter.variable} h-full scroll-smooth antialiased`}
+      className={`${interLocal.variable} ${cormorantGaramond.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-[var(--surface)] text-[var(--text)]">
+      <body className="flex min-h-full flex-col overflow-x-hidden bg-[var(--surface)] text-[var(--text)]">
         <a className="skip-to-content" href="#main-content">
           Skip to main content
         </a>
+        <SiteHeader />
         <main id="main-content" className="flex-1">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );

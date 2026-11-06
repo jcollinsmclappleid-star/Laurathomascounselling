@@ -1,8 +1,11 @@
 # Laura Thomas Counselling — Cursor Composer batches
 
-**Repo:** `jcollinsmclappleid-star/Laura-Thomas-Counselling-` (empty Next.js greenfield)  
+**Repo:** `jcollinsmclappleid-star/Laurathomascounselling`  
 **Reference pack path in repo:** `docs/reference/`  
-**Authority:** `docs/reference/START_IN_CURSOR.md` + `docs/reference/references/*.html` + Visual Direction 02. Archive `F_Phased_Cursor_Prompts.md` / `E_…Specification.md` are supporting specs; do not revive superseded cream-only homepage concepts as the final look.
+**Authority:** `docs/reference/00_START_HERE.md` → `START_IN_CURSOR.md` → `DESIGN_TOKENS.md` → `references/*.html` + Visual Direction 02.
+
+**Batch 0 (complete):** Next.js 16 App Router base repurposed from donor tooling — tokens, shared components, SEO stubs. No full pages.  
+**Batch 1 extends Batch 0** — do not re-scaffold or run `create-next-app`; add fonts, public assets, header/footer shell only.
 
 ## How to run
 1. Open the Laura repo in Cursor.
@@ -15,7 +18,8 @@
 - Design tokens: forest `#173e35`, cream `#f4efe4`, sage `#dce3d3`, terracotta `#9b4935`, clay `#e6cbbb`. Headings: Cormorant Garamond; body/nav: Inter (files under `docs/reference/assets/font-*.woff2` — note they are TrueType data in `.woff2` names; follow `docs/reference/archive/assets/fonts.css` / convert correctly).
 - Use real logo `original-00-00.png`, portrait `laura.webp`, Parentology logo `logo-parentology-alpha.webp`, verified covers `book-girls.webp` / `book-boys.webp`. `room.webp` and `family.webp` are **generated concept** images — flag for client approval; do not present as Laura’s real practice/clients.
 - Preserve useful URLs: `/`, `/services/`, `/counselling/`, `/couples-counselling/`, `/family-therapy-2/`, `/counselling-for-young-people/`, `/online-counselling/`, `/parentology/`, `/books/`, `/books/[slug]/`, `/counselling-blog/`, `/qualified-counsellor/`, `/fully-qualified/`, `/faq-and-fees/`, `/contact-me/`, plus original root article slugs when migrating.
-- **Do not invent** credentials, fees, session formats, availability, testimonials, chapter quotes, or contact details. Prefer pack / WordPress inventory facts, or clear `[PLACEHOLDER: …]` copy.
+- **Do not invent** credentials, fees, session formats, availability, testimonials, chapter quotes, or contact details. Prefer pack facts, or clear `[PLACEHOLDER: …]` copy.
+- **No WordPress / legacy content migration** in Composer batches unless Joshua explicitly approves a dedicated migration effort — no fetching, scraping, importing, recreating articles/pages, or building migration inventories during design/infrastructure work.
 - Keep `docs/reference/` **out of** `public/` and the production bundle. Copy needed assets into `public/` or import via the app asset pipeline.
 - No CMS backend, no live enquiry form success simulation, no DNS/deploy, no Parentology rebuild/checkout.
 - Two worlds, one Laura: both homepage pathways stay **inside** the counselling site; Parentology World remains a separate site with contextual outbound links only.
@@ -23,7 +27,8 @@
 ---
 
 ## Batch titles
-1. Next.js scaffold + design tokens + fonts + layout shell  
+0. Codebase assessment + Next.js base (complete)  
+1. Fonts, assets, header/footer layout shell (extends Batch 0)  
 2. Homepage (desktop + mobile first screen)  
 3. Counselling hub + individual service template  
 4. Local Parentology gateway  
@@ -35,65 +40,14 @@
 
 ---
 
-## Batch 1 — Next.js scaffold + design tokens + fonts + layout shell
+## Batch 1 — Fonts, assets, layout shell (extends Batch 0)
 
 ```text
-You are building the Laura Thomas Counselling marketing site in THIS repository.
-This is Batch 1 of 9. Implement ONLY this batch, then stop and commit.
+Batch 1 extends the Batch 0 Next.js base — do NOT run create-next-app or re-scaffold.
 
-CONTEXT
-- Repo is empty / greenfield. Create a Next.js App Router + TypeScript app at the repository root (not a nested second app).
-- Read before coding:
-  - docs/reference/00_START_HERE.md
-  - docs/reference/START_IN_CURSOR.md (strategy + acceptance; ignore any instruction to “reuse a non-Next donor stack” — this repo is empty and Next.js is required)
-  - docs/reference/DESIGN_TOKENS.md
-  - docs/reference/README.md
-  - docs/reference/archive/assets/fonts.css
-  - docs/reference/archive/E_Cursor_Technical_Build_Specification.md (stack notes only; do not implement all routes yet)
-- Visual authority for later batches: docs/reference/references/Home.html and Mobile_Home.html. Do NOT port full pages in Batch 1.
+Scope: copy fonts (TrueType files named .woff2 in the pack — rename to .ttf or set format correctly), wire next/font/local, copy listed assets into public/, Header + Footer shell, stub home. Read docs/reference/references/Home.html + Mobile_Home.html for header chrome only.
 
-CREATE / CHANGE (exact scope)
-1. Scaffold Next.js (App Router, TypeScript, ESLint). Prefer `create-next-app` with App Router, TS, no src/ directory OR with src/ — pick one and stay consistent. Include a lockfile. Use the package manager already present if any; otherwise npm.
-2. Copy runtime assets from the reference pack into the app (NOT the whole docs/reference tree into public):
-   - public/brand/original-00-00.png  (counselling logo)
-   - public/brand/logo-parentology-alpha.webp
-   - public/images/laura.webp
-   - public/images/room.webp
-   - public/images/family.webp
-   - public/images/book-girls.webp
-   - public/images/book-boys.webp
-   - public/images/detail.webp (if present)
-   - fonts: place the six font-*.woff2 files where next/font/local can load them (e.g. app/fonts/ or src/app/fonts/), and keep licence texts under docs/reference/licences (already in repo) — optionally also copy licences to a LICENSES/ or docs/fonts/ note.
-3. Design tokens as CSS variables (global CSS, e.g. app/globals.css):
-   - --color-forest: #173e35
-   - --color-cream: #f4efe4
-   - --color-sage: #dce3d3
-   - --color-terracotta: #9b4935
-   - --color-clay: #e6cbbb
-   - Plus semantic aliases: --surface, --text, --accent, --soft-surface
-   - Parentology world overrides can be prepared as a data-world="parentology" selector (warmer clay/terracotta) but do not build the gateway yet.
-   - Fluid type scale stubs for display / h1 / body / kicker; max content width ~1296px; 8px spacing scale helpers.
-4. Fonts via next/font/local (Cormorant Garamond 400/500 + italic 400; Inter 400/500/600). Wire CSS variables --font-serif / --font-sans onto <html> or <body>. Follow the pack’s @font-face mapping in docs/reference/archive/assets/fonts.css. If format('truetype') is required because of the TrueType-in-.woff2 quirk, match that; do not invent other families.
-5. Layout shell only:
-   - app/layout.tsx: html lang="en", metadata title/description placeholders (“Laura Thomas Counselling” / Bedford & online — no invented claims), skip-to-content link, apply fonts + globals.
-   - components/shell/Header.tsx: cream bar, real logo img from /brand/original-00-00.png with alt “Laura Thomas Counselling”, desktop nav links (Counselling → /services/, Parentology → /parentology/, Books → /books/, About Laura → /qualified-counsellor/), CTA “Start a conversation” → /contact-me/, mobile Menu control (≥44px tap) that toggles an accessible disclosure (aria-expanded, Escape closes, focus return). No fake booking.
-   - components/shell/Footer.tsx: simple footer with credentials line using ONLY verified pack facts: “M.Ed · MNCPS (Accred.)”, “Published parenting author”, “Wixams, Bedford & online”. No invented phone/email — use placeholder links to /contact-me/ if needed.
-   - app/page.tsx: temporary stub that says the shell is ready and lists the Batch 2 homepage goal; use cream background and tokens so the shell is visually on-brand. Do not implement the photographic homepage yet.
-6. Add a short AGENTS.md at repo root pointing future Composer runs at docs/reference/COMPOSER_BATCHES.md and the authority order in docs/reference/README_PACK.md.
-7. .gitignore appropriate for Next.js. Ensure docs/reference stays tracked. Do not commit secrets or .env with credentials.
-
-DO NOT DO IN BATCH 1
-- Full homepage, world selector, motion, service pages, CMS, forms that pretend to submit, Sanity, redirects migration, or copying docs/reference HTML into React as a blob.
-
-ACCEPTANCE (must all pass before you stop)
-- `npm run build` succeeds.
-- `npm run lint` succeeds (or fix config so it does).
-- `npm run dev` shows Header + Footer + stub home on cream; logo loads; desktop nav links have correct hrefs; mobile menu opens/closes with keyboard + Escape.
-- At 375px width: no horizontal scroll on the stub page; menu control usable.
-- Fonts apply (serif headings / sans body) without console 404s for font files.
-- Stop. Commit with message: `chore(batch-1): Next.js scaffold, tokens, fonts, layout shell`.
-
-REPORT briefly: files created, any token/font quirks found, and confirm Batch 2 should implement the homepage from docs/reference/references/Home.html + Mobile_Home.html.
+Acceptance: build + lint; 375px no horizontal scroll; commit `chore(batch-1): fonts, assets, layout shell` and stop. Batch 2 implements the homepage.
 ```
 
 ---
@@ -158,18 +112,19 @@ Acceptance: build + lint; covers undistorted; commit `feat(batch-5): books showc
 
 ---
 
-## Batch 6 — Article template, blog listing, one recovered article
+## Batch 6 — Article template + blog listing (placeholder content only)
 
 ```text
-Batch 6 of 9. Read docs/reference/references/Article.html, previews/Article.jpg, archive/registers/WordPress_Content_Inventory.csv, START_IN_CURSOR migration section.
+Batch 6 of 9. Read docs/reference/references/Article.html and previews/Article.jpg for layout only — do NOT recover WordPress posts or read WordPress_Content_Inventory.csv for migration.
 
 Implement structured content files (MD/MDX or JSON) + shared Article template:
-- app/counselling-blog/page.tsx listing
-- One recovered article at its ORIGINAL root slug from the inventory (e.g. a real post URL path). Preserve title, credited author, dates; strip nav/comments/recommendation chrome from body; if full body is unavailable, use excerpt + `[PLACEHOLDER: full body pending migration]` and still prove the route.
-- Shared tag-archive template stub generating from the same collection (even if only one tag).
-- docs/MIGRATION_INVENTORY.md listing inventory counts and what remains.
+- app/counselling-blog/page.tsx listing with placeholder sample entries (clearly marked draft — not migrated WordPress content)
+- One sample article route using placeholder title/body to prove the template (no original root slug recovery)
+- Shared tag-archive template stub generating from the same placeholder collection (even if only one tag)
 
-No CMS. No rewriting all historical articles. Acceptance: build + lint; article URL works; commit `feat(batch-6): article template + one recovered post` and stop.
+No CMS. No WordPress recovery or migration. Full historical content migration deferred until Joshua approves.
+
+Acceptance: build + lint; template routes work; commit `feat(batch-6): article template + blog listing placeholders` and stop.
 ```
 
 ---
@@ -202,11 +157,11 @@ Acceptance: build + lint; reduced-motion OK; commit `feat(batch-8): world select
 
 ---
 
-## Batch 9 — SEO foundations
+## Batch 9 — SEO foundations (technical only)
 
 ```text
-Batch 9 of 9. Implement next metadata for built routes, app/sitemap.ts, app/robots.ts, truthful JSON-LD stubs (Person / Organization counselling only with pack facts — Wixams/Bedford & online; Book where pages exist; BreadcrumbList). No fabricated ratings, medical licences, or AI-guarantee schema. Canonical + trailing-slash consistency. Preview/noindex notes if any preview path exists.
+Batch 9 of 9. Implement next metadata for built routes, app/sitemap.ts, app/robots.ts, truthful JSON-LD stubs (Person / Organization counselling only with pack facts — Wixams/Bedford & online; Book where pages exist; BreadcrumbList). No fabricated ratings, medical licences, or AI-guarantee schema. No long-form or SEO copywriting — metadata and structured data only. Canonical + trailing-slash consistency. Preview/noindex notes if any preview path exists.
 
-Acceptance: build + lint; sitemap lists only real routes; commit `feat(batch-9): seo metadata sitemap json-ld` and stop. Summarise remaining work (full WP migration, Sanity decision, fee confirmation, asset approvals for concept photos).
+Acceptance: build + lint; sitemap lists only real routes; commit `feat(batch-9): seo metadata sitemap json-ld` and stop. Summarise remaining work (optional future migration if Joshua approves, Sanity decision, fee confirmation, asset approvals for concept photos).
 ```
 

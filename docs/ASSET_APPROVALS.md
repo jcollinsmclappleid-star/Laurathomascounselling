@@ -17,7 +17,7 @@
 | Laura in doorway (about) | Same (resized crop) | `public/images/laura-doorway-about.webp` |
 | Intro video | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2026/04/WhatsApp-Video-2026-04-13-at-17.59.21.mp4` | `public/media/laura-intro.mp4` |
 | Video poster (frame @ 1s) | Extracted from intro video | `public/images/laura-video-poster.webp` |
-| Logo — navigation on green (live v2a, transparent, cream wordmark) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2022/05/laura-logo-v2a-1280x393.jpg` | `public/brand/laura-logo-nav-on-green.webp` |
+| Logo — navigation on green (live v2a, transparent, cream wordmark) | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2022/05/laura-logo-v2a-1280x393.jpg` | `public/brand/laura-logo-nav-on-green.webp` — tree trunk in cream `#fff8e9` for contrast on the forest bar |
 | Logo — navigation on cream (same asset, original grey wordmark) | Same | `public/brand/laura-logo-nav-on-cream.webp` |
 | Teen / parent portrait | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2019/12/Bedford-Counselling-1111-980x1471.jpg` | `public/images/teen-parent-support.webp` |
 | Parentology logo (live header wordmark) | `https://images.squarespace-cdn.com/content/v1/66fd780b0c462278f659f97b/b09e73ae-01d0-4177-b36e-6f108285f899/Copy+of+Black+and+White+Minimalist+Elegant+Modern+Typography++Creative+Studio+Brand+Logo+%282000+x+1200+px%29+%285%29.png` | `public/images/parentology/parentology-logo.webp` |

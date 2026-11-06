@@ -1,17 +1,18 @@
 export const primaryNavLinks = [
   { label: "Counselling", href: "/services/" },
-  { label: "Parentology", href: "/parentology/" },
-  { label: "Books", href: "/books/" },
+  { label: "Parenting & teenagers", href: "/parentology/" },
   { label: "About Laura", href: "/qualified-counsellor/" },
+  { label: "Books", href: "/books/" },
+  { label: "Contact", href: "/contact-me/" },
 ] as const;
 
 export const contactCta = {
-  label: "Start a conversation",
+  label: "Contact",
   href: "/contact-me/",
 } as const;
 
+/** Location and authorship only. Qualification lines stay off the page until Laura confirms them. */
 export const verifiedCredentials = [
-  "M.Ed · MNCPS (Accred.)",
   "Published parenting author",
   "Wixams, Bedford & online",
 ] as const;

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-06",
+  "sitemap_urls": 113,
+  "excluded_blog_urls": 60,
+  "audited_non_blog_urls": 55,
+  "http_200": 54,
+  "http_404": 1,
+  "new_parent_routes_proposed": 17,
+  "launch_parent_routes": 8,
+  "images_registered": 128,
+  "reference_images_downloaded": 24,
+  "youtube_ids": 6,
+  "unique_drive_files": 19,
+  "revision": 2,
+  "parenting_root": "/parenting/",
+  "rewritten_p1_pages": 8,
+  "conditional_intro_and_development_drafts": 9,
+  "existing_counselling_urls_preserved": true,
+  "live_sites_changed": false
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "source_page": "https://www.parentologyworld.com/",
+    "label": "Book a call",
+    "destination": "https://calendar.app.google/yxaMjxFQTXHnSwTw6",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/",
+    "label": "Book a call",
+    "destination": "https://calendar.app.google/5ShyUAQktuhpr2Cz5",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/",
+    "label": "Buy Now!",
+    "destination": "https://www.amazon.co.uk/Parenting-Unstoppable-Girls-Independent-Self-Esteem/dp/B0DBFCDG98/ref=tmm_pap_swatch_0",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/",
+    "label": "Buy Now!",
+    "destination": "https://amzn.eu/d/13P0oMB",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/home",
+    "label": "Book a call",
+    "destination": "https://calendar.app.google/yxaMjxFQTXHnSwTw6",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/home",
+    "label": "Book a call",
+    "destination": "https://calendar.app.google/5ShyUAQktuhpr2Cz5",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/home",
+    "label": "Buy Now!",
+    "destination": "https://www.amazon.co.uk/Parenting-Unstoppable-Girls-Independent-Self-Esteem/dp/B0DBFCDG98/ref=tmm_pap_swatch_0",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/home",
+    "label": "Buy Now!",
+    "destination": "https://amzn.eu/d/13P0oMB",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/about",
+    "label": "Parenting Teen Boys with Confidence",
+    "destination": "https://amzn.eu/d/8iarNJ3",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/about",
+    "label": "Parenting Unstoppable Girls",
+    "destination": "https://amzn.eu/d/fpJbCE5",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/about",
+    "label": "Lets Talk",
+    "destination": "https://calendar.app.google/5ShyUAQktuhpr2Cz5",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/contact",
+    "label": "",
+    "destination": "https://www.facebook.com/groups/348316844627434/",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/terms-and-conditions",
+    "label": "info@parentologyworld.com",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/refund",
+    "label": "info@parentologyworld.com",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/refund",
+    "label": "info@parentologywolrd.com",
+    "destination": "mailto:info@parentologywolrd.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/power",
+    "label": "Book a Discovery Call",
+    "destination": "https://calendar.app.google/aHupr2J5KT6hZTms7",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/power",
+    "label": "Prefer to skip the chat? Text me and lets just get going!",
+    "destination": "sms:07915431739",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/education",
+    "label": "Book a Call",
+    "destination": "https://calendar.app.google/aHupr2J5KT6hZTms7",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/education",
+    "label": "Start Understanding Your Teen Today",
+    "destination": "mailto:info@parentologyworld.com?subject=Book%20a%20call!",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intensive",
+    "label": "Book a Call",
+    "destination": "https://calendar.app.google/aHupr2J5KT6hZTms7",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/change",
+    "label": "Book a Discovery Call",
+    "destination": "https://calendar.app.google/aHupr2J5KT6hZTms7",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page-2",
+    "label": "Contact Rebecca",
+    "destination": "mailto:rebeccafishwickcounselling@gmail.com?subject=Hi%20I%20saw%20you%20on%20Parentology%20website!",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page-2-1",
+    "label": "Contact Kate",
+    "destination": "mailto:Kate@empassioncounselling.co.uk?subject=Hi%20I%20saw%20you%20on%20Parentology%20website!",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page-2-1-1",
+    "label": "Contact Glendene Care",
+    "destination": "mailto:barb.bailey@glendenecare.co.uk?subject=Hi%20I%20saw%20you%20on%20Parentology%20website!",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page-2-1-1-1",
+    "label": "Contact Stacey",
+    "destination": "mailto:headinsidecounselling@outlook.com?subject=Hi%20I%20saw%20you%20on%20Parentology%20website!",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/parents",
+    "label": "Get support now",
+    "destination": "https://calendar.app.google/5ShyUAQktuhpr2Cz5",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/parents",
+    "label": "Have a question?",
+    "destination": "mailto:info@parentologyworld.com?subject=Enquiry%20About%20Strategy%20Session%20Please",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/parents",
+    "label": "Enquire About Sessions",
+    "destination": "mailto:info@parentologyworld.com?subject=Enquire%20About%20Coaching%20and%20Counselling",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/resources",
+    "label": "",
+    "destination": "https://www.amazon.co.uk/Parenting-Teen-Boys-Confidence-Independence/dp/B0DK7B64VL/ref=pd_bxgy_thbs_d_sccl_1/261-2571104-1371550?pd_rd_w=b1IXf&content-id=amzn1.sym.ec630614-3f9e-4b7f-ba9a-fe89f8e4113f&pf_rd_p=ec630614-3f9e-4b7f-ba9a-fe89f8e4113f&pf_rd_r=YHDE8D2F5YQ2NBTZQEXM&pd_rd_wg=NPgJM&pd_rd_r=81110788-25c3-4e28-846c-d30357d3f4e3&pd_rd_i=B0DK7B64VL&psc=1",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/resources",
+    "label": "View Books on Amazon",
+    "destination": "https://www.amazon.co.uk/Parenting-Unstoppable-Girls-Independent-Self-Esteem/dp/B0DBFCDG98/ref=pd_bxgy_thbs_d_sccl_2/261-2571104-1371550?pd_rd_w=8sLwE&content-id=amzn1.sym.ec630614-3f9e-4b7f-ba9a-fe89f8e4113f&pf_rd_p=ec630614-3f9e-4b7f-ba9a-fe89f8e4113f&pf_rd_r=ZGJ6NEXRRW0M16BCR3KF&pd_rd_wg=I6RPp&pd_rd_r=ac3d5c97-d029-46f5-bd4c-a408ff3a4f7c&pd_rd_i=B0DBFCDG98&psc=1",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/resources",
+    "label": "Join the Facebook Group",
+    "destination": "https://www.facebook.com/groups/348316844627434/",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/free-support-1",
+    "label": "Book a call here",
+    "destination": "https://calendar.app.google/YX5nJbkPEcrXpUx99",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/media",
+    "label": "Parenting Unstoppable Girls",
+    "destination": "https://amzn.eu/d/d6tuEXy",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/media",
+    "label": "Parenting Teen Boys with Confidence",
+    "destination": "https://amzn.eu/d/ieUam4J",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "Book 60-Min Session →",
+    "destination": "https://calendar.app.google/p9uEyEsySnsYS6nN8",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "Book 90-Min Session →",
+    "destination": "https://calendar.app.google/PyCjQNCi1hAVvZkN9",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "Email",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "Book a Call",
+    "destination": "https://calendar.app.google/yxaMjxFQTXHnSwTw6",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "info@parentologyworld.com",
+    "destination": "mailto:info@parentologyworld.com?",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/exam-support",
+    "label": "",
+    "destination": "https://www.facebook.com/groups/348316844627434/",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/examhelp",
+    "label": "Get a clear plan to support your teen",
+    "destination": "https://calendar.app.google/BBEj92V1b3raUm3e9",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/examhelp",
+    "label": "Contact",
+    "destination": "mailto:info@parentologyworld.com?",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelm",
+    "label": "Get Instant Access →",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelm",
+    "label": "Contact",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch-1",
+    "label": "Start a Conversation",
+    "destination": "https://calendar.app.google/jKLT1jWzkLuA4PyW8",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch-1",
+    "label": "Contact",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch-1",
+    "label": "Book a Call",
+    "destination": "https://calendar.app.google/yxaMjxFQTXHnSwTw6",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch-1",
+    "label": "info@parentologyworld.com",
+    "destination": "mailto:info@parentologyworld.com?",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch-1",
+    "label": "",
+    "destination": "https://www.facebook.com/groups/348316844627434/",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page",
+    "label": "Book a Call With Laura",
+    "destination": "https://calendar.app.google/jKLT1jWzkLuA4PyW8",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch",
+    "label": "Book a Call with Laura",
+    "destination": "https://calendar.app.google/oLi96RB1omo9JdPF8",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouch",
+    "label": "Book a Call With Laura",
+    "destination": "https://calendar.google.com/appointments/schedules/AcZssZ3yQQKpGV0KCYhoNBlJrS-PIGlwGdCVJudkJoDLpqY1GvSXdlng-9ke3HabwesQQpFOZSgPkeN1",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/new-page-1",
+    "label": "Book a Call With Laura",
+    "destination": "https://calendar.google.com/appointments/schedules/AcZssZ3yQQKpGV0KCYhoNBlJrS-PIGlwGdCVJudkJoDLpqY1GvSXdlng-9ke3HabwesQQpFOZSgPkeN1",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouchsupport",
+    "label": "Book a Call with Laura",
+    "destination": "https://calendar.app.google/oLi96RB1omo9JdPF8",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/intouchsupport",
+    "label": "Book a Call With Laura",
+    "destination": "https://calendar.google.com/appointments/schedules/AcZssZ3yQQKpGV0KCYhoNBlJrS-PIGlwGdCVJudkJoDLpqY1GvSXdlng-9ke3HabwesQQpFOZSgPkeN1",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset",
+    "label": "Overwhelm Reset: Managing Your Teen When You’re Exhausted Sale Price: £39.00 Original Price: £49.00 ",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset",
+    "label": "Self-Harm and Suicide Awareness Workshop £19.00",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/self-harm-and-suicide-awareness-workshop",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset/mental-health",
+    "label": "Overwhelm Reset: Managing Your Teen When You’re Exhausted Sale Price: £39.00 Original Price: £49.00 ",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset/parent-support",
+    "label": "Overwhelm Reset: Managing Your Teen When You’re Exhausted Sale Price: £39.00 Original Price: £49.00 ",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "label": "Overwhelm Reset: Managing Your Teen When You’re Exhausted",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/parentsupport",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/overwhelmreset/p/self-harm-and-suicide-awareness-workshop",
+    "label": "Self-Harm and Suicide Awareness Workshop",
+    "destination": "https://www.parentologyworld.com/overwhelmreset/p/self-harm-and-suicide-awareness-workshop",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/privacy-policy",
+    "label": "info@parentologyworld.com",
+    "destination": "mailto:info@parentologyworld.com",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/parent-teen-connect/home",
+    "label": "Join via Facebook",
+    "destination": "https://www.facebook.com/groups/594552953734155",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  },
+  {
+    "source_page": "https://www.parentologyworld.com/safeguarding",
+    "label": "LSCB@bedford.gov.uk",
+    "destination": "mailto:LSCB@bedford.gov.uk",
+    "verification": "Link observed only; booking, payment and delivery not tested",
+    "implementation": "Use only after destination owner and purpose are confirmed"
+  }
+]

@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { contactCta, primaryNavLinks } from "@/components/shell/site-nav";
+import { primaryNavLinks } from "@/components/shell/site-nav";
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const isHomeOverlay = pathname === "/";
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
@@ -40,49 +43,71 @@ export function SiteHeader() {
     };
   }, [menuOpen]);
 
+  const onForestBar = isHomeOverlay;
+
   return (
-    <header className="sticky top-0 z-50 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]">
-      <div className="mx-auto flex h-16 max-w-[var(--content-max)] items-center justify-between gap-4 px-[18px] md:h-[100px] md:px-10 lg:px-[65px]">
+    <header
+      className={cn(
+        "z-50 w-full",
+        onForestBar
+          ? "absolute inset-x-0 top-0 border-b border-white/15 bg-[#102f2c]/94 text-[#fff8e9] backdrop-blur-sm md:bg-[#102f2c]/96"
+          : "sticky top-0 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]",
+      )}
+    >
+      <div
+        className={cn(
+          "mx-auto flex max-w-[var(--content-max)] items-center justify-between gap-4 px-[18px] md:px-10 lg:px-[65px]",
+          onForestBar ? "h-16" : "h-16 md:h-[100px]",
+        )}
+      >
         <Link
           href="/"
-          className="relative block h-[60px] w-[193px] shrink-0 md:h-[88px] md:w-[245px]"
+          className={cn(
+            "relative block shrink-0",
+            onForestBar
+              ? "h-11 w-[145px] md:h-12 md:w-[158px]"
+              : "h-12 w-[158px] md:h-14 md:w-[185px]",
+          )}
         >
           <Image
-            src="/brand/original-00-00.png"
+            src={
+              onForestBar
+                ? "/brand/laura-logo-nav-on-green.webp"
+                : "/brand/laura-logo-nav-on-cream.webp"
+            }
             alt="Laura Thomas Counselling"
             fill
             className="object-contain object-left"
-            sizes="(max-width: 768px) 193px, 245px"
+            sizes="185px"
             priority
           />
         </Link>
 
         <nav
-          className="hidden items-center gap-8 text-xs md:flex lg:gap-9"
+          className="hidden items-center gap-6 text-xs xl:flex xl:gap-8"
           aria-label="Primary"
         >
           {primaryNavLinks.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="min-h-[44px] py-3 leading-none transition hover:text-[var(--accent)]"
+              className={cn(
+                "inline-flex min-h-[44px] items-center py-3 leading-none transition hover:text-[var(--accent)]",
+                onForestBar && "hover:text-white",
+              )}
             >
               {item.label}
             </Link>
           ))}
-          <Link
-            href={contactCta.href}
-            className="inline-flex min-h-[44px] items-center gap-1.5 border border-[#657a69]/80 px-[22px] py-3 text-xs font-medium transition hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)]"
-          >
-            {contactCta.label}
-            <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.8} />
-          </Link>
         </nav>
 
         <button
           ref={menuButtonRef}
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs md:hidden"
+          className={cn(
+            "inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs xl:hidden",
+            onForestBar && "text-[#fff8e9]",
+          )}
           aria-expanded={menuOpen}
           aria-controls={panelId}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -102,7 +127,7 @@ export function SiteHeader() {
       <div
         id={panelId}
         className={cn(
-          "border-t border-[#b7bda9] bg-[var(--color-cream)] md:hidden",
+          "border-t border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)] xl:hidden",
           !menuOpen && "hidden",
         )}
       >
@@ -117,14 +142,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href={contactCta.href}
-            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 border border-[#657a69]/80 px-5 py-3 text-sm font-medium"
-            onClick={closeMenu}
-          >
-            {contactCta.label}
-            <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.8} />
-          </Link>
         </nav>
       </div>
     </header>

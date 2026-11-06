@@ -1,0 +1,612 @@
+[
+  {
+    "route_id": "R01",
+    "priority": "P1",
+    "path": "/parenting/",
+    "title": "Support for you. Understanding for your teenager.",
+    "source_pages": [
+      "https://www.parentologyworld.com/",
+      "https://www.parentologyworld.com/home",
+      "https://www.parentologyworld.com/about"
+    ],
+    "purpose": "Introduce the parent journey and help a visitor choose education, parent support, In-Touch or counselling.",
+    "template": "Parent hub",
+    "sections": [
+      "You do not have to arrive with the answer",
+      "Start with what you need",
+      "One person behind both parts of the work",
+      "Get to know my approach"
+    ],
+    "related_routes": [
+      "/parenting/support-for-you/",
+      "/parenting/ongoing-guidance/",
+      "/parenting/practical-tools/",
+      "/parenting/responding-with-reset/",
+      "/books/"
+    ],
+    "image_ids": [
+      "IMG006",
+      "IMG010",
+      "IMG001"
+    ],
+    "video_ids": [
+      "YJPXSzILdv4"
+    ],
+    "cta": "Explore support for you",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Parenting & teenagers",
+    "content_draft_id": "R01",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R02",
+    "priority": "P1",
+    "path": "/parenting/support-for-you/",
+    "title": "Find the support that fits your family",
+    "source_pages": [
+      "https://www.parentologyworld.com/parents",
+      "https://www.parentologyworld.com/free-support-1"
+    ],
+    "purpose": "Explain who parent support is for and distinguish parent coaching from counselling and support for the young person.",
+    "template": "Service overview",
+    "sections": [
+      "Different needs deserve a clear choice",
+      "Practical parent coaching",
+      "Counselling for you",
+      "Support for your teenager",
+      "An enquiry is a place to begin"
+    ],
+    "related_routes": [
+      "/parenting/ongoing-guidance/",
+      "/parenting/a-plan-for-your-family/",
+      "/counselling/",
+      "/family-therapy-2/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG046",
+      "IMG006"
+    ],
+    "video_ids": [],
+    "cta": "Ask about suitable support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Support for you",
+    "content_draft_id": "R02",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R03",
+    "priority": "P1",
+    "path": "/parenting/ongoing-guidance/",
+    "title": "A continuing connection through In-Touch",
+    "source_pages": [
+      "https://www.parentologyworld.com/intouch",
+      "https://www.parentologyworld.com/intouchsupport",
+      "https://www.parentologyworld.com/intouch-1",
+      "https://www.parentologyworld.com/new-page",
+      "https://www.parentologyworld.com/new-page-1"
+    ],
+    "purpose": "Explain Laura’s messaging-led parent support without implying an emergency or overnight service.",
+    "template": "Signature service",
+    "sections": [
+      "When another question comes up",
+      "Understand the arrangement before you begin",
+      "Clear boundaries matter",
+      "How this connects to the wider work",
+      "Find out whether it fits"
+    ],
+    "related_routes": [
+      "/parenting/support-for-you/",
+      "/parenting/responding-with-reset/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG075",
+      "IMG077",
+      "IMG076"
+    ],
+    "video_ids": [],
+    "cta": "Ask about In-Touch",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "In-Touch guidance",
+    "content_draft_id": "R03",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R04",
+    "priority": "P1",
+    "path": "/parenting/responding-with-reset/",
+    "title": "A more considered response, with RESET",
+    "source_pages": [
+      "https://www.parentologyworld.com/about",
+      "https://www.parentologyworld.com/free-support-1"
+    ],
+    "purpose": "Provide one consistent explanation of the framework across books, services and education.",
+    "template": "Method page",
+    "sections": [
+      "A structure for the conversation",
+      "Recognise the issue",
+      "Empathise in the moment",
+      "Say what matters",
+      "Emotionally regulate together",
+      "Take action with confidence",
+      "Explore it with the right context"
+    ],
+    "related_routes": [
+      "/parenting/ongoing-guidance/",
+      "/parenting/support-for-you/",
+      "/parenting/learn-at-your-pace/when-parenting-feels-too-much/",
+      "/books/"
+    ],
+    "image_ids": [
+      "IMG013"
+    ],
+    "video_ids": [],
+    "cta": "Explore parent support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "The RESET approach",
+    "content_draft_id": "R04",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R05",
+    "priority": "P1",
+    "path": "/parenting/practical-tools/",
+    "title": "Something useful for the moment you are in",
+    "source_pages": [
+      "https://www.parentologyworld.com/resources",
+      "https://www.parentologyworld.com/resources-access-page",
+      "https://www.parentologyworld.com/resources-access-page-1",
+      "https://www.parentologyworld.com/resourceva",
+      "https://www.parentologyworld.com/member-site-homepage-1",
+      "https://www.parentologyworld.com/watch-now"
+    ],
+    "purpose": "Curate books, guides and video entry points with explicit free, sign-up or paid access labels.",
+    "template": "Resource hub",
+    "sections": [
+      "Find your starting point",
+      "Read",
+      "Watch",
+      "Learn in your own time",
+      "Know what happens next",
+      "When a resource is not enough"
+    ],
+    "related_routes": [
+      "/books/",
+      "/parenting/learn-at-your-pace/",
+      "/parenting/responding-with-reset/"
+    ],
+    "image_ids": [
+      "IMG053",
+      "IMG054",
+      "IMG055"
+    ],
+    "video_ids": [
+      "UynmunzC0mQ",
+      "nCYBW0X-s4Q",
+      "878QAeVv8Wk",
+      "2ZsoL3xHAy8",
+      "kqbBZlE19n0"
+    ],
+    "cta": "Browse practical tools",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Practical tools",
+    "content_draft_id": "R05",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R06",
+    "priority": "P1",
+    "path": "/parenting/learn-at-your-pace/",
+    "title": "Make room to understand, in your own time",
+    "source_pages": [
+      "https://www.parentologyworld.com/resources",
+      "https://www.parentologyworld.com/overwhelmreset",
+      "https://www.parentologyworld.com/livesessions"
+    ],
+    "purpose": "Separate on-demand paid workshops from free replays and live services.",
+    "template": "Workshop index",
+    "sections": [
+      "Choose the subject that matters now",
+      "See the detail before you decide",
+      "Learning connected to Laura’s work",
+      "Access through Parentology",
+      "Looking for something for a group?"
+    ],
+    "related_routes": [
+      "/parenting/learn-at-your-pace/when-parenting-feels-too-much/",
+      "/parenting/learn-at-your-pace/understanding-self-harm/"
+    ],
+    "image_ids": [
+      "IMG053"
+    ],
+    "video_ids": [],
+    "cta": "Explore the workshops",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Learn at your pace",
+    "content_draft_id": "R06",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R07",
+    "priority": "P1",
+    "path": "/parenting/learn-at-your-pace/when-parenting-feels-too-much/",
+    "title": "When parenting feels too much",
+    "source_pages": [
+      "https://www.parentologyworld.com/overwhelm",
+      "https://www.parentologyworld.com/overwhelmreset/p/parentsupport"
+    ],
+    "purpose": "Create a concise informative local sales page for the existing workshop; keep fulfilment external.",
+    "template": "Workshop detail",
+    "sections": [
+      "When your own experience needs attention",
+      "What you are choosing",
+      "A place within the wider picture",
+      "Check the current product details"
+    ],
+    "related_routes": [
+      "/parenting/learn-at-your-pace/",
+      "/parenting/responding-with-reset/",
+      "/parenting/ongoing-guidance/"
+    ],
+    "image_ids": [
+      "IMG046",
+      "IMG076"
+    ],
+    "video_ids": [],
+    "cta": "View the workshop on Parentology",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Parent overwhelm workshop",
+    "content_draft_id": "R07",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R08",
+    "priority": "P1",
+    "path": "/parenting/learn-at-your-pace/understanding-self-harm/",
+    "title": "Understanding self-harm: a workshop for parents",
+    "source_pages": [
+      "https://www.parentologyworld.com/overwhelmreset/p/self-harm-and-suicide-awareness-workshop",
+      "https://www.parentologyworld.com/resources"
+    ],
+    "purpose": "Describe the existing educational workshop with appropriate professional boundaries; no new clinical advice is authored in this audit.",
+    "template": "Workshop detail",
+    "sections": [
+      "Understand the scope first",
+      "The workshop and toolkit",
+      "Education and individual support have different roles",
+      "Explore before purchasing",
+      "A careful connection to further reading"
+    ],
+    "related_routes": [
+      "/parenting/learn-at-your-pace/",
+      "/parenting/support-for-you/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG053"
+    ],
+    "video_ids": [],
+    "cta": "Read the Parentology workshop details",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Self-harm awareness workshop",
+    "content_draft_id": "R08",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R09",
+    "priority": "P2",
+    "path": "/parenting/exams-with-less-pressure/",
+    "title": "Support through the pressure of exams",
+    "source_pages": [
+      "https://www.parentologyworld.com/exam-support",
+      "https://www.parentologyworld.com/examhelp"
+    ],
+    "purpose": "Consolidate the overlapping exam campaigns into one evergreen service/resource page if the offer remains active.",
+    "template": "Seasonal service",
+    "sections": [
+      "Start with the kind of support you need",
+      "Understand the current offer",
+      "Questions this page will answer"
+    ],
+    "related_routes": [
+      "/parenting/support-for-you/",
+      "/parenting/responding-with-reset/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG066",
+      "IMG067"
+    ],
+    "video_ids": [],
+    "cta": "Ask about exam-related support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Exam pressure",
+    "content_draft_id": "R09",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R10",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/",
+    "title": "Make sense of the teenage years",
+    "source_pages": [
+      "https://www.parentologyworld.com/parent-teen-connect/home",
+      "https://www.parentologyworld.com/resources",
+      "https://www.parentologyworld.com/media"
+    ],
+    "purpose": "Provide a useful learning hub with introductions and approved resources, not an index of empty future pages.",
+    "template": "Topic hub",
+    "sections": [
+      "Browse by what is happening",
+      "Follow a useful connection",
+      "Learning with a named source"
+    ],
+    "related_routes": [
+      "/parenting/understanding-your-teen/when-conversations-break-down/",
+      "/parenting/understanding-your-teen/anxiety-and-big-emotions/",
+      "/parenting/understanding-your-teen/when-school-feels-difficult/",
+      "/parenting/understanding-your-teen/confidence-and-belonging/",
+      "/parenting/understanding-your-teen/neurodivergent-experiences/",
+      "/parenting/exams-with-less-pressure/"
+    ],
+    "image_ids": [
+      "IMG001",
+      "IMG076"
+    ],
+    "video_ids": [],
+    "cta": "Find a relevant topic",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Understand your teenager",
+    "content_draft_id": "R10",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R11",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/when-conversations-break-down/",
+    "title": "When conversations keep breaking down",
+    "source_pages": [
+      "https://www.parentologyworld.com/parent-teen-connect/home",
+      "https://www.parentologyworld.com/parents",
+      "https://www.parentologyworld.com/media"
+    ],
+    "purpose": "Answer how parents can understand communication difficulties and where practical guidance fits.",
+    "template": "Evergreen expert page",
+    "sections": [
+      "Make the question specific",
+      "Connect the ideas",
+      "Where a conversation about your family fits"
+    ],
+    "related_routes": [
+      "/parenting/responding-with-reset/",
+      "/parenting/support-for-you/",
+      "/books/parenting-unstoppable-girls/"
+    ],
+    "image_ids": [
+      "IMG076"
+    ],
+    "video_ids": [],
+    "cta": "Explore parent support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Conversations & boundaries",
+    "content_draft_id": "R11",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R12",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/anxiety-and-big-emotions/",
+    "title": "When worry and big emotions take over",
+    "source_pages": [
+      "https://www.parentologyworld.com/media",
+      "https://www.parentologyworld.com/parent-teen-connect/home",
+      "https://www.parentologyworld.com/resources"
+    ],
+    "purpose": "Distinguish learning about anxiety and overwhelm from choosing professional support.",
+    "template": "Evergreen expert page",
+    "sections": [
+      "Answer the questions behind the search",
+      "Choose a relevant source",
+      "Offer a proportionate next step"
+    ],
+    "related_routes": [
+      "/parenting/learn-at-your-pace/when-parenting-feels-too-much/",
+      "/parenting/ongoing-guidance/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG001"
+    ],
+    "video_ids": [
+      "878QAeVv8Wk"
+    ],
+    "cta": "Explore the support options",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Anxiety & emotions",
+    "content_draft_id": "R12",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R13",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/when-school-feels-difficult/",
+    "title": "When getting to school feels difficult",
+    "source_pages": [
+      "https://www.parentologyworld.com/media",
+      "https://www.parentologyworld.com/parents",
+      "https://www.parentologyworld.com/intouch"
+    ],
+    "purpose": "Develop a distinct non-blog resource around school avoidance using Laura’s approved expertise.",
+    "template": "Evergreen expert page",
+    "sections": [
+      "Understand the context before the response",
+      "Connect home and professional conversations",
+      "Make the route into help clear"
+    ],
+    "related_routes": [
+      "/parenting/ongoing-guidance/",
+      "/parenting/exams-with-less-pressure/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG067"
+    ],
+    "video_ids": [],
+    "cta": "Ask about parent support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "School difficulties",
+    "content_draft_id": "R13",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R14",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/confidence-and-belonging/",
+    "title": "Confidence, identity and finding a place",
+    "source_pages": [
+      "https://www.parentologyworld.com/parent-teen-connect/home",
+      "https://www.parentologyworld.com/resources-access-page",
+      "https://www.parentologyworld.com/resources"
+    ],
+    "purpose": "Connect recognised book themes with approved resources and original explanation.",
+    "template": "Evergreen expert page",
+    "sections": [
+      "Begin with the parent’s question",
+      "Bring the books into the journey",
+      "Use resources with context"
+    ],
+    "related_routes": [
+      "/books/parenting-unstoppable-girls/",
+      "/books/parenting-teen-boys-with-confidence/",
+      "/parenting/practical-tools/"
+    ],
+    "image_ids": [
+      "IMG007",
+      "IMG009"
+    ],
+    "video_ids": [
+      "2ZsoL3xHAy8"
+    ],
+    "cta": "Explore Laura’s books",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Confidence & identity",
+    "content_draft_id": "R14",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R15",
+    "priority": "P2",
+    "path": "/parenting/understanding-your-teen/neurodivergent-experiences/",
+    "title": "Understanding your teenager’s individual experience",
+    "source_pages": [
+      "https://www.parentologyworld.com/media",
+      "https://www.parentologyworld.com/resources-access-page",
+      "https://www.parentologyworld.com/teen-support"
+    ],
+    "purpose": "Provide a carefully scoped resource introduction rather than implying diagnosis or unverified specialist accreditation.",
+    "template": "Evergreen expert page",
+    "sections": [
+      "Be clear about what the page offers",
+      "Review the material before recommending it",
+      "Discuss suitability, rather than assume it"
+    ],
+    "related_routes": [
+      "/parenting/practical-tools/",
+      "/parenting/support-for-you/",
+      "/counselling-for-young-people/"
+    ],
+    "image_ids": [
+      "IMG006"
+    ],
+    "video_ids": [
+      "UynmunzC0mQ"
+    ],
+    "cta": "Ask about suitable support",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Neurodivergent experiences",
+    "content_draft_id": "R15",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R16",
+    "priority": "P2",
+    "path": "/parenting/support-for-schools/",
+    "title": "Bring the conversation to your school or parent group",
+    "source_pages": [
+      "https://www.parentologyworld.com/about",
+      "https://www.parentologyworld.com/media"
+    ],
+    "purpose": "Separate commissioned talks and professional/parent-group work from buying an on-demand workshop.",
+    "template": "Professional enquiry page",
+    "sections": [
+      "Shape the discussion around the audience",
+      "Know what to include in an enquiry",
+      "Connect speaking to the wider work"
+    ],
+    "related_routes": [
+      "/parenting/learn-at-your-pace/",
+      "/media-and-publications/",
+      "/qualified-counsellor/"
+    ],
+    "image_ids": [
+      "IMG002",
+      "IMG053"
+    ],
+    "video_ids": [],
+    "cta": "Enquire about a group session",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Schools & parent groups",
+    "content_draft_id": "R16",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  },
+  {
+    "route_id": "R17",
+    "priority": "P2",
+    "path": "/parenting/a-plan-for-your-family/",
+    "title": "Time to step back and make a plan",
+    "source_pages": [
+      "https://www.parentologyworld.com/parents",
+      "https://www.parentologyworld.com/intouch",
+      "https://www.parentologyworld.com/power",
+      "https://www.parentologyworld.com/education"
+    ],
+    "purpose": "Create a dedicated page only if Laura confirms it is a distinct current offer with clear format and duration.",
+    "template": "Conditional service page",
+    "sections": [
+      "Clarify what the conversation is for",
+      "Keep the decision understandable",
+      "No placeholder offer to buy"
+    ],
+    "related_routes": [
+      "/parenting/support-for-you/",
+      "/parenting/ongoing-guidance/"
+    ],
+    "image_ids": [
+      "IMG006"
+    ],
+    "video_ids": [],
+    "cta": "Ask about a planning conversation",
+    "status": "Design/content handover only; not implemented",
+    "copy_status": "Original rewritten draft supplied; Laura review required",
+    "navigation_label": "Family strategy session",
+    "content_draft_id": "R17",
+    "copy_mode": "Original synthesis around reader need; source voice/facts retained"
+  }
+]

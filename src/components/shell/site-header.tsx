@@ -3,11 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { contactCta, primaryNavLinks } from "@/components/shell/site-nav";
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  const isHomeOverlay = pathname === "/";
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
@@ -40,18 +43,40 @@ export function SiteHeader() {
     };
   }, [menuOpen]);
 
+  const overlayHeader = isHomeOverlay && !menuOpen;
+
   return (
-    <header className="sticky top-0 z-50 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]">
-      <div className="mx-auto flex h-16 max-w-[var(--content-max)] items-center justify-between gap-4 px-[18px] md:h-[100px] md:px-10 lg:px-[65px]">
+    <header
+      className={cn(
+        "z-50 w-full",
+        overlayHeader
+          ? "absolute inset-x-0 top-0 border-b border-white/20 bg-gradient-to-b from-[#102f2c]/75 via-[#102f2c]/35 to-transparent text-[#fff8e9]"
+          : "sticky top-0 border-b border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)]",
+      )}
+    >
+      <div
+        className={cn(
+          "mx-auto flex max-w-[var(--content-max)] items-center justify-between gap-4 px-[18px] md:px-10 lg:px-[65px]",
+          overlayHeader ? "h-14 md:h-16" : "h-16 md:h-[100px]",
+        )}
+      >
         <Link
           href="/"
-          className="relative block h-[60px] w-[193px] shrink-0 md:h-[88px] md:w-[245px]"
+          className={cn(
+            "relative block shrink-0",
+            overlayHeader
+              ? "h-[52px] w-[168px] md:h-[60px] md:w-[193px]"
+              : "h-[60px] w-[193px] md:h-[88px] md:w-[245px]",
+          )}
         >
           <Image
             src="/brand/original-00-00.png"
             alt="Laura Thomas Counselling"
             fill
-            className="object-contain object-left"
+            className={cn(
+              "object-contain object-left",
+              overlayHeader && "brightness-0 invert",
+            )}
             sizes="(max-width: 768px) 193px, 245px"
             priority
           />
@@ -82,7 +107,10 @@ export function SiteHeader() {
         <button
           ref={menuButtonRef}
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs md:hidden"
+          className={cn(
+            "inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs md:hidden",
+            overlayHeader && "text-[#fff8e9]",
+          )}
           aria-expanded={menuOpen}
           aria-controls={panelId}
           aria-label={menuOpen ? "Close menu" : "Open menu"}

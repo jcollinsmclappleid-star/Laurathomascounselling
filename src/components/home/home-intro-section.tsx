@@ -59,9 +59,24 @@ export function HomeIntroSection() {
           ))}
           <div className="rounded-2xl bg-[var(--color-clay)] px-4 py-4">
             <p className="text-[15px] leading-relaxed">{homeParentologySisterLine}</p>
-            <div className="mt-3">
+            <div className="mt-3 flex flex-col items-start gap-3">
+              <a
+                href="https://www.parentologyworld.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--color-forest)]/35 px-6 py-3 text-sm font-medium text-[var(--color-forest)] transition hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-forest)]"
+              >
+                Visit Parentology World
+                <span className="sr-only">
+                  {" "}
+                  (opens parentologyworld.com in a new tab)
+                </span>
+              </a>
+              <p className="text-xs leading-relaxed">
+                Opens parentologyworld.com in a new tab.
+              </p>
               <HomeCtaSecondary href={parentologyHref}>
-                Explore Parentology
+                Parenting &amp; teenagers on this site
               </HomeCtaSecondary>
             </div>
           </div>

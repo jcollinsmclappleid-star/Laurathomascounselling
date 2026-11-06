@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  contactCta,
-  primaryNavLinks,
-  verifiedCredentials,
-} from "@/components/shell/site-nav";
+import { primaryNavLinks, verifiedCredentials } from "@/components/shell/site-nav";
 
 export function SiteFooter() {
   return (
@@ -36,27 +32,11 @@ export function SiteFooter() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  className="inline-flex min-h-11 items-center underline-offset-4 hover:underline"
-                  href={contactCta.href}
-                >
-                  {contactCta.label}
-                </Link>
-              </li>
             </ul>
           </nav>
           <p className="mt-6 text-[var(--color-cream)]/80">
             [PLACEHOLDER: contact details — phone and email pending client
             confirmation]
-          </p>
-          <p className="mt-2">
-            <Link
-              href="/contact-me/"
-              className="inline-flex min-h-11 items-center font-medium underline underline-offset-4"
-            >
-              Contact
-            </Link>
           </p>
         </div>
 

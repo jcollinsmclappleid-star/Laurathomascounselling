@@ -1,0 +1,292 @@
+{
+  "created_at": "2026-11-06",
+  "revision": 2,
+  "scope": "Original rewritten parenting content, revised routes and enhanced UI/UX; no live website changes",
+  "files": [
+    {
+      "path": "Audit_Summary.json",
+      "bytes": 533,
+      "sha256": "ef36d97fad8c97284186ec01bf61e825db7cc13ab60c7419e9b64577f5ed760e"
+    },
+    {
+      "path": "CTA_Register.json",
+      "bytes": 23674,
+      "sha256": "ad8497db0b5ba0e7272a94ed70a4600a0151751becb18220897b0787a760cde4"
+    },
+    {
+      "path": "Content_Differentiation_Map.csv",
+      "bytes": 8386,
+      "sha256": "bd7a85f441e4682f41d67b184a68395685f2cd3fc7cd51660df6c44551cd6a05"
+    },
+    {
+      "path": "Content_Facts_and_Decisions.md",
+      "bytes": 12101,
+      "sha256": "bba127505caa324fa1df838e536d44b3dc0b79cfa08be6fabba049e569d498a3"
+    },
+    {
+      "path": "Content_Section_Map.csv",
+      "bytes": 30017,
+      "sha256": "4a6b78f9aeb07a46ecaa175b1522ebb6c81e2e861a77bcb52447bea592befe2b"
+    },
+    {
+      "path": "Copy_Ledger_Template.csv",
+      "bytes": 26786,
+      "sha256": "d3468dfd073f50a315074236a9abab3cddbd9079bc5c9203b5a6dc8d0ad08c9f"
+    },
+    {
+      "path": "Cursor_Assessment_and_Implementation_Batches.md",
+      "bytes": 9504,
+      "sha256": "91cb706e9d9171e9b7e943f5a675f6c4695f118a5bd616c14b959b6434ee3470"
+    },
+    {
+      "path": "Design_Study_1.png",
+      "bytes": 210829,
+      "sha256": "b4edda89cbbc7753de3af5150bdc1a28cebedbecbce3e652573b8e3416723517"
+    },
+    {
+      "path": "Design_Study_2.png",
+      "bytes": 164442,
+      "sha256": "70f3d649d2bd10037a369a62bb3013841418adc9d31f37f9d249c62a2709136a"
+    },
+    {
+      "path": "Image_Contact_Sheet.jpg",
+      "bytes": 261917,
+      "sha256": "c3d138f4aac4d47672ee1a18bf6e28f0960ed672940b6f89ab7da112d48c99c1"
+    },
+    {
+      "path": "Image_Register.csv",
+      "bytes": 43987,
+      "sha256": "316297cf723149b862ef597774b504c3ee5928d07d4ca1ceb80777bef7af85f5"
+    },
+    {
+      "path": "Image_Register.json",
+      "bytes": 61971,
+      "sha256": "dbe7f9d2153b45ac09beae5bdc382a721e2034f78ab2b17bdacfcbc44dcb4327"
+    },
+    {
+      "path": "Implementation_Plan.md",
+      "bytes": 26350,
+      "sha256": "159fb50a36805f13a7b1ddabb64820089a25f291763090c35d6d295933738ee4"
+    },
+    {
+      "path": "Laura_Review_Decisions.csv",
+      "bytes": 2627,
+      "sha256": "a843ba6431e17cfbde75bf4e6bde20f008896bc741b7507bd5601b1d3023ac88"
+    },
+    {
+      "path": "Metadata_and_Discovery_Register.csv",
+      "bytes": 15928,
+      "sha256": "7df73b47c2d25df33a0d6a023187f641927885168796f8f095242c6567568660"
+    },
+    {
+      "path": "Page_Briefs.md",
+      "bytes": 22090,
+      "sha256": "3af0056f554f8005ab88de121ee16178e16f8bd1d8e3a8658919a246c5156381"
+    },
+    {
+      "path": "Parentology_Architecture.html",
+      "bytes": 11075,
+      "sha256": "608d8babedc46089fc2f0d8d09c671053b1443e118e617997d906109e258ae15"
+    },
+    {
+      "path": "Parentology_Architecture.png",
+      "bytes": 168010,
+      "sha256": "bc0fdcd3d2466c010c6871d6b6c5f6da08b5c806c24fce380974bfd5a18d25e7"
+    },
+    {
+      "path": "Parentology_Architecture.svg",
+      "bytes": 10872,
+      "sha256": "f8404562f9a5e90e15cc3f0aa56eedf3e3f80db706aff95972d80c59e09e7c62"
+    },
+    {
+      "path": "Parentology_Assessment_and_Implementation_Plan.pdf",
+      "bytes": 158403,
+      "sha256": "4f5377d4a502a006439afcd78329cb73092a6f6b2d2ce7eedbaf75a7c99c3a24"
+    },
+    {
+      "path": "Proposed_Routes.csv",
+      "bytes": 9338,
+      "sha256": "9fcdb734bd6a2725dc8814bf623ff3da640fc5ae4cc5d47548de14c9291ff92d"
+    },
+    {
+      "path": "Proposed_Routes.json",
+      "bytes": 22291,
+      "sha256": "2229d0596ef4c942a6ca52ba95b8a3207d3fd7c2c03b6366b3f0e4d0033074ec"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3723,
+      "sha256": "d5d6893606fba8ccdd28bffb2efb89781763acf3c9efa125efa0d2e6ab3da7f5"
+    },
+    {
+      "path": "Resource_Link_Register.json",
+      "bytes": 17602,
+      "sha256": "21532878f0e75febca0119d5b59cb89bdc1485748d1c9b2c2a4a1d67495ed6c9"
+    },
+    {
+      "path": "Revision_2_Checks.md",
+      "bytes": 1532,
+      "sha256": "be1d8c2e4387b33d34f8d056c5acbc12c8b2b44c99456459ed18693ef90a22ad"
+    },
+    {
+      "path": "Rewritten_Page_Content.json",
+      "bytes": 48267,
+      "sha256": "1dee2870b02e24a640235416f7e5cf064d5a8cace28c3e227685d071f5b6eb08"
+    },
+    {
+      "path": "Rewritten_Page_Content.md",
+      "bytes": 37421,
+      "sha256": "0591b8ba3f4da0a36671a0f2810cbec971f9a9b0d46c1358f02f587f85e62a76"
+    },
+    {
+      "path": "Route_Changes_Not_Redirects.csv",
+      "bytes": 5685,
+      "sha256": "073b591037a1a79eaf1a6e3f4db91e33d29206320dbd8b6ee2c90a9e4813fba7"
+    },
+    {
+      "path": "Source_Internal_Links.csv",
+      "bytes": 117055,
+      "sha256": "6cfafe6f24d14a1244b945db431ea2b270b4220594a493415240d0f4898dab36"
+    },
+    {
+      "path": "Source_Page_Register.csv",
+      "bytes": 29298,
+      "sha256": "44b152a9ee924f8876f02cb67e59f707dee71cb56c73163e7bfb72ff0a865fbe"
+    },
+    {
+      "path": "Source_Page_Register.json",
+      "bytes": 45932,
+      "sha256": "1723586cf3893a5c6dd7bfa1978de3375a68ebccece28fc793501f5310bc09d2"
+    },
+    {
+      "path": "UI_UX_Design_Brief.md",
+      "bytes": 10451,
+      "sha256": "cd3f8ffde088ccd112ac36930b92751f424cce99931bf34beaed2081058a5c4b"
+    },
+    {
+      "path": "Video_Register.json",
+      "bytes": 2530,
+      "sha256": "c94c90afa904185ff7535567d6d8d162aca34b0e92fa34e63b1693b97d384192"
+    },
+    {
+      "path": "assets/IMG001.webp",
+      "bytes": 83338,
+      "sha256": "f78cd7276fc47de41b5f8bb60cc779af728678f848af530929c07c77410d80fe"
+    },
+    {
+      "path": "assets/IMG002.webp",
+      "bytes": 129232,
+      "sha256": "a9db58fa0f509922bcbce09f6f17d6128bbe8136304382b2545aa7c79300a5d1"
+    },
+    {
+      "path": "assets/IMG003.webp",
+      "bytes": 189526,
+      "sha256": "890372c2be6e4d1ae139a7db11df273f2a70d4d25ee5ea2181b8cd76b9377d56"
+    },
+    {
+      "path": "assets/IMG004.webp",
+      "bytes": 180634,
+      "sha256": "e4dc56d448214e0cf3d9ee1d9d2cac018d739343907498239559e6209cd8128c"
+    },
+    {
+      "path": "assets/IMG006.webp",
+      "bytes": 40494,
+      "sha256": "e29b8322fcf65b4c37f38f993cc3e4cc6c0b36183ea9a20489f34ed4b7fb155f"
+    },
+    {
+      "path": "assets/IMG007.webp",
+      "bytes": 21674,
+      "sha256": "07bd3515011270ae969f3d9704a757dc3cae2ed155983b46f5a68151aa983627"
+    },
+    {
+      "path": "assets/IMG009.webp",
+      "bytes": 20868,
+      "sha256": "e8f2e4c6af8b460601d60ddd459a82e89f8d8e0bcf5d6eb87c27e92e43073ecd"
+    },
+    {
+      "path": "assets/IMG010.webp",
+      "bytes": 79694,
+      "sha256": "9d6c7c97f5fb60df11eed41c25818fbd39aceaba7047ec609bbd140246c8ffe5"
+    },
+    {
+      "path": "assets/IMG011.webp",
+      "bytes": 48618,
+      "sha256": "d2327fe6927e38b3c96bf2f26ef797c1823af12486be1e4ec5482c0bb2ea4047"
+    },
+    {
+      "path": "assets/IMG012.webp",
+      "bytes": 108986,
+      "sha256": "e619edf7a2668cdf0c8e61ce8aa759f0ac92e3a1233ca98d1a53ee447e5b5c1c"
+    },
+    {
+      "path": "assets/IMG013.webp",
+      "bytes": 74278,
+      "sha256": "84d61454a24379affc48e3b217fc4fd6490fed0e901e0c96f10955a78658b402"
+    },
+    {
+      "path": "assets/IMG014.webp",
+      "bytes": 67616,
+      "sha256": "f61145cbb178ebc7c8ee9d1449bb442c2d5dec18457decc2841865906dc380a8"
+    },
+    {
+      "path": "assets/IMG015.webp",
+      "bytes": 76622,
+      "sha256": "f4bfe1cb39ca30c3d3a2981e7cd75ee82e9f3b380246ffeae1f407d7e67dbaa1"
+    },
+    {
+      "path": "assets/IMG046.webp",
+      "bytes": 130834,
+      "sha256": "cb2640135c373ed9bae71f17245223f4197a6aad058d977f47f79a9425951839"
+    },
+    {
+      "path": "assets/IMG048.webp",
+      "bytes": 73776,
+      "sha256": "c4a9e4b85f780d7977cb1415c4eff190cd113bc51f244d2a2e13e0517213b0aa"
+    },
+    {
+      "path": "assets/IMG050.webp",
+      "bytes": 261710,
+      "sha256": "e8eaea7680eeb471273ccb06d04a891b7329951b05bd23477b1cdac92fa2fc5c"
+    },
+    {
+      "path": "assets/IMG053.webp",
+      "bytes": 180656,
+      "sha256": "3df7fae7f02be51ec878f5d1b1f664cf04a43ba8957baf7fb1fbfd6106ae6a7f"
+    },
+    {
+      "path": "assets/IMG054.webp",
+      "bytes": 60042,
+      "sha256": "fd16b58f5c4b3c6d56a740cde1f05a77fcaad93e174e06f85f45754f64456f19"
+    },
+    {
+      "path": "assets/IMG055.webp",
+      "bytes": 33734,
+      "sha256": "d208753719cdc9966b2ec28bc35f67e7f53ceec8fae96854b8a77cdc86aff155"
+    },
+    {
+      "path": "assets/IMG066.webp",
+      "bytes": 65634,
+      "sha256": "f50d86b60e8b0a2de9569b70500051b71446ddc68381b466a2b881dc4c8bafd8"
+    },
+    {
+      "path": "assets/IMG067.webp",
+      "bytes": 71914,
+      "sha256": "da8a9f3c9a6802c394e298965e30c4590e333e516cc9ad3aa769d503bfef8c10"
+    },
+    {
+      "path": "assets/IMG075.webp",
+      "bytes": 159682,
+      "sha256": "90bcce41b6f4f66014c20e1701421eb23037157e1685f8aecf9618def4a723d1"
+    },
+    {
+      "path": "assets/IMG076.webp",
+      "bytes": 95208,
+      "sha256": "31d51ec978a249ae92c78cacd19087a4ae049fba61aefbc8ad5b08efe3b63992"
+    },
+    {
+      "path": "assets/IMG077.webp",
+      "bytes": 11428,
+      "sha256": "1258275c6ead2fad218def6e33b3e665552f29c336e00fcea3825d7914141fc3"
+    }
+  ]
+}

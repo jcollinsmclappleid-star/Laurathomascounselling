@@ -73,7 +73,7 @@ export function MeetLauraPanel({
                 : "mt-2 max-w-md text-sm",
             )}
           >
-            M.Ed · Counsellor &amp; parenting specialist · Bedford &amp; online
+            Counsellor &amp; parenting specialist · Bedford &amp; online
           </p>
           {!isHero ? (
             <span className="mt-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/70 bg-white/10 px-4 py-2 text-[11px] uppercase tracking-[0.12em] backdrop-blur-sm transition group-hover:bg-white/20 group-active:scale-[0.98]">

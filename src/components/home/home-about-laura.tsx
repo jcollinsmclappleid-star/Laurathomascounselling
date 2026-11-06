@@ -1,6 +1,5 @@
 import {
   Award,
-  BadgeCheck,
   Clock,
   Footprints,
   GraduationCap,
@@ -39,6 +38,7 @@ export function HomeAboutLaura() {
   return (
     <section
       className="border-t border-[#c8cbb9]/80 bg-[var(--color-cream)] px-[19px] py-12 md:px-10 lg:px-[65px]"
+      id="laura-introduction"
       aria-labelledby="about-laura-heading"
     >
       <div className="mx-auto max-w-[var(--content-max)]">
@@ -72,18 +72,6 @@ export function HomeAboutLaura() {
           ))}
         </div>
 
-        <ul className="mt-5 flex flex-wrap gap-2">
-          <li>
-            <DesignPill icon={GraduationCap} tone="cream">
-              M.Ed
-            </DesignPill>
-          </li>
-          <li>
-            <DesignPill icon={BadgeCheck} tone="cream">
-              MNCPS (Accred.)
-            </DesignPill>
-          </li>
-        </ul>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <HomeCtaSecondary href={aboutHref}>Read more about me</HomeCtaSecondary>
           <HomeCtaPrimary href={contactHref}>Book a free call</HomeCtaPrimary>

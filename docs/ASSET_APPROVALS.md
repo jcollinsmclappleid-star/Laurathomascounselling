@@ -36,3 +36,27 @@
 | Couples / relationship | `https://www.laurathomascounselling.co.uk/wp-content/uploads/2021/07/relationship-5-1280x825.jpg` | `public/images/couples-support.webp` |
 
 Do not present concept room/family photography as documentary photos of Laura’s practice or clients until Laura confirms.
+
+## Credentials pending Laura’s confirmation (Batch 2h, decision D09)
+
+The homepage, About section and footer were showing **M.Ed** and **MNCPS (Accred.)**. The live logo file reads **M.Sc., MNCS (Accred)**. Pack decision D09 says qualifications, memberships and professional wording still need Laura’s confirmation. Those text pills and lines are off the page until she confirms them. The logo images stay, including the wording printed in the artwork.
+
+| Removed from | Wording taken off the page |
+| --- | --- |
+| Homepage, under the hero | Pills: M.Ed; MNCPS (Accred.) |
+| Homepage About Laura | Pills: M.Ed; MNCPS (Accred.) |
+| Footer | Line: M.Ed · MNCPS (Accred.) |
+| Meet Laura panel (component exists; not currently on the page) | Leading “M.Ed · ” |
+
+Not added in their place: M.Sc. or MNCS (Accred.) as text. “Published parenting author” and “Wixams, Bedford & online” remain.
+
+## Parentology Revision 2 images (Batch 2h)
+
+Reference renditions live in `docs/reference/parentology-rev2/assets/`. They are not production masters. Image_Register marks identity and licence as still to confirm.
+
+| ID | Decision |
+| --- | --- |
+| IMG010 | Same Parentology wordmark already at `public/images/parentology/parentology-logo.webp`. Reused. Not copied again. |
+| IMG006, IMG013 | Design brief treats these as Laura portraits. The register still says identity/licence to confirm, so they were **not** copied into `public/`. The hub uses the existing doorway portrait of Laura from her counselling site. |
+| IMG001 | Pexels stock (`pexels-cottonbro`). Not used. Not presented as Laura or as a client. |
+| Other pack renditions | Left in `docs/reference/` only. Not copied into `public/`. |

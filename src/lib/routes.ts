@@ -5,12 +5,16 @@ export type LegacyRoute = {
   path: string;
   kind: LegacyRouteKind;
   title: string;
-  /** Composer batch that will implement the route, or `registry-only` for posts until migration. */
-  plannedBatch: number | "registry-only" | "built";
+  /**
+   * Composer batch that will implement the route, `built` once a page exists,
+   * or `registry-only` for posts until migration.
+   * `"4a" | "4b" | "4c"` are the Parentology section under `/parentology/`.
+   */
+  plannedBatch: number | "4a" | "4b" | "4c" | "registry-only" | "built";
 };
 
 /** Paths that exist as Next.js pages in this repo (expand as batches land). */
-export const builtPagePaths = ["/"] as const;
+export const builtPagePaths = ["/", "/parentology/"] as const;
 
 /**
  * Explicit legacy URL registry — every public WordPress URL plus planned new routes
@@ -36,6 +40,9 @@ export const legacyRoutes: LegacyRoute[] = [
     title: "Parenting and Family Support",
     plannedBatch: 4,
   },
+  // Live WordPress 301s /parenting/ to /parenting-and-family-support/.
+  // This registry has no redirect entry type, so /parenting/ is not listed here.
+  // Keep that redirect at launch. See docs/LIVE_SITE_ASSESSMENT.md.
   { path: "/parenting-teens/", kind: "page", title: "Parenting Teens", plannedBatch: 4 },
   {
     path: "/counselling-for-children/",
@@ -43,7 +50,54 @@ export const legacyRoutes: LegacyRoute[] = [
     title: "Children",
     plannedBatch: 3,
   },
-  { path: "/parentology/", kind: "page", title: "Parentology gateway", plannedBatch: 4 },
+  {
+    path: "/parentology/",
+    kind: "page",
+    title: "Support for you. Understanding for your teenager.",
+    plannedBatch: "built",
+  },
+  {
+    path: "/parentology/support-for-you/",
+    kind: "page",
+    title: "Find the support that fits your family",
+    plannedBatch: "4b",
+  },
+  {
+    path: "/parentology/ongoing-guidance/",
+    kind: "page",
+    title: "A continuing connection through In-Touch",
+    plannedBatch: "4b",
+  },
+  {
+    path: "/parentology/responding-with-reset/",
+    kind: "page",
+    title: "A more considered response, with RESET",
+    plannedBatch: "4b",
+  },
+  {
+    path: "/parentology/practical-tools/",
+    kind: "page",
+    title: "Something useful for the moment you are in",
+    plannedBatch: "4c",
+  },
+  {
+    path: "/parentology/learn-at-your-pace/",
+    kind: "page",
+    title: "Make room to understand, in your own time",
+    plannedBatch: "4c",
+  },
+  {
+    path: "/parentology/learn-at-your-pace/when-parenting-feels-too-much/",
+    kind: "page",
+    title: "When parenting feels too much",
+    plannedBatch: "4c",
+  },
+  {
+    path: "/parentology/learn-at-your-pace/understanding-self-harm/",
+    kind: "page",
+    title: "Understanding self-harm: a workshop for parents",
+    plannedBatch: "4c",
+  },
   { path: "/books/", kind: "page", title: "Books", plannedBatch: 5 },
   {
     path: "/books/parenting-unstoppable-girls/",

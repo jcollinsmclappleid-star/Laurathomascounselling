@@ -67,7 +67,7 @@ Navigation no longer uses a cream pill. The live **v2a** lockup (`laura-logo-v2a
 
 **Why this, for SEO.** The homepage keeps a single H1. Parentology gets its own H2, unique verbatim copy, a descriptive image alt, and an internal link with the anchor “Explore Parentology” to `/parentology/`. That is a clear topical signal and a crawlable path without a second H1, without an off-site checkout link, and without duplicating the whole Parentology site. Testimonials on the sister site are not reused.
 
-**Images.** `family.webp` is the mother-and-daughter photograph used for the Parentology route tile in Batch 2e, and again in the band. The counselling route tile uses `room.webp` (an armchair in a quiet room). The live file previously used there (`counselling-space.webp`, Bedford-Counselling-71) is a windowsill of ornaments, not a counselling room. The PSA badge is not a background; accreditation stays as the small credentials line already on the page.
+**Images.** `family.webp` is the mother-and-daughter photograph used for the Parentology route tile in Batch 2e, and again in the band. The counselling route tile uses `room.webp` (an armchair in a quiet room). The live file previously used there (`counselling-space.webp`, Bedford-Counselling-71) is a windowsill of ornaments, not a counselling room. The PSA badge is not a background. Qualification lines that were on the page were removed in Batch 2h until Laura confirms them (see `ASSET_APPROVALS.md`). The logo file itself is unchanged.
 
 ## Homepage copy still not on the rebuild (Batch 2g)
 
@@ -79,3 +79,29 @@ Compared with the live homepage on 6 November 2026, after restoring Recent blogs
 - The FAQ opener is one paragraph here. On the live page it is split: “Coming to counselling can be a nerve- wracking experience:” then the questions, then “Its understandable to have lots of questions as it is a big decision to make. I get it.”
 - “Whether you're dealing with you mental health…” is tidied to “your”.
 - How I can help service copy is the same sentences, joined into one paragraph per service.
+
+## Parenting URLs (Batch 2h)
+
+Checked against the live WordPress site and Parentology Revision 2. The new section does **not** use `/parenting/` as its prefix.
+
+| URL | Live behaviour (6 Nov 2026) | This build |
+| --- | --- | --- |
+| `/parenting/` | **301** to `/parenting-and-family-support/` (likely an automatic slug guess) | **Keep that redirect at launch.** Do not replace it with the new hub. The route registry has no redirect entry type, so `/parenting/` is not listed in `src/lib/routes.ts`. It must still 301 to `/parenting-and-family-support/` when this site goes live. |
+| `/parenting-and-family-support/` | Existing counselling page | Unchanged path. Different job from the new Parentology section. Link to it; do not duplicate it. |
+| `/parenting-teens/` | Existing counselling page | Unchanged path. Different job from the new Parentology section. Link to it; do not duplicate it. |
+| `/family-therapy-2/` | Existing counselling page | Unchanged. |
+| `/counselling-for-young-people/` | Existing counselling page | Unchanged. Separate from parent coaching. |
+| `/parentology/` | **404** | Hub. Nav label “Parenting & teenagers”. |
+| `/parentology/support-for-you/` | **404** | Registered for Batch 4b. Not built yet. |
+| `/parentology/ongoing-guidance/` | **404** | Registered for Batch 4b. Not built yet. |
+| `/parentology/responding-with-reset/` | **404** | Registered for Batch 4b. Not built yet. |
+| `/parentology/practical-tools/` | **404** | Registered for Batch 4c. Not built yet. |
+| `/parentology/learn-at-your-pace/` | **404** | Registered for Batch 4c. Not built yet. |
+| `/parentology/learn-at-your-pace/when-parenting-feels-too-much/` | **404** | Registered for Batch 4c. Not built yet. |
+| `/parentology/learn-at-your-pace/understanding-self-harm/` | **404** | Registered for Batch 4c. Not built yet. |
+
+Revision 2 had proposed these eight pages under `/parenting/`. Using `/parentology/` instead avoids the live `/parenting/` redirect. P2 routes from that pack are not registered and are not linked.
+
+The homepage first screen now offers Counselling and Parenting & teenagers as two local choices. Parenting goes to `/parentology/`. That supersedes the Batch 2g note that Parentology should stay off the first screen. The clay band beside Teen & Parent Support still links to `/parentology/`.
+
+Book paths and blog paths are unchanged.

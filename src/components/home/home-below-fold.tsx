@@ -240,7 +240,7 @@ export function HomeBelowFold() {
                 <CopyNote icon={Compass}>{homeParentologyWorld.body}</CopyNote>
                 <CopyNote icon={Route}>{homeParentologyWorld.detail}</CopyNote>
                 <HomeCtaPrimary href={parentologyHref} className="mt-2">
-                  Explore Parentology
+                  Parenting &amp; teenagers
                 </HomeCtaPrimary>
               </div>
             </article>

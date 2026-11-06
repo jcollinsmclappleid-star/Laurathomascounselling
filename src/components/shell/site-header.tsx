@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { contactCta, primaryNavLinks } from "@/components/shell/site-nav";
+import { primaryNavLinks } from "@/components/shell/site-nav";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -84,7 +84,7 @@ export function SiteHeader() {
         </Link>
 
         <nav
-          className="hidden items-center gap-8 text-xs md:flex lg:gap-9"
+          className="hidden items-center gap-6 text-xs xl:flex xl:gap-8"
           aria-label="Primary"
         >
           {primaryNavLinks.map((item) => (
@@ -92,32 +92,20 @@ export function SiteHeader() {
               key={item.href}
               href={item.href}
               className={cn(
-                "min-h-[44px] py-3 leading-none transition hover:text-[var(--accent)]",
+                "inline-flex min-h-[44px] items-center py-3 leading-none transition hover:text-[var(--accent)]",
                 onForestBar && "hover:text-white",
               )}
             >
               {item.label}
             </Link>
           ))}
-          <Link
-            href={contactCta.href}
-            className={cn(
-              "inline-flex min-h-[44px] items-center gap-1.5 border px-[22px] py-3 text-xs font-medium transition",
-              onForestBar
-                ? "border-white/55 hover:border-white hover:bg-white/10"
-                : "border-[#657a69]/80 hover:border-[var(--color-forest)] hover:bg-[var(--soft-surface)]",
-            )}
-          >
-            {contactCta.label}
-            <ArrowUpRight aria-hidden="true" size={14} strokeWidth={1.8} />
-          </Link>
         </nav>
 
         <button
           ref={menuButtonRef}
           type="button"
           className={cn(
-            "inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs md:hidden",
+            "inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 text-xs xl:hidden",
             onForestBar && "text-[#fff8e9]",
           )}
           aria-expanded={menuOpen}
@@ -139,7 +127,7 @@ export function SiteHeader() {
       <div
         id={panelId}
         className={cn(
-          "border-t border-[#b7bda9] bg-[var(--color-cream)] md:hidden",
+          "border-t border-[#b7bda9] bg-[var(--color-cream)] text-[var(--color-forest)] xl:hidden",
           !menuOpen && "hidden",
         )}
       >
@@ -154,14 +142,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href={contactCta.href}
-            className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 border border-[#657a69]/80 px-5 py-3 text-sm font-medium"
-            onClick={closeMenu}
-          >
-            {contactCta.label}
-            <ArrowUpRight aria-hidden="true" size={16} strokeWidth={1.8} />
-          </Link>
         </nav>
       </div>
     </header>

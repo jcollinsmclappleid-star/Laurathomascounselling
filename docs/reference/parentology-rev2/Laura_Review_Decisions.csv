@@ -1,0 +1,15 @@
+decision_id,area,question,source_reference,category,Laura_response,approved_by,approved_date,status
+D01,In-Touch,Which source version is current? Are Core/Plus current? What is included and at what approved price?,/intouch; /intouch-1; /new-page-1,Service terms,,,,Pending
+D02,Availability,"What are the messaging platform, working days, response hours, exclusions and escalation boundaries?",/intouch; /intensive; /change,Service terms,,,,Pending
+D03,Strategy sessions,"Are the 60-minute initial, 90-minute strategy and two-hour sessions different offers? Which should appear?",/intouch; /parents; /power,Offer selection,,,,Pending
+D04,RESET,Which five labels and explanation are current? Can you supply an approved practical example?,/about; /free-support-1,Framework,,,,Pending
+D05,Older packages,"Which coaching packages are still sold? Confirm inclusions, follow-up and availability.",/power; /education; /intensive; /change,Offer selection,,,,Pending
+D06,Workshops,"Confirm product title, contents, price, access duration, refunds and existing purchase/delivery link for each workshop.",/overwhelm; /overwhelmreset,Product terms,,,,Pending
+D07,Exam support,"Does this remain an ongoing offer? Confirm session formats, prices and calendar, removing old July availability.",/exam-support; /examhelp,Conditional offer,,,,Pending
+D08,Resources,"For each file or replay: free, sign-up, paid or member-only? Which can be embedded or moved?",Resource_Link_Register.json,Access,,,,Pending
+D09,Credentials,"Confirm exact qualifications, current memberships/designations, professional wording and practice/business identities.",/about,Authority,,,,Pending
+D10,Images and video,"Confirm identities, cross-domain rights, approved assets, actual playback and captions/transcript availability.",Image_Register.json; Video_Register.json,Media,,,,Pending
+D11,Booking and contact,Choose one correct destination per journey; confirm who receives enquiries and whether an introductory call remains free/30 minutes.,CTA_Register.json,Conversion,,,,Pending
+D12,Books research and press,"Supply current publication metadata, approved book themes, research details and media links; substantiate any bestseller claim.",/about; /media,Authority,,,,Pending
+D13,Practitioner network,Should the separate practitioner network stay linked? Confirm relationships and exclude obsolete/filler profiles.,/teen-support; /therapists,Provider clarity,,,,Pending
+D14,Policies and testimonials,"Approve cross-domain testimonial use and current policies for the actual services, data flows and fulfilment.",Policy URLs in source register,Publication,,,,Pending

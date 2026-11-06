@@ -8,6 +8,8 @@
 4. **Secrets & infra** — never commit secrets; do not deploy or change DNS.
 5. **Reference pack** — keep `docs/reference/` out of `public/` and the production bundle.
 6. **No content migration** — do not fetch, scrape, import, or recreate WordPress articles or pages unless Joshua explicitly approves a migration batch. No migration inventories or recovery work in design/infrastructure batches.
+7. **RULE A — NOT INDEXABLE** — Laura’s live site must not be affected until Joshua explicitly approves launch. Default the build to non-indexable: root layout `metadata.robots` (`index: false`, `follow: false`), `X-Robots-Tag: noindex, nofollow` on all routes via `next.config` headers, and `app/robots.ts` returning `Disallow: /` for all user agents. Do not list URLs in the sitemap (empty until launch). Do not set canonical URLs pointing at the live production domain yet. Gate behind a single flag (`SITE_INDEXABLE`, default `false`); document in `.env.example`.
+8. **RULE B — PROTECT URLS** — every existing public URL on Laura’s current site keeps exactly the same path, including trailing slashes. Maintain an explicit registry in `src/lib/routes.ts` (from `WordPress_Content_Inventory.csv` plus route notes in the technical spec). Set `trailingSlash: true` in `next.config`. No catch-all routes, no redirects to the homepage, no slug changes. Article URLs are listed in the registry only until a migration batch builds them. Run `npm run check:routes` to verify no duplicate registry paths and that every built page path exists in the registry.
 
 ## How to run work
 

@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import { SiteFooter } from "@/components/shell/site-footer";
 import { SiteHeader } from "@/components/shell/site-header";
 import { cormorantGaramond, interLocal } from "./fonts";
-import { absoluteUrl, siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
+import { isSiteIndexable, siteRobotsMetadata } from "@/lib/site-indexable";
 import "./globals.css";
+
+const indexable = isSiteIndexable();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -12,13 +15,14 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  alternates: {
-    canonical: absoluteUrl("/"),
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  ...(indexable
+    ? {
+        alternates: {
+          canonical: new URL("/", siteConfig.url).toString(),
+        },
+      }
+    : {}),
+  robots: siteRobotsMetadata(),
 };
 
 export default function RootLayout({

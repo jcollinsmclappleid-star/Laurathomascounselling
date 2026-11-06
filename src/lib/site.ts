@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isSiteIndexable, siteRobotsMetadata } from "@/lib/site-indexable";
 
 export const siteConfig = {
   name: "Laura Thomas Counselling",
@@ -21,13 +22,19 @@ export function pageMetadata({
   path: string;
 }): Metadata {
   const url = absoluteUrl(path);
+  const indexable = isSiteIndexable();
 
   return {
     title,
     description,
-    alternates: {
-      canonical: url,
-    },
+    robots: siteRobotsMetadata(),
+    ...(indexable
+      ? {
+          alternates: {
+            canonical: url,
+          },
+        }
+      : {}),
     openGraph: {
       title,
       description,

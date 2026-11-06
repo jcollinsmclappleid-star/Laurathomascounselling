@@ -13,6 +13,8 @@ alwaysApply: true
 - Never commit secrets; do not deploy or change DNS.
 - Keep `docs/reference/` out of `public/` and the production bundle.
 - No WordPress or legacy content migration (fetch, scrape, import, recreate, or inventory) unless Joshua explicitly approves — defer to a dedicated migration batch.
+- **RULE A — NOT INDEXABLE:** Until Joshua approves launch, the whole build stays non-indexable (`SITE_INDEXABLE` defaults false): layout robots noindex/nofollow, global `X-Robots-Tag`, `robots.ts` `Disallow: /`, empty sitemap, no live-domain canonicals.
+- **RULE B — PROTECT URLS:** Preserve every legacy path (trailing slashes) via `src/lib/routes.ts`; `trailingSlash: true`; no catch-alls or homepage redirects; articles registry-only until migration; `npm run check:routes` must pass.
 
 ## Workflow
 
